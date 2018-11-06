@@ -1,0 +1,227 @@
+<block name="include">
+    <include file="./Public/header.html" />
+</block>
+
+<body>
+    <!-- 广告轮播图 -->
+    <div class="banner">
+        <div class="bd">
+            <ul>
+                <volist name="list" id="no">
+                    <li>
+                        <a href="{$no['url']}"><img src="__PUBLIC__/img/{$no['imgpath']}" alt="幻灯片" /></a>
+                    </li>
+                </volist>
+            </ul>
+        </div>
+        <ul class="hd">
+            <li class="on"></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <!-- <block name="include"><include file="./Public/demand.html" /></block> -->
+        <ul></ul>
+    </div>
+    <script type="text/javascript" src="__PUBLIC__/home/js/layer.js"></script>
+    <script src="__PUBLIC__/home/js/yzh.js"></script>
+    <script>
+        form_submit('demand_form');
+        jQuery(".demand_box").slide({
+            mainCell: "ul",
+            autoPlay: true,
+            effect: "topMarquee",
+            vis: 2,
+            interTime: 60
+        });
+    </script>
+    <script type="text/javascript">
+        jQuery(".banner").slide({ /*SuperSlide图片切换*/
+            titCell: ".hd li",
+            mainCell: ".bd ul",
+            effect: "fold",
+            autoPlay: true,
+            easing: "easeOutCirc",
+            interTime: 6000
+        });
+    </script>
+    <!--我们的优势-->
+    <div class="youshi-box" id="test01">
+        <div class="main">
+            <div class="title ">
+                <h2 style="margin-left:-61px;">我们的优势</h2>
+                <span id="line"></span>
+            </div>
+            <p class="youshi-t">为什么选择我们？WHY CHOOSE US?</p>
+            <ul>
+                <li>
+                    <span class="y-02"><em></em></span>
+                    <p class="y-title">专业服务顾问团队</p>
+                    <p>专业的商务顾问与服务顾问团队，1对1为您量身订做方案，解决各种问题</p>
+                </li>
+                <li>
+                    <span class="y-03"><em></em></span>
+                    <p class="y-title">系统管理 办理时间更快</p>
+                    <p>行业领先的信息化系统，与政务数据对接，业务办理流程时间监控，超期自动预警，办理时间更快</p>
+                </li>
+                <li>
+                    <span class="y-05"><em></em></span>
+                    <p class="y-title">一站式全面服务</p>
+                    <p>提供工商、会计代理、知产项目、互联网、地产装饰、品牌、资质、财税等多种企业整合服务</p>
+                </li>
+                <li>
+                    <span class="y-01"><em></em></span>
+                    <p class="y-title">办理进度随时随地查询</p>
+                    <p>可通过我们的客服人员/商务顾问/APP/网站/微信服务号/短信提醒，随时随地获知办理进度</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--专业顾问团队-->
+    <div class="team grWidth main">
+        <div class="title ">
+            <h2 style="margin-left:-55px;">我们的团队</h2>
+            <span id="line"></span>
+        </div>
+        <p class="youshi-t">专业顾问团队 PROFESSIONAL ADVISOR TEAM</p>
+        <div class="teamSlide">
+            <div class="ohbox">
+                <ul>
+                    <volist name="list2" id="row2">
+                        <li>
+                            <a class="tImg fl" href="__MODULE__/About/team/id/{$row2['id']}">
+                                <img src="__PUBLIC__/image/{$row2['pic']}" alt="{$row2['name']}">
+                                <h4>
+                                    <a href="__MODULE__/About/team/id/{$row2['id']}">{$row2['name']}
+                                        <span>{$row2['position']}</span>
+                                    </a>
+                                </h4>
+                                <p>{$row2['content']}</p>
+                            </a>
+                        </li>
+                    </volist>
+                </ul>
+            </div>
+            <div class="pageBtn">
+                <span class="prev"></span>
+                <span class="next">></span>
+            </div>
+        </div>
+    </div>
+    <!--客户口碑-->
+    <div class="khkb-box">
+        <div class="main">
+            <div class="title ">
+                <h2 style="margin-left:-50px;">客户口碑</h2>
+                <span id="line"></span>
+            </div>
+            <p class="khkb-t">CUSTOMER REPUTATION</p>
+            <div class="clear"></div>
+            <ul >
+                <volist name="lis" id="lrow">
+                    <li>
+                        <h2 title="{$lrow['title']}"><a href="__MODULE__/About/xinwen/id/{$lrow['id']}">{$lrow['title']}</a></h2>
+                        <p>{$lrow['content']}</p>
+                    </li>
+                </volist>
+            </ul>
+        </div>
+    </div>
+    <!--合作伙伴-->
+    <div class="hezuo-box">
+        <div class="main">
+            <div class="title ">
+                <h2 style="margin-left:-85px;">我们的合作伙伴</h2>
+                <span id="line"></span>
+            </div>
+            <p class="khkb-t">OUR BUSINESS PARTNER</p>
+            <div class="clear"></div>
+            <ul class="partnerMain clearfix">
+                <volist name="re" id="erow">
+                    <li>
+                        <a href="{$erow['url']}">
+                          <img src="__PUBLIC__/img/{$erow['imgpath']}" alt="">
+                          <span>{$erow['name']}</span>
+                        </a>
+                    </li>
+                </volist>
+            </ul>
+        </div>
+    </div>
+    <div class="advantage-box ">
+        <ul class="advantage clearfix">
+            <li >
+                <h2>超高性价比</h2>
+                <p>不用东奔西走，找创哈网络一站式搞定，为客户节约大量成本。</p>
+                <div class="img"><i class=""></i></div>
+            </li>
+            <li>
+                <h2>高效的服务</h2>
+                <p>创哈网络拥有标准服务框架,服务简洁有效。</p>
+                <div class="img"><i class="a2"></i></div>
+            </li>
+            <li >
+                <h2>服务流程透明</h2>
+                <p>随时查询服务进度，进度有变化资讯会第一时间告知。</p>
+                <div class="img"><i class="a3"></i></div>
+            </li>
+            <li >
+                <h2>信息保密</h2>
+                <p>严格遵守商业诚信，保守商业秘密，杜绝信息泄露</p>
+                <div class="img"><i class="a4"></i></div>
+            </li>
+            <li >
+                <h2>退款保障</h2>
+                <p>如对咨询人员的服务不满意，可以向创哈网络管理层投诉，核实后可退款。</p>
+                <div class="img"><i class="a5"></i></div>
+            </li>
+        </ul>
+    </div>
+    <div class="clearfix"></div>
+   
+    <!--漂浮-->
+    <!-- <div class="floating">
+    <div class="top">
+    <span class="close"></span>
+    <i class="icon"></i>
+    <p>填写您的需求，我们即刻给您致电</p>
+    </div>
+    <div class="main">
+    <form id="floating_form" name="form" action="/form/insert.html" method="post">
+    <input name="formid" value="3" type="hidden">
+    <input name="lan" value="1" type="hidden">
+    <input class="f1" type="text" name="title" placeholder="请填写您的需求">
+    <input class="f2" type="text" name="phone" placeholder="留下电话，方便联系您">
+    <p class="btn"><a class="fl btn1" href="http://wpa.qq.com/msgrd?v=3&uin=1696902291&site=qq&menu=yes">免费咨询</a><input class="sub fr" type="submit" value="立即提交"></p></form>
+    </div>
+    </div> -->
+    <script type="text/javascript">
+        /*专业顾问团队 */
+        jQuery(".teamSlide").slide({
+            mainCell: ".ohbox ul",
+            effect: "leftLoop",
+            vis: 4,
+            scroll: 1,
+            autoPlay: true
+        });
+        /* 新闻中心 */
+        jQuery(".news").slide({
+            titCell: ".newsMenu  a",
+            mainCell: ".newsMain",
+            delayTime: 0,
+            prevCell: false,
+            nextCell: false
+        });
+        form_submit('floating_form');
+        $(function() {
+            setTimeout(function() {
+                    $(".floating").show()
+                },
+                3000);
+            $('.floating .close,.floating .btn1').click(function() {
+                $('.floating').hide()
+            });
+        });
+    </script>
+    <block name="include">
+        <include file="./Public/footer.html" />
+    </block>

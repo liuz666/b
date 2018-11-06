@@ -1,0 +1,25 @@
+   <table class="layui-table" id="did"> 
+    <thead> 
+     <tr> 
+      <!-- <th> <input type="checkbox" name="" value="" class="all" /> </th>  -->
+      <th> ID </th> 
+      <th>  所属模块分类 </th> 
+      <th>  权限名称</th> 
+      <th>  所属方法</th> 
+      <th>  操作 </th> 
+     </tr> 
+    </thead> 
+    <tbody id="x-link"> 
+    <foreach name="list" item="row">
+     <tr> 
+      <!-- <td> <input type="checkbox" value="1" name="" /> </td>  -->
+      <td> {$row['id']} </td> 
+      <td> {$row['mname']}</td> 
+      <td> {$row['name']} </td> 
+      <td> {$row['aname']} </td> 
+      <td class="td-manage"> <a title="编辑" href="javascript:;" onclick="edit('编辑','__URL__/edit/id/{$row['id']}','','','310')" class="ml-5" style="text-decoration:none"> <i class="layui-icon"></i> </a> <a title="删除" href="javascript:;" onclick="rule_del(this,'{$row['id']}')" style="text-decoration:none"> <i class="layui-icon"></i> </a> </td> 
+     </tr> 
+     </foreach>
+    </tbody> 
+   </table> 
+   

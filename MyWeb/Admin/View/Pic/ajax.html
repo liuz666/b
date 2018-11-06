@@ -1,0 +1,52 @@
+<div id="uid">
+            <table class="layui-table">
+                <thead>
+                    <tr>
+                        <th>
+                          
+                        </th>
+                        <th>
+                            ID
+                        </th>
+                        <th>
+                            项目名称
+                        </th>
+                        <th>
+                            图片
+                        </th>
+                        <th>
+                            操作
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="x-img">
+                    <foreach name="list" item="row">
+                    <tr>
+                        <td>
+                           <input type="checkbox" value="{$row['id']}" name="id[]">
+                        </td>
+                        <td>
+                            {$row['id']}
+                        </td>
+                        <td>
+                            {$row['name']}
+                        </td>
+                        <td >
+                            <img src="__ROOT__/Public/images/{$row['pic']}" width="100px" height="100px">
+                        </td>
+                        <td class="td-manage">
+                        
+                            <a title="编辑" href="javascript:;" onclick="banner_edit('编辑','__URL__/edit?id={$row['id']}','4','','510')"
+                            class="ml-5" style="text-decoration:none">
+                                <i class="layui-icon">&#xe642;</i>
+                            </a>
+                            <a title="删除" href="javascript:;" onclick="banner_del(this,'{$row['id']}')" 
+                            style="text-decoration:none">
+                                <i class="layui-icon">&#xe640;</i>
+                            </a>
+                        </td>
+                    </tr>
+                </foreach>
+                </tbody>
+            </table>
+        </div>

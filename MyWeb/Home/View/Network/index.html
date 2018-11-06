@@ -1,0 +1,118 @@
+<block name="include"><include file="./Public/header.html" /></block>
+<style type="text/css">
+.navMenu {
+  display:none;
+
+}
+</style>
+    <div class="breadCrumb">
+      <div class="grWidth">
+        <span></span>
+        <a href="/"></a>
+        <em></em>
+        <a class="" href=""></a>
+        <a class="bc" href=""></a></div>
+    </div>
+    <div class="proShow grWidth">
+      <div class="proShow_left fl">
+        <div class="proShow_box1">
+          <volist name="list" id="row">
+          <div class="proShow_img fl">
+            <img src="__PUBLIC__/images/{$row['pic']}" alt="文网文" width=""></div>
+          <div class="proShow_synopsis fr">
+            <h3 class="title">{$row['name']}</h3>
+            <div class="font">{$row['content']}</div>
+            <p class="price">服务价格：
+              <span>
+                <i>￥</i>面议</span>
+            </p>
+            <p class="btn">
+              
+              <a class="zx" href="tencent://Message/?Uin={$row['qq']}&websiteName=qzone.qq.com&Menu=yes">
+                <i>
+                </i>立即咨询</a>
+            </p>
+          </div>
+        </div>
+        <div class="proShow_box2">
+          <h3 class="title">
+            <span>服务介绍</span></h3>
+          <div class="main">
+            {$row['desrc']}
+            </div>
+            }
+        </div>
+      </volist>
+        <div class="proShow_box3">
+          <h3 class="title">
+            <span>为什么选择我们？</span></h3>
+          <ul class="main">
+            <li>
+              <span class="sImg">
+                <img src="__PUBLIC__/home/images/odds1.jpg" alt="专业服务顾问团队"></span>
+              <h4>专业服务顾问团队</h4>
+              <p>专业的商务顾问与服务顾问团队，1对1为您量身订做方案，解决各种问题</p>
+            </li>
+            <li>
+              <span class="sImg">
+                <img src="__PUBLIC__/home/images/odds2.jpg" alt="系统管理 办理时间更快"></span>
+              <h4>系统管理 办理时间更快</h4>
+              <p>行业领先的信息化系统，与政务数据对接，业务办理流程时间监控，超期自动预警，办理时间更快</p>
+            </li>
+            <li>
+              <span class="sImg">
+                <img src="__PUBLIC__/home/images/odds3.jpg" alt="专业服务顾问团队"></span>
+              <h4>专业服务顾问团队</h4>
+              <p>提供工商、会计代理、知产项目、互联网、地产装饰、品牌、资质、财税等多种企业整合服务</p>
+            </li>
+            <li>
+              <span class="sImg">
+                <img src="__PUBLIC__/home/images/odds4.jpg" alt="办理进度随时随地查询"></span>
+              <h4>办理进度随时随地查询</h4>
+              <p>可通过我们的客服人员/商务顾问/APP/网站/微信服务号/短信提醒，随时随地获知办理进度</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="proShow_right fr">
+        <block name="include"><include file="./Public/demand.html" /></block>
+            <ul></ul>
+          </div>
+        </div>
+        <script type="text/javascript" src="__PUBLIC__/home/js/layer.js"></script>
+        <script src="__PUBLIC__/home/js/yzh.js"></script>
+        <script>form_submit('demand_form');
+          jQuery(".demand_box").slide({
+            mainCell: "ul",
+            autoPlay: true,
+            effect: "topMarquee",
+            vis: 2,
+            interTime: 60
+          });</script>
+        <div class="right_team">
+          <h3 class="title">
+            <span>选择服务人员</span></h3>
+          <div class="ohbox">
+            <ul>
+              <volist name="team" id="row1">
+              <li>
+                <a href="__MODULE__/About/fuwu/id/{$row1['id']}">
+                  <img src="__PUBLIC__/image/{$row1['pic']}" alt="{$row1['name']}">
+                  <p>{$row1['name']}</p>
+                </a>
+              </li>
+            </volist>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>jQuery(".right_team").slide({
+        mainCell: ".ohbox ul",
+        autoPlay: true,
+        effect: "topMarquee",
+        vis: 4,
+        interTime: 50
+      });</script>
+    <block name="include"><include file="./Public/footer.html" /></block>

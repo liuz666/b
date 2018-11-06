@@ -1,0 +1,108 @@
+<block name="include"><include file="./Public/header.html" /></block>
+
+  <body>
+
+    <!-- 广告轮播图 -->
+    <div class="banner">
+      <div class="bd">
+        <ul>
+          <volist name="list" id="no">
+          <li>
+            <a href="{$no['url']}">
+              <img src="__PUBLIC__/img/{$no['imgpath']}" alt="幻灯片" /></a>
+          </li>
+        </volist>
+        </ul>
+      </div>
+      <ul class="hd">
+        <li class="on"></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <block name="include"><include file="./Public/demand.html" /></block>
+          <ul></ul>
+        </div>
+      </div>
+      <script type="text/javascript" src="__PUBLIC__/home/js/layer.js"></script>
+      <script src="__PUBLIC__/home/js/yzh.js"></script>
+      <script>form_submit('demand_form');
+        jQuery(".demand_box").slide({
+          mainCell: "ul",
+          autoPlay: true,
+          effect: "topMarquee",
+          vis: 2,
+          interTime: 60
+        });</script>
+    </div>
+    <script type="text/javascript">/*SuperSlide图片切换*/
+      jQuery(".banner").slide({
+        titCell: ".hd li",
+        mainCell: ".bd ul",
+        effect: "fold",
+        autoPlay: true,
+        easing: "easeOutCirc",
+        interTime: 6000
+      });</script>
+
+ <link href="__PUBLIC__/home/css/zy.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript">
+     $(function(){
+       $(".div-title a").eq(1).addClass("ahober");// $("#top a").first().addClass("hei");
+       $(".div-title a").hover(function(){
+         $(".div-title a").removeClass("ahober");
+        $(".div-title-center .div-cenr1").eq($(this).index()).show().siblings().hide(); 
+        $(this).addClass("ahober");
+        
+      });
+       });
+    </script>
+
+<script language="javascript" type="text/javascript">
+    function Show_TabADSMenu(tabadid_num, tabadnum) {
+        for (var i = 0; i < 3; i++) { document.getElementById("tabadcontent_" + tabadid_num + i).style.display = "none"; }
+        for (var i = 0; i < 3; i++) { document.getElementById("tabadmenu_" + tabadid_num + i).className = ""; }
+        document.getElementById("tabadmenu_" + tabadid_num + tabadnum).className = "ban24_3der";
+        document.getElementById("tabadcontent_" + tabadid_num + tabadnum).style.display = "block";
+    }
+</script>
+<div class="fut20">
+<div class="ban24_main">
+  <ul class="ban24_ontt">
+    <img src="__PUBLIC__/home/images/zy/ban24_2.jpg" width="980" height="398" onclick="QQopenChatWindow();"/>
+  </ul> 
+  <ul class="ban24_ont">
+    <img src="__PUBLIC__/home/images/zy/ban24_2a.jpg" tppabs="http://www.jinsan.cn/template/images/ban24_2a.jpg" width="980" height="210" onclick="QQopenChatWindow();"/>
+  </ul> 
+  <ul class="ban24_3d">
+      <li class="ban24_3der" id="tabadmenu_11" onmouseover="setTimeout('Show_TabADSMenu(1,1)',200);">增值电信企业</li>
+      <li id="tabadmenu_10" onmouseover="setTimeout('Show_TabADSMenu(1,0)',200);">文网文企业</li>
+      <li id="tabadmenu_12" onmouseover="setTimeout('Show_TabADSMenu(1,2)',200);">网络视听</li> 
+  </ul>
+  <ul class="ban24_ont" id="tabadcontent_11">
+    <img src="__PUBLIC__/home/images/zy/ban24_3a.jpg" tppabs="http://www.jinsan.cn/template/images/ban24_3a.jpg" width="980" height="455" onclick="QQopenChatWindow();"/>
+  </ul>
+  <ul class="ban24_ont" id="tabadcontent_10" style="display:none">
+  <img src="__PUBLIC__/home/images/zy/ban24_3.jpg" tppabs="http://www.jinsan.cn/template/images/ban24_3.jpg" width="980" height="455" onclick="QQopenChatWindow();"/>
+  </ul>
+  <ul class="ban24_ont" id="tabadcontent_12" style="display:none">
+     <img src="__PUBLIC__/home/images/zy/ban24_32.jpg" tppabs="http://www.jinsan.cn/template/images/ban24_32.jpg" width="980" height="455" onclick="QQopenChatWindow();"/>
+  </ul>
+ 
+  
+</div>
+
+<script language="javascript">
+jQuery(document).ready(
+        function ($) {
+            $("img").lazyload({
+                placeholder: "grey.gif"/*tpa=http://www.jinsan.cn/template/images/grey.gif*/,
+                effect: "fadeIn"
+            });
+        });
+</script>
+<div class="footpic"><a href="javascript:;" onclick="OpenQQ()"><img src="__PUBLIC__/home/images/zy/gspic01.png" tppabs="http://www.jinsan.cn/template/images/gspic01.png" width="981" height="262" /></a></div>
+
+</div>
+
+    <block name="include"><include file="./Public/footer.html" /></block>
+    

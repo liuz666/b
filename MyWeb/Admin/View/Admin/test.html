@@ -1,0 +1,31 @@
+   <table class="layui-table"> 
+    <thead> 
+     <tr> 
+      <th> <input type="checkbox" name="" value="" class="ckb" /> </th> 
+      <th> ID </th> 
+      <th> 登录名 </th> 
+      <th> 手机 </th> 
+      <th> 邮箱 </th> 
+      <th> 角色 </th> 
+      <th> 加入时间 </th> 
+      <th> 状态 </th> 
+      <th> 操作 </th> 
+     </tr> 
+    </thead> 
+    <tbody> 
+     <foreach name="list" item="row">
+     <tr> 
+      <td> <input type="checkbox" value="" name="" /> </td> 
+      <td> {$row['id']}</td> 
+      <td> {$row['adminname']}</td> 
+      <td> {$row['phone']}</td> 
+      <td> {$row['email']}</td> 
+      <td> {$row['role']} </td> 
+      <td> {$row['addtime']|date="y-m-d",###} </td> 
+      <td class="td-status"> <span class="layui-btn layui-btn-normal layui-btn-mini"> 已启用 </span> </td> 
+      <td class="td-manage"> <a style="text-decoration:none" onclick="admin_stop(this,'10001')" href="javascript:;" title="停用"> <i class="layui-icon"></i> </a> <a title="编辑" href="javascript:;" onclick="admin_edit('编辑','__URL__/admin_edit?id={$row['id']}','','','510')" class="ml-5" style="text-decoration:none"> <i class="layui-icon"></i> </a> <a title="删除" href="javascript:;" onclick="admin_del(this,'{$row['id']}')" style="text-decoration:none"> <i class="layui-icon"></i> </a> </td> 
+     </tr> 
+     </foreach>
+    </tbody> 
+   </table> 
+  

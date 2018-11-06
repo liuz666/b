@@ -1,0 +1,308 @@
+<block name="include"><include file="./Public/header.html" /></block>
+
+  <body>
+
+    <!-- 广告轮播图 -->
+    <div class="banner">
+      <div class="bd">
+        <ul>
+          <volist name="list" id="no">
+          <li>
+            <a href="{$no['url']}">
+              <img src="__PUBLIC__/img/{$no['imgpath']}" alt="幻灯片" /></a>
+          </li>
+        </volist>
+        </ul>
+      </div>
+      <ul class="hd">
+        <li class="on"></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <block name="include"><include file="./Public/demand.html" /></block>
+          <ul></ul>
+        </div>
+      </div>
+      <script type="text/javascript" src="__PUBLIC__/home/js/layer.js"></script>
+      <script src="__PUBLIC__/home/js/yzh.js"></script>
+      <script>form_submit('demand_form');
+        jQuery(".demand_box").slide({
+          mainCell: "ul",
+          autoPlay: true,
+          effect: "topMarquee",
+          vis: 2,
+          interTime: 60
+        });</script>
+      <script type="text/javascript">
+ $(function(){
+   $(".wahj-tit2 a").eq(1).addClass("aahover");// $("#top a").first().addClass("hei");
+   $(".wahj-tit2 a").hover(function(){
+     $(".wahj-tit2 a").removeClass("aahover");
+    $(".wahj-box2 .div-whj").eq($(this).index()).show().siblings().hide(); 
+    $(this).addClass("aahover");
+    
+  });
+  $(".wahj-tit1 a").eq(1).addClass("aahover");// $("#top a").first().addClass("hei");
+   $(".wahj-tit1 a").hover(function(){
+     $(".wahj-tit1 a").removeClass("aahover");
+    $(".wahj-box1 .div-whj").eq($(this).index()).show().siblings().hide(); 
+    $(this).addClass("aahover");
+    
+  });
+  $(".wahj-tit3 a").eq(0).addClass("aahover");// $("#top a").first().addClass("hei");
+   $(".wahj-tit3 a").hover(function(){
+     $(".wahj-tit3 a").removeClass("aahover");
+    $(".wahj-box1 .div-whj45").eq($(this).index()).show().siblings().hide(); 
+    $(this).addClass("aahover");
+    
+  });
+   })
+</script>
+    </div>
+    <script type="text/javascript">/*SuperSlide图片切换*/
+      jQuery(".banner").slide({
+        titCell: ".hd li",
+        mainCell: ".bd ul",
+        effect: "fold",
+        autoPlay: true,
+        easing: "easeOutCirc",
+        interTime: 6000
+      });</script>
+
+    <link href="__PUBLIC__/home/css/yxba.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript">
+     $(function(){
+       $(".div-title a").eq(1).addClass("ahober");// $("#top a").first().addClass("hei");
+       $(".div-title a").hover(function(){
+         $(".div-title a").removeClass("ahober");
+        $(".div-title-center .div-cenr1").eq($(this).index()).show().siblings().hide(); 
+        $(this).addClass("ahober");
+        
+      });
+       })
+    </script>
+
+    <div class="main maine1" style="line-height: 62px;">
+      <h2 class="about-h2 margin85">关于游戏运营 您需要了解</h2>
+        <p class="minv-p">游戏运营您需要两种备案，一种是游戏运营备案，一种是游戏出版备案。</p>
+        <ul class="mainer1">
+          <li>
+              <img src="__PUBLIC__/home/images/img1.png" tppabs="http://www.gongsibao.com/st/yxba/1605/images/img1.png" />
+                <h3>游戏运营备案</h3>
+                <p>根据《网络游戏管理暂行办法》（文化部令第49号）的规定，<br />国产网络游戏在上网运营之日起30日内应当按规定向国务院文<br />化行政部门履行备案手续。</p>
+            	<a href="javascript:window.location=%27http://182.131.21.139/gspt/ccm-action/domesticgame/searchGame%27" target="_blank" class="iuji1" style="background: #ef5c4c;margin-top: 4%;">游戏运营备案查询</a>
+            </li>
+            <li>
+              <img src="__PUBLIC__/home/images/img2.png" tppabs="http://www.gongsibao.com/st/yxba/1605/images/img2.png" />
+                <h3>游戏出版备案</h3>
+                <p>新闻出版总署也要求经营网络游戏的公司，每款产品需到新闻<br />出版署做一次互联网出版备案，通常也称游戏版号。</p>
+              	<a href="javascript:window.location=%27http://www.sapprft.gov.cn/sapprft/zongshu/serviceList2.shtml?PublishmentSystemID=3966&FileName=&DpStyleone=China%27" target="_blank" class="iuji1" style="background: #f3bf1e;margin-top: 8%;">游戏版号查询</a>
+            </li>
+        </ul>
+        
+    </div>
+    <div class="main1 main2" style="line-height: 45px;">
+      <h2 class="about-h2 about-h21" style="margin-top:55px;">游戏备案办理条件</h2>
+        <div class="main">
+          <div class="wahj-tit wahj-tit2">
+                <a>游戏运营备案</a>
+                <a>游戏出版备案</a>
+            </div>
+            <div class="wahj-box wahj-box2">
+              <div class="div-whj" style="display:none">
+                  <div class="diver2">
+                        <p class="ml-none pad40">申报单位已取得文化厅颁发的<br />《网络文化经营许可证》</p>
+                        <p class="pad40">申报单位的产品上网运营时间<br />未超过30日</p>
+                        <p class="pad40">需具备完整的业务发展计划及<br />运营管理措施</p>
+                        <p class="pad25">备案游戏产品需符合《互联网<br />文化管理暂行规定》《网络游<br />戏管理暂行办法》相关规定</p>
+                        <p class="pad25">备案游戏产品需符合《中华人<br />民共和国文化部令第49号令网<br />络游戏管理暂行办法》相关规定</p>
+                    </div>
+                    <p class="none1">没有相关许可证？咨询办理</p>
+                    <a href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank" class="iuji1">立即咨询</a>
+                    
+                </div>
+                <div class="div-whj li-lett">
+                    <div class="diver2">
+                        <p class="ml-none pad40">游戏开发或者运营公司取得软<br />件著作权</p>
+                        <p class="pad40">有通信管理局颁发的"增值电信业<br />务经营许可证"-ICP证</p>
+                        <p class="pad25">游戏产品需符合《互联网文化管理暂<br />行规定》《网络游戏管理暂行办法》<br />相关规定</p>
+                        <p class="pad25">游戏产品需符合《中华人民共和国文<br />化部令第49号令网络游戏管理暂行办<br />法》相关规定</p>  
+                    </div>
+                    <p class="none1">还未取得相关资质和许可证？ 咨询办理</p>
+                    <a href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank" class="iuji1">立即咨询</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <div class="main maine1" style="line-height: 62px;">
+      <h2 class="about-h2 margin85" style=" border:none">游戏备案办理流程</h2>
+        <div class="main">
+          <div class="wahj-tit wahj-tit1" style="margin-top:5px;">
+                <a>游戏运营备案</a>
+                <a>游戏出版备案</a>
+            </div>
+            <div class="wahj-box wahj-box1">
+              <div class="div-whj div-whj41 div-whj42" style="display:none">
+                  <div class="diver2">
+                        <p class="ml-none">厦门核实客户办理条件</p>
+                        <p>客户公司提供相关材料</p>
+                        <p>厦门咨询撰写办理</p>
+                        <p class="pple">材料经由客户公司<br />签字、盖章</p>
+                        <p class="pple">提交文化局、文化厅<br />审核</p>
+                        <p >文化部复审</p>
+                        <p>办理完成游戏备案</p>
+                    </div>
+                    <img src="__PUBLIC__/home/images/b2.jpg" tppabs="http://www.gongsibao.com/st/yxba/1605/images/b2.jpg" />
+                    <a href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank" class="iuji1">咨询办理</a>
+                    
+                </div>
+                <div class="div-whj div-whj41 ">
+                    <div class="diver2">
+                        <p class="ml-none pple">厦门核实客户办<br />理条件</p>
+                        <p class="pple">客户公司提供相<br />关材料</p>
+                        <p>厦门咨询撰写办理</p>
+                        <p class="pple">材料经由客户公司<br />签字、盖章</p>
+                        <p class="pple">厦门提交出版社<br />审核</p>
+                        <p >当地出版局初审</p>
+                        <p>新闻出版总署初审</p>
+                        <p>取得游戏版号</p>
+                    </div>
+                    <img src="__PUBLIC__/home/images/img32.jpg" tppabs="http://www.gongsibao.com/st/yxba/1605/images/img3.jpg" />
+                    <a href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank" class="iuji1">咨询办理</a>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+    <div class="maine14" style="line-height: 30px;">
+      <div class="main">
+            <h2 class="about-h2 margin85" style=" border:none; margin-top:55px; color:#fff;">如果您准备同我们合作 您需要准备</h2>
+            <div class="main">
+                <div class="wahj-tit wahj-tit3" style="margin-top:5px;">
+                    <a>游戏运营备案</a>
+                    <a>游戏出版备案</a>
+                </div>
+                <div class="wahj-box wahj-box1">
+                    <div class="div-whj div-whj42 div-whj45">
+                        <div class="diver2 diver254">
+                          <div class="left">
+                                <p class="ml-none">文化部网络游戏产品备案申报表</p>
+                                <p>产品主题以及内容说明书</p>
+                                <p>产品操作说明</p>
+                                <p class="ml-none pple1">游戏中全部对白、旁白、描述性文字<br />及游戏主题曲、插曲的歌词文本</p>
+                                <p class="pple1">申请单位的《网络文化经营许可证》<br />和《营业执照》复印件</p>
+                                <p class="pple1" >自行审核结果(含可能存在争议内<br />容的相关说明)</p>
+                            </div>
+                            <p class="right">产品样品(包括网络游戏软件客户端<br />程序，以CD-ROM或DVD光盘为载<br />体)三份，并提供登录账号及其相应<br />密码，该账号应具备最高管理权限(<br />或最高游戏级别)</p>
+                        </div>
+                        <p class="none1" style="margin-top:15px;">太过繁杂？咨询厦门帮您梳理</p>
+                        <a href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank" class="iuji1">立即咨询</a>
+                        
+                    </div>
+                    <div class="div-whj div-whj42 div-whj45" style="display:none" >
+                        <div class="diver2 diver2545">
+                                <p class="ml-none">游戏介绍</p>
+                                <p>测试帐号及密码(5组)</p>
+                                <p>游戏屏蔽词库</p>
+                                <p >游戏脚本</p>
+                                <p class="e1r">彩色游戏截图(需附<br />图片说明)</p>
+                                <p >防沉迷系统</p>
+                           
+                        </div>
+                        <div class="diver2 diver2545">
+                                <p class="ml-none">出版社审读报告</p>
+                                <p>出版合同</p>
+                                <p>出版与网络监管协议</p>
+                                <p class="e1r"> 企业法人营业执照复<br />印件</p>
+                                <p class="e1r">增值电信业务经营许可证<br />复印件</p>
+                                <p class="e1r">计算机软件著作权登<br />记证书复印件</p>
+                           
+                        </div>
+                        <p class="none1" style="margin-top:5px;">太过繁杂？咨询厦门帮您梳理</p>
+                        <a href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank" class="iuji1">立即咨询</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="main maine1" style="height:600px;line-height: 62px;">
+      <h2 class="about-h2 margin85" style="border:none">厦门服务保障</h2>
+        <ul class="epb-ul1">
+          <li class="lie">
+              <b></b>
+                <h3>经验丰富</h3>
+                <p>10年经验为您保驾护航</p>
+            </li>
+            <li class="lie1">
+              <b></b>
+                <h3>一站式服务</h3>
+                <p>各个环节保障服务顺畅</p>
+            </li>
+            <li class="lie2">
+              <b></b>
+                <h3>一对一高效服务</h3>
+                <p>专业对接人员,帮你节省不必要环节</p>
+            </li>
+        </ul>
+        <ul class="epb-ul1" style="margin-top:40px;">
+          <li class="lie lie3">
+              <b></b>
+                <h3>信息保密</h3>
+                <p>自有服务器保障客户数据安全<br />专人保障客户资料免遭外泄</p>
+            </li>
+            <li class="lie4">
+              <b></b>
+                <h3>专业品质</h3>
+                <p>服务均由3年以上资深人士操作保障品质</p>
+            </li>
+            <li class="lie5">
+              <b></b>
+                <h3>全程服务</h3>
+                <p>售前咨询，下单5分钟内响应，关键环节100%提醒</p>
+            </li>
+        </ul>
+        
+    </div>
+  
+    <div class="main1 main2" style="height:500px;line-height: 62px;">
+            <h2 class="about-h2 about-h21" style="margin-top:55px;">这些我们也能帮您办到</h2>
+            <ul class="main aere1">
+               <li>
+                  <img src="__PUBLIC__/home/images/tu1.png" tppabs="http://www.gongsibao.com/st/yxba/1605/images/tu1.png" />
+                    <h3>网络文化经营许可证</h3>
+                    <p>企业具备《网络文化经营许可证》才算迈进了游戏运营的大门，此后再根据推广方式和运营方式的不同分别申请ICP证、游戏备案、游戏版号等资质</p>
+                    <a href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank"></a>
+               </li>
+                <li>
+                  <img src="__PUBLIC__/home/images/tu22.jpg" tppabs="http://www.gongsibao.com/st/yxba/1605/images/tu2.jpg" />
+                    <h3>ICP证书</h3>
+                    <p>ICP证是在网站涉及经营性以及提供有偿信息服务时申请的，在游戏运营的环节中主要作用于开通在线支付以及其他信息/活动收费等栏目功能</p>
+                    <a href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank"></a>
+               </li>
+                <li>
+                  <img src="__PUBLIC__/home/images/tu3.png" tppabs="http://www.gongsibao.com/st/yxba/1605/images/tu3.png" />
+                    <h3>SP证书</h3>
+                    <p>SP证是在移动端涉及经营性以及提供有偿信息服务时申请的，在游戏运营的环节中主要作用于开通在线支付以及其他信息/活动收费等栏目功能</p>
+                    <a href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank"></a>
+               </li>
+               <li>
+                  <img src="__PUBLIC__/home/images/tu4.png" tppabs="http://www.gongsibao.com/st/yxba/1605/images/tu4.png" />
+                    <h3>游戏著作权</h3>
+                    <p>是游戏软件厂商或者个人作者开发的尤为重要，游戏源代码泄露可通过此有效的保护自身的合法权益</p>
+                    <a href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank"></a>
+               </li>
+               <li style="background:none">
+                  <img src="__PUBLIC__/home/images/tu5.png" tppabs="http://www.gongsibao.com/st/yxba/1605/images/tu5.png" />
+                    <h3>游戏虚拟货币</h3>
+                    <p>虚拟货币主要由网络游戏服务商发行，用来购买游戏道具，如装备、服装等。需提交相关部门准入。</p>
+                    <a href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank" ></a>
+               </li>
+            </ul>
+        </div>
+
+    <block name="include"><include file="./Public/footer.html" /></block>
+    

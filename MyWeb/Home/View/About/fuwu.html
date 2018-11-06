@@ -1,0 +1,53 @@
+<block name="include"><include file="./Public/header.html" /></block>
+<style type="text/css">
+.navMenu {
+  display:none;
+
+}
+</style>
+  <div class="breadCrumb"> 
+   <div class="grWidth"> 
+    <span>您现在的位置：</span>
+    <a href="/">首页</a>
+    <em> &gt; </em>
+    <a class="" href="http://chuangyawl.com/guanyu">关于我们</a> &gt; 
+    <a class="bc" href="http://chuangyawl.com/a/guanyu/fwtd/">服务团队</a> 
+   </div> 
+  </div> 
+  <div class="listWrapper grWidth clearfix"> 
+   <!-- 左侧栏目 --> 
+   <div class="sidebar"> 
+    <ul class="sidebarMenu"> 
+     <li><a class="" href="__MODULE__/About/index" title="公司简介">公司简介</a> </li>
+     <li><a class="current" href="__MODULE__/About/team" title="服务团队">服务团队</a> </li>
+     <li><a class="" href="__MODULE__/Contact/index" title="联系我们">联系我们</a> </li> 
+    </ul> 
+   </div> 
+   <div class="listRight"> 
+    <div class="caseShow"> 
+      <volist name="list" id="row">
+     <h2 class="title">{$row['name']}</h2> 
+     <p class="p1"> <span>作者： admin</span><span>发表时间：{$row['time']|date='Y-m-d',###}</span><span>浏览量：<script src="/plus/count.php?view=yes&amp;aid=48&amp;mid=1" type="text/javascript" language="javascript"></script></span> </p> 
+     <div class="caseShow_font1">
+      {$row['conte']}
+     </div> 
+   </volist>
+    </div> 
+    <div class="relatedCase caseList solu"> 
+     <h3 class="relatedTitle mb15"><span>相关团队</span></h3> 
+     <div class="bd"> 
+      <ul>
+        <volist name="team" id='row1'>
+       <li><a href="__MODULE__/About/fuwu/id/{$row1['id']}"><span class="cImg"><img src="__PUBLIC__/image/{$row1['pic']}" alt="{$row1['name']}" /></span><h5>{$row1['name']}</h5></a></li> 
+       </volist>
+      </ul> 
+     </div> 
+    </div> 
+    <script type="text/javascript">
+            jQuery(".relatedCase").slide({mainCell:".bd ul",autoPlay:true,effect:"leftMarquee",vis:4,interTime:25,trigger:"click"});
+        </script> 
+   </div> 
+  </div> 
+  
+   <!-- 尾部 --> 
+  <block name="include"><include file="./Public/footer.html" /></block>

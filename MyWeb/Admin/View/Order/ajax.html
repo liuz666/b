@@ -1,0 +1,72 @@
+<div id="uid">
+ <table class="layui-table" id="check">
+                <thead>
+                    <tr>
+                        <th>
+                            <!-- <input type="checkbox" name="" value=""> -->
+                        </th>
+                        <th>
+                            ID
+                        </th>
+                        <th>
+                            需求
+                        </th>
+                        <th>
+                            电话
+                        </th>
+                        <th>
+                            提交时间
+                        </th>
+                        <th>
+                            状态
+                        </th>
+                        <th>
+                            操作
+                        </th>
+                    </tr>
+                </thead>
+                 <tbody>
+                <foreach name="list1" item="row">
+                    <tr>
+                        <td>
+                            <input type="checkbox" value="{$row['id']}" name="id[]">
+                        </td>
+                        <td>
+                            {$row['id']}
+                        </td>
+                        <td>
+                            {$row['xuqiu']}
+                        </td>
+                        <td >
+                            {$row['phone']}
+                        </td>
+                        <td >
+                            {$row['addtime']|date="Y-m-d",###}
+                        </td>
+                        <td>
+                                <a href="__URL__/sendupdate?id={$row['id']}">
+                                    <if condition="($row['status'] eq 1)"><div style="color:green">已处理</div>
+                                    <else /><div style="color:red">未处理</div>
+                                    </if>
+                                </a> 
+                        </td>
+                        </td>
+                        <td class="td-manage">
+                           <!--  <a style="text-decoration:none" onclick="member_stop(this,'10001')" href="javascript:;" title="停用">
+                                <i class="layui-icon">&#xe601;</i>
+                            </a> -->
+                            
+                            <!-- <a style="text-decoration:none"  onclick="member_password('修改密码','__URL__/pwd.html','10001','600','400')"
+                            href="javascript:;" title="修改密码">
+                                <i class="layui-icon">&#xe631;</i>
+                            </a> -->
+                            <a title="删除" href="javascript:;" onclick="member_del(this,'{$row['id']}')" 
+                            style="text-decoration:none">
+                                <i class="layui-icon">&#xe640;</i>
+                            </a>
+                        </td>
+                    </tr>
+                    </foreach>
+                </tbody>
+            </table>
+            </div>

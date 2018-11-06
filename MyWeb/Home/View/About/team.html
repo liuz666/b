@@ -1,0 +1,44 @@
+<block name="include"><include file="./Public/header.html" /></block>
+<style type="text/css">
+.navMenu {
+  display:none;
+
+}
+</style>
+  <div class="breadCrumb"> 
+   <div class="grWidth"> 
+    <span>您现在的位置：</span>
+    <a href="/">首页</a>
+    <em> &gt; </em>
+    <a class="" href="/guanyu/">关于我们</a> &gt; 
+    <a class="bc" href="/plus/list.php?tid=15">服务团队</a> 
+   </div> 
+  </div> 
+  <div class="listWrapper grWidth clearfix"> 
+   <!-- 左侧栏目 --> 
+   <div class="sidebar"> 
+    <ul class="sidebarMenu"> 
+      <li>
+      <a class="" href="__MODULE__/About/index" title="公司简介">公司简介</a></li>
+            <!-- <li>
+              <a class="" href="/a/guanyu/gsdt/" title="公司动态">公司动态</a> -->
+              <li>
+                <a class="" href="__MODULE__/About/team" title="服务团队">服务团队</a>
+                <li>
+                  <a class="" href="__MODULE__/Contact/index" title="联系我们">联系我们</a></li>
+    </ul> 
+   </div> 
+   <div class="listRight"> 
+    <div class="teamList"> 
+     <ul> 
+      <volist name="list" id="row">
+      <!----> 
+      <li> <a class="tImg" href="__MODULE__/About/fuwu/id/{$row['id']}"><img src="__PUBLIC__/image/{$row['pic']}" alt="林小桃" /></a> <h4><a href="__MODULE__/About/fuwu/id/{$row['id']}">{$row['name']}<span>{$row['position']}</span></a></h4> <p class="font">{$row['content']}</p> <p class="btn"><a href="tencent://message/?uin={$row['qq']}">立即咨询</a><a href="__MODULE__/About/fuwu/id/{$row['id']}">了解更多</a></p> </li>
+      </volist>
+      <!----> 
+     </ul> 
+    </div> 
+    <div class="pagination"></div> 
+   </div> 
+  </div> 
+   <block name="include"><include file="./Public/footer.html" /></block>

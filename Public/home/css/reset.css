@@ -1,0 +1,290 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0px; padding:0px;}
+p,ul,li,ol,h1,h2,h3,h4,h5,h6,{ margin:0px; padding:0px;}
+img{ border:0px;}
+ul, li{ list-style:none;}
+a{ text-decoration:none;}
+a:hover{ text-decoration:none;}
+.clear{clear:both;}
+body{ font-size:12px; font-family:"微软雅黑"; background:#ffffff; color:#343434}
+.left{ float:left}
+.right{ float:right}
+
+/*头部样式开始*/
+.header{border-bottom:none;}
+.header_wrap {width:100%; overflow:hidden; background:#111;}
+.logo {width:280px; height:60px; float:left;}
+.tel {width:366px; height:60px; float:right;}
+/*头部样式结束*/
+/*导航样式开始*/
+.nav_wrap {width:80%; height:40px;margin-left:10%; z-index:999;}
+/*#nav { width:1185px; margin:0 auto; font-size:16px;}*/
+#nav{clear:both;width:100%;height:56px; margin-top:10px;}
+#nav ul li.headerli{
+  position:relative;
+  list-style:none;
+  display:inline-block;
+  font-family:'微软雅黑';
+  font-size:18px;
+  color:#666;
+}
+#nav ul li.headerli>a{
+  display:block;
+  height:56px;
+  line-height:56px;
+  color:#666;
+  text-decoration:none;
+  padding:0px 30px;
+}
+#nav ul li.headerli a:hover{color:#c7100b;}
+#nav .hover-menu{ min-width:274px;position:absolute;top:55px;left:-44px;z-index:888;background:#c7100b;display:none; }
+#nav ul li.headerli .hover-menu li{ color:#fff;text-align:center;}
+#nav ul li.headerli .hover-menu a{ height:30px;line-height:30px;padding:5px 10px;display:block;color:#Fff;font-size:14px;}
+#nav ul li.headerli .hover-menu a:hover{ color:#fb8c8c}
+#nav ul li.headerli:hover .hover-menu{ display:block}
+/*导航样式结束*/
+
+/*banner样式开始*/
+.banner{  height:424px; overflow: hidden; width:100%;position:relative;top:20px;zoom: 1;}
+.banner-img{height:501px;}
+.bannli1{background:url(banner.jpg)/*tpa=http://www.gongsibao.com/st/htjh/images/banner.jpg*/ top center no-repeat;height:501px;}
+.bannli2{background:url(banner2.jpg)/*tpa=http://www.gongsibao.com/st/htjh/images/banner2.jpg*/ top center no-repeat;height:501px;}
+.bannli3{background:url(banner3.jpg)/*tpa=http://www.gongsibao.com/st/htjh/images/banner3.jpg*/ top center no-repeat;height:501px;}
+.banner1{ width:1200px; height:100%; overflow: hidden; position:relative; margin:0 auto}
+.banner11{ position:absolute; top:424px; width:100%; text-align:center; left:0;}
+.banner11 a{ display:inline-block; width:256px; height:39px; line-height:37px; color:#ebebeb; font-size:18px; background:url(a.png)/*tpa=http://www.gongsibao.com/st/htjh/images/a.png*/ no-repeat; cursor:pointer; margin:0 5px;}
+.banner11 a:hover{ background:#ff0000}
+
+
+.flexslider .slides li {
+	width:100%;
+}
+.flex-control-nav {
+	width: 100%;
+	position: absolute;
+	bottom: 10px;
+	text-align: center;
+}
+.flex-control-nav li {
+	margin: 0 2px;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+}
+.flex-control-paging li a {
+	display:inline-block; width:256px; height:39px; line-height:37px; color:#ebebeb; font-size:18px; background:url(a.png)/*tpa=http://www.gongsibao.com/st/htjh/images/a.png*/ no-repeat; cursor:pointer; margin:0 5px;
+}
+.flex-control-paging li a.flex-active,
+.flex-control-paging li.active a {
+background:#ff0000
+}
+
+.flexslider .slides a img {
+	width: 100%;
+	display: block;
+}
+
+
+/*banner样式结束*/
+
+/*增值电信许可证代码开始*/
+.part1{ height:680px; overflow:hidden}
+.title h2{ color:#ee1d23; font-size:36px; font-weight:normal; position:absolute; left:210px; top:25px;}
+.title p{ position:absolute; font-size:16px; left:148px; top:89px; line-height:22px;}
+.part1-ul{ width:1180px; margin:50px auto 0; overflow:hidden}
+.part1-ul li{ float:left; display:inline; width:281px; height:373px; background:#f9f9f9; margin-left:18px; cursor: pointer}
+.part1-ul li h3{ text-align:center; color:#333333; font-size:16px; height:90px; line-height:90px;}
+.b1{ background: url(../images/1.png)/*tpa=http://www.gongsibao.com/st/htjh/images/../images/1.png*/ no-repeat 0 0; width:77px; height:82px; display:block; margin:0 auto; cursor:pointer; }
+.part1-ul li p{ font-size:14px; margin:20px 22px 0; overflow:hidden; line-height:24px; }
+.redu font{ float:left}
+.part1-ul li p.mp{height:76px;}
+.redu span{ background:url(../images/1.png)/*tpa=http://www.gongsibao.com/st/htjh/images/../images/1.png*/ no-repeat; background-position:-384px -101px; float:left; width:14px; height:14px; margin-left:3px; display:inline; margin-top:7px;}
+.zixu{ width:234px; margin:17px auto 0; overflow: hidden}
+.zixu a{ float:left; font-size:14px; background:url(../images/1.png)/*tpa=http://www.gongsibao.com/st/htjh/images/../images/1.png*/ no-repeat;background-position:0px -99px;color:#343434; width:114px; height:31px; text-align:center;  cursor:pointer;  padding-top:5px;}
+.zixu a.right{ float:right}
+.zixu a:hover{background-position:-128px -99px; color:#fff}
+.part1-ul li.margin0{ margin-left:0}
+.b2{background-position:-90px 0px;}
+.b3{background-position:-181px 0px;}
+.b4{background-position:-270px 0px;}
+.part1-ul li:hover .b1{background-position:0px -662px;}
+.part1-ul li:hover .b2{background-position:-90px -663px;}
+.part1-ul li:hover .b3{background-position:-182px -663px;}
+.part1-ul li:hover .b4{background-position:-270px -663px;}
+
+.bb1{	-moz-transition: all 0.8s ease-in-out; 
+	-webkit-transition: all 0.8s ease-in-out; 
+	-o-transition: all 0.8s ease-in-out; 
+	-ms-transition: all 0.8s ease-in-out; 
+	transition: all 0.8s ease-in-out; width:77px; height:81px; display:block; margin:0 auto;}
+.part1-ul li:hover .bb1{ 
+	-moz-transform: rotate(360deg); cursor:pointer;
+	-webkit-transform: rotate(360deg); 
+	-o-transform: rotate(360deg); 
+	-ms-transform: rotate(360deg); 
+	transform: rotate(360deg); 
+	} 
+	
+	/*.bb1{ 
+-webkit-transition: all ease .3s; -moz-transition: all ease .3s; -o-transition: all ease .3s;
+-ms-transition: all ease .3s;  
+    transition: all ease .3s; width:77px; height:82px; margin:0 auto; display:block; 
+	} 
+.bb1:hover{ 
+ -webkit-transform: scale(1.45); -moz-transform: scale(1.45);  -o-transform: scale(1.45);  -ms-transform: scale(1.45);   
+    transform: scale(1.45);  
+    box-shadow: 0px 0px 18px rgba(0,0,0,.5); 
+	} */
+
+/*增值电信许可证代码结束*/
+
+/*网络文化业务代码开始*/
+.title1{ background:url(title2.png)/*tpa=http://www.gongsibao.com/st/htjh/images/title2.png*/  no-repeat;}
+.title1 p{ top:99px;}
+.part1-ul1{ margin-top:70px;}
+.part1-ul1 li{ background:none}
+.part1-ul1 li p.mp{ margin-top:0}
+.part1-ul1 .zixu a{background-position:-213px -615px; color:#fff;}
+.part1-ul1 .zixu a:hover{ background-position: -128px -99px; color:#fff;}
+.b5{background-position:0px -149px;}
+.b6{background-position:-90px -149px;}
+.b7{background-position:-181px -149px;}
+.b8{background-position:-270px -149px;}
+
+.part1-ul li:hover .b5{background-position:0px -753px;}
+.part1-ul li:hover .b61{background-position:-90px -753px;}
+.part1-ul li:hover .b7{background-position:-182px -753px;}
+.part1-ul li:hover .b8{background-position:-270px -754px;}
+
+/*网络文化业务代码结束*/
+
+/*游戏运营代码开始*/
+
+.title3{background:url(title3.jpg)/*tpa=http://www.gongsibao.com/st/htjh/images/title3.jpg*/  no-repeat;}
+.title3 h2{ top:10px;}
+.title3 p{ top:84px;}
+.b9{background-position:0px -240px;}
+.b10{background-position:-90px -240px;}
+.b11{background-position:-181px -240px;}
+.b12{background-position:-270px -240px;}
+
+.part1-ul li:hover .b9{background-position:0px -843px;}
+.part1-ul li:hover .b10{background-position:-90px -842px;}
+.part1-ul li:hover .b11{background-position:-181px -842px;}
+.part1-ul li:hover .b12{background-position:-270px -842px;}
+
+
+
+/*游戏运营代码结束*/
+
+/*影视演出代码开始*/
+.part1-ul13 li p.mp{ height:105px;}
+.title4{background:url(title4.png)/*tpa=http://www.gongsibao.com/st/htjh/images/title4.png*/  no-repeat;}
+.title4 h2{ top:16px;}
+.title4 p{ top:92px;}
+.b13{background-position:0px -330px;}
+.b14{background-position:-90px -330px;}
+.b15{background-position:-181px -330px;}
+.b16{background-position:-270px -330px;}
+.part1-ul li:hover .b13{background-position:1px -930px;}
+.part1-ul li:hover .b14{background-position:-90px -930px;}
+.part1-ul li:hover .b15{background-position:-182px -930px;}
+.part1-ul li:hover .b16{background-position:-270px -930px;}
+
+
+/*影视演出代码结束*/
+
+/*呼叫中心业务代码开始*/
+.part1-ul14 li p.mp{ height:105px;}
+.title5{background:url(title5.jpg)/*tpa=http://www.gongsibao.com/st/htjh/images/title5.jpg*/  no-repeat;}
+.part1-ul14 li p{ margin-top:8px;}
+.part1-ul14 li p.redu{ margin-top:0}
+
+.title5 h2{ top:12px;}
+.title5 p{ top:86px;}
+.b17{background-position:0px -421px;}
+.b18{background-position:-90px -421px;}
+.b19{background-position:-181px -421px;}
+.b20{background-position:-270px -421px;}
+
+.part1-ul li:hover .b17{background-position:1px -1020px;}
+.part1-ul li:hover .b18{background-position:-90px -1021px;}
+.part1-ul li:hover .b19{background-position:-182px -1020px;}
+.part1-ul li:hover .b20{background-position:-270px -1020px;}
+
+
+/*呼叫中心业务代码结束*/
+
+
+/*企业认证代码开始*/
+.title6{background:url(title6.jpg)/*tpa=http://www.gongsibao.com/st/htjh/images/title6.jpg*/  no-repeat;}
+.title6 h2{ top:6px;}
+.title6 p{ top:72px;}
+
+.b21{background-position:0px -517px;}
+.b22{background-position:-90px -517px;}
+.b23{background-position:-181px -517px;}
+.b24{background-position:-270px -517px;}
+
+.part1-ul li:hover .b21{background-position:1px -1112px;}
+.part1-ul li:hover .b22{background-position:-90px -1112px;}
+.part1-ul li:hover .b23{background-position:-181px -1112px;}
+.part1-ul li:hover .b24{background-position:-270px -1112px;}
+
+/*企业认证代码结束*/
+
+/*倒数第二部分代码开始*/
+.part9{ height:390px; overflow:hidden}
+.part91{ width:1200px; margin:73px auto 0; height:317px; position:relative}
+.part91 ul{ height:100%; width:100%; position:absolute; top:0; left:0; z-index:2;}
+.part91 ul li{ float:left; display:inline;  width:240px;text-align:center; }
+.part91 ul li a{ display:block; background:url(pic1.jpg)/*tpa=http://www.gongsibao.com/st/htjh/images/pic1.jpg*/  no-repeat; width:139px; height:146px; margin:0 auto; cursor:pointer;-webkit-transition: all ease .3s; -moz-transition: all ease .3s; -o-transition: all ease .3s;
+-ms-transition: all ease .3s;  
+    transition: all ease .3s; }
+.part91 ul li:hover a{background:url(pic11.jpg)/*tpa=http://www.gongsibao.com/st/htjh/images/pic11.jpg*/  no-repeat;-moz-transform: rotate(360deg); cursor:pointer;
+	-webkit-transform: scale(1.2); -moz-transform: scale(1.2);  -o-transform: scale(1.2);  -ms-transform: scale(1.2);   
+    transform: scale(1.2);  
+    }
+.part91 ul li a.jp1{ background:url(pic2.jpg)/*tpa=http://www.gongsibao.com/st/htjh/images/pic2.jpg*/  no-repeat;}
+.part91 ul li:hover a.jp1{ background:url(pic22.jpg)/*tpa=http://www.gongsibao.com/st/htjh/images/pic22.jpg*/  no-repeat;}
+
+.part91 ul li a.jp2{ background:url(pic3.jpg)/*tpa=http://www.gongsibao.com/st/htjh/images/pic3.jpg*/  no-repeat;}
+.part91 ul li:hover a.jp2{ background:url(pic33.jpg)/*tpa=http://www.gongsibao.com/st/htjh/images/pic33.jpg*/  no-repeat;}
+
+.part91 ul li a.jp3{ background:url(pic4.jpg)/*tpa=http://www.gongsibao.com/st/htjh/images/pic4.jpg*/  no-repeat;}
+.part91 ul li:hover a.jp3{ background:url(pic44.jpg)/*tpa=http://www.gongsibao.com/st/htjh/images/pic44.jpg*/  no-repeat;}
+
+.part91 ul li a.jp4{ background:url(pic5.jpg)/*tpa=http://www.gongsibao.com/st/htjh/images/pic5.jpg*/  no-repeat;}
+.part91 ul li:hover a.jp4{ background:url(pic55.jpg)/*tpa=http://www.gongsibao.com/st/htjh/images/pic55.jpg*/  no-repeat;}
+
+
+.part91 ul li h3{ font-size:18px; margin-top:15px;}
+.part91 ul li p{ font-size:14px; line-height:24px; margin-top:10px; color:#555555;}
+.line{ position:absolute; border:1px solid #eeeeee; top:69px; left:132px; width:878px; z-index:1}
+
+/*倒数第二部分代码结束*/
+
+
+
+/*我们的客户代码开始*/
+
+.footer h2{ text-align:center; font-size:36px; color:#fff; font-weight:normal; height:90px; line-height:120px;}
+.footer1{ width:1180px; margin:0 auto; overflow: hidden; position:relative}
+.footer11{width:1104px;  height:265px; float:left; overflow: hidden}
+
+.footer-ul{ width:2208px; }
+.footer-ul li img{ float:left; display:inline; margin-left:30px; width:240px; margin-top:28px;}
+
+
+.footer11 ul li{float:left;width:1104px; overflow:hidden }
+#anright22{background:url(../images/right.png) no-repeat; width:38px; height:38px; float:left; margin-top:120px; cursor:pointer }
+#anleft22{background:url(../images/left.png) no-repeat; width:38px; height:38px; float:left; margin-top:120px;cursor:pointer}
+#anleft22:hover{background:url(../images/left../images/1.png) no-repeat;}
+#anright22:hover{background:url(../images/right../images/1.png) no-repeat;}
+
+
+/*我们的客户代码结束*/
+
+
+

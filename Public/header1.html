@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)https://www.vmall.com/member/ -->
+<html>
+	<head>
+    <script>
+      var sUserAgent = navigator.userAgent.toLowerCase();
+      var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+      var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+      var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+      var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+      var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+      var bIsAndroid = sUserAgent.match(/android/i) == "android";
+      var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+      var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+
+    if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+    	window.location.href = 'http://m.chuangha.com/';
+    }
+     	var _hmt = _hmt || [];
+      	(function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?04f8341f0e6f69a827b51660ee69c701";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      	})();
+    </script>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Language" content="zh-cn" />
+		<!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
+		<title>首页_个人中心_华为商城</title>
+		<link rel="shortcut icon" href="https://www.vmall.com/favicon.ico" />
+		<link href="__PUBLIC__/home/ec.core.min.css" rel="stylesheet" type="text/css" />
+		<block name="css"><link href="{$css}" rel="stylesheet" type="text/css" /></block>	
+		<!-- <script src="__PUBLIC__/home/jsapi.js" namespace="ec"></script> -->
+		<!--[if lte IE 6]>
+			<script>ol.isIE6 = true;</script>
+		<![endif]-->
+		<!--[if IE 7]>
+			<script>ol.isIE7 = true;</script>
+		<![endif]-->
+		<!--[if IE 8]>
+			<script>ol.isIE8 = true;</script>
+		<![endif]-->
+		<script src="__PUBLIC__/home/jquery-1.4.4.min.js"></script>
+		<!-- <script src="__PUBLIC__/home/ec.core.js"></script> -->
+		<!-- <script src="__PUBLIC__/home/ec.business.min.js"></script> -->
+		<!--[if lt IE 9]>
+			<script src="https://res9.vmallres.com/20170630/js/common/html5shiv.js"></script>
+		<![endif]--></head>
+		<style>
+			.btn-disabled{
+				pointer-events: none;
+				cursor: not-allowed;
+				box-shadow: none;
+				opacity: .65;"
+			}
+		</style>
+	<body class="wide">
+		<div class="top-banner" id="top-banner-block"></div>
+		<!-- 20130605-qq-彩贝-start -->
+		<div class="qq-caibei-bar hide" id="caibeiMsg">
+			<div class="layout">
+				<div class="qq-caibei-bar-tips" id="HeadShow"></div>
+				<div class="qq-caibei-bar-userInfo" id="ShowMsg"></div>
+			</div>
+		</div>
+		<!-- 20130605-qq-彩贝-end -->
+		<div class="shortcut">
+			<div class="layout">
+				<div class="s-sub">
+					<ul>
+						<li class="s-hw">
+							<a href="http://consumer.huawei.com/cn/" target="_blank">华为官网</a></li>
+						<li class="s-honor">
+							<a href="http://www.honor.cn/" target="_blank">荣耀官网</a></li>
+						<!-- <li class="s-emui"><a href="http://emui.huawei.com/cn/" target="_blank">EMUI</a></li>
+						<li class="s-appstore"><a href="http://appstore.huawei.com/" target="_blank">应用市场</a></li>
+						<li class="s-cloud"><a href="http://cloud.huawei.com/cn/contact" target="_blank">云服务</a></li>
+						<li class="s-developer"><a href="http://developer.huawei.com/" target="_blank">开发者联盟</a></li>
+						-->
+						<li class="s-appsoft">
+							<div class="s-dropdown">
+								<div class="h">
+									<a href="http://emui.huawei.com/appsoft/" target="_blank">软件应用</a>
+									<s>
+									</s>
+								</div>
+								<div class="b">
+									<p>
+										<a href="http://emui.huawei.com/cn/" target="_blank">EMUI</a></p>
+									<p>
+										<a href="http://appstore.huawei.com/" target="_blank">应用市场</a></p>
+									<p>
+										<a href="http://cloud.huawei.com/" target="_blank">云服务</a></p>
+									<p>
+										<a href="http://developer.huawei.com/" target="_blank">开发者联盟</a></p>
+								</div>
+							</div>
+						</li>
+						<li class="s-club">
+							<a href="http://club.huawei.com/" target="_blank">花粉俱乐部</a></li>
+						<li class="s-sr">
+							<a href="javascript:;" onclick="showSelectRegion()">Select Region</a></li>
+					</ul>
+				</div>
+				<div class="s-main">
+					<ul>
+						<if condition="$_SESSION['id']">
+						<li class="s-user" id="login_status" style="display: list-item;">
+							<!-- ie6下鼠标悬停追加ClassName： hover 示例：[ s-dropdown hover ] -->
+							<div class="s-dropdown">
+								<div class="h">
+									<a href="__MODULE__/person/index" id="customer_name" rel="nofollow" timetype="timestamp" class="link-user">{$_SESSION['username']}</a>
+									<em class="vip-state" id="vip-info">
+										<a class="link-noAct" href="https://www.vmall.com/member/account" id="vip-inActive" title="请完善个人信息，即刻享受会员特权" style="display: none;">去激活</a>
+										<a href="https://www.vmall.com/member/point" title="VMALL V0会员" id="vip-Active">
+											<i class="icon-vip-level-0"></i>&nbsp;</a>
+										<a title="实名认证" id="authentication" href="https://www.vmall.com/authmember/accesstoken">
+											<i class="icon-authentication icon-authentication-not"></i>&nbsp;</a>
+									</em>
+									<s>
+									</s>
+								</div>
+								<div class="b">
+									<div class="w-name">
+										<a href="" rel="nofollow" timetype="timestamp">
+											<img id="customerPic" <if condition="$_SESSION['pic']">src="__PUBLIC__/images/{$_SESSION['pic']}" <else />src="__PUBLIC__/home/img88.jpg"</if> alt="" /></a>
+										<a class="name " href="https://hwid1.vmall.com/oauth2/userCenter/hwAccount?reqClientType=26&amp;loginChannel=26000000&amp;themeName=cloudTheme" target="_blank" id="user-center">我的华为帐号</a>&nbsp;|&nbsp;
+										<a href="__MODULE__/Index/logout">退出</a></div>
+									<div class="w-info">
+										<!-- <span>经验值：&nbsp;
+											<em>
+												<a id="empiricalValue" title="激活会员即可享受会员特权" href="https://www.vmall.com/member/point" target="_blank">0</a></em>
+										</span>
+										<span>芝麻信用：&nbsp;
+											<em>
+												<a id="zhimaPoint" href="https://www.vmall.com/member/zm">去认证</a></em>
+										</span> -->
+									</div>
+									<div id="userPrivilege" class="w-ple"></div>
+								</div>
+							</div>
+						</li>
+						<else />
+						<li class="s-login" id="unlogin_status" style="display: list-item;">
+							<a href="__MODULE__/Index/login" rel="nofollow">登录</a>&nbsp;&nbsp;&nbsp;
+							<a href="__MODULE__/Index/register" rel="nofollow">注册</a></li>
+						</if>
+						
+						
+						<!-- <li class="s-gather hide" id="newPointlogin_status" style="display: list-item;">
+							 <p id="userNewPoint">积&nbsp;分&nbsp;&nbsp;<a href="/member/newpoint?t=1499080451948" target="_blank" id="userPointBalance"></a></p>
+							
+							<a href="https://www.vmall.com/member/newpoint?t=1499080451948" target="_blank" id="userNewPoint">积分
+								<span id="userPointBalance">5</span></a>
+						</li> -->
+						<li class="s-myOrders">
+							<a href="__MODULE__/person/order" rel="nofollow" timetype="timestamp">我的订单</a></li>
+						<li class="s-promo">
+							<a href="" rel="nofollow">V码(优购码)</a></li>
+						<li class="s-hwep hide" id="preferential"></li>
+						<li class="s-mobile">
+							<a href="" target="_blank">手机版</a></li>
+						<li class="s-sitemap">
+							<div class="s-dropdown ">
+								<div class="h">
+									<a href="javascript:;">网站导航</a>
+									<s>
+									</s>
+								</div>
+								<div class="b">
+									<p>
+										<a href="">帮助中心</a></p>
+									<p>
+										<a href="" target="_blank">PC软件</a></p>
+									<p>
+										<a href="" target="_blank">数字音乐</a></p>
+									<p>
+										<a href="" target="_blank">爱旅</a></p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<header class="header">
+			<div class="layout">
+				<!-- 21030909-logo-start -->
+				<div class="logo logo-index">
+					<a href="__MODULE__/index/index" title="Vmall.com - 华为商城">
+						<img src="__PUBLIC__/home/logo20161112183503.png" alt="Vmall.com - 华为商城" /></a>
+				</div>
+				<!-- 21030909-logo-start -->
+				<!-- 20130909-搜索条-焦点为search-form增加className:hover -start -->
+				<div class="searchBar relative">
+					<!-- 页头热门搜索 -->
+					<div class="searchBar-form" id="searchBar-area">
+						<form method="get" action="__MODULE__/Goods/index">
+							<input type="text" class="text" name='title' maxlength="100" id="search-kw" autocomplete="off" />
+							<input type="submit" class="button" value="搜索" style="background-image: url('__PUBLIC__/home/icon47.png')" /></form>
+					</div>
+					<div class="searchBar-key">
+						<a href="__MODULE__/Goods/info?gname=HUAWEI%20Mate9&id=80" target="_blank">HUAWEI Mate 9</a>
+						<a href="__MODULE__/Goods/info/gname/荣耀V9/id/79" target="_blank">荣耀V9</a>
+						<a href="__MODULE__/Goods/info?gname=荣耀%205&id=116" target="_blank">荣耀5</a></div>
+				</div>
+				<script>$('#search-kw').focus(function() {
+						$('.searchBar-key').addClass('hide');
+
+					}).blur(function() {
+
+						$('.searchBar-key').removeClass('hide');
+					})</script>
+				<!-- 20130909-搜索条-end -->
+				<!-- 21030910-头部-工具栏-start -->
+				<div class="header-toolbar">
+					<!-- 21030910-头部-工具栏-焦点为header-toolbar-item增加ClassName:hover -->
+					<div class="header-toolbar-item" id="header-toolbar-imall">
+						<!-- 21030909-我的商城-start -->
+						<div class="i-mall">
+							<div class="h">
+								<a href="https://www.vmall.com/member?t=14990804519491499080452081" rel="nofollow" timetype="timestamp">我的商城</a>
+								<i>
+								</i>
+								<s>
+								</s>
+								<u>
+								</u>
+							</div>
+							<div class="b" id="header-toolbar-imall-content">
+								<div class="i-mall-prompt" id="cart_unlogin_info">
+									<p>
+										<a href="https://www.vmall.com/member?t=1499080452192">{$_SESSION['username']}</a>
+										<em class="vip-state" id="vip-info">&nbsp;&nbsp;&nbsp;&nbsp;
+											<a href="https://www.vmall.com/member/point" title="VMALL V0会员" id="vip-Active">
+												<i class="icon-vip-level-0"></i></a>
+										</em>
+									</p>
+								</div>
+								<div class="i-mall-uc " id="cart_login_info">
+									<ul>
+										<li>
+											<a href="__URL__/order" rel="nofollow" timetype="timestamp">我的订单</a></li>
+										<li>
+											<a href="https://www.vmall.com/member/order?t=14990804519491499080452081&amp;tab=unpaid" timetype="timestamp">待支付</a>
+											<span id="toolbar-orderWaitingHandleCount" class="hide">0</span></li>
+										<li>
+											<a href="https://www.vmall.com/member/order?t=14990804519491499080452081&amp;tab=nocomment" timetype="timestamp">待评论</a>
+											<span id="toolbar-notRemarkCount" class="hide">0</span></li>
+										<li>
+											<a href="https://www.vmall.com/member/coupon?t=14990804519491499080452081" timetype="timestamp">优惠券</a>
+											<span id="toolbar-couponCount" class="hide">0</span></li>
+									</ul>
+								</div>
+								<!-- 页头会员专享信息 -->
+								<div class="i-mall-event ">
+									<p>
+										<a href="http://sale.vmall.com/smrz.html" target="_self">
+											<img src="__PUBLIC__/home/20160127095348354.jpg" alt="特权频道" /></a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- 21030909-我的商城-end --></div>
+					<div class="header-toolbar-item" id="header-toolbar-minicart">
+						<!-- 21030909-迷你购物车-start -->
+						<div class="minicart">
+							<div class="h" id="header-toolbar-minicart-h">
+								<a href="https://cart.vmall.com/cart/cart.html?t=14990804519491499080452081" rel="nofollow" timetype="timestamp" target="blank">我的购物车
+									<span>
+										<em id="header-cart-total">0</em>
+										<b>
+										</b>
+									</span>
+								</a>
+								<i>
+								</i>
+								<s>
+								</s>
+								<u>
+								</u>
+							</div>
+							<div class="b" id="header-toolbar-minicart-content">
+								<div class="minicart-pro-empty" id="minicart-pro-empty">
+									<span class="icon-minicart">您的购物车是空的，赶紧选购吧！</span></div>
+								<div id="minicart-pro-list-block" style="display: none;">
+									<ul class="minicart-pro-list" id="minicart-pro-list"></ul>
+								</div>
+								<div class="minicart-pro-settleup" id="minicart-pro-settleup" style="display: none;">
+									<p>共
+										<em id="micro-cart-total">0</em>件商品，金额合计
+										<b id="micro-cart-totalPrice">&yen;&nbsp;0</b></p>
+									<a class="button-minicart-settleup" href="__MODULE__/order/index" target="blank">去结算</a></div>
+							</div>
+						</div>
+						<!-- 21030909-迷你购物车-end --></div>
+				</div>
+				<script>
+				// $('#header-cart-total').html(0);
+            	id = {$_SESSION['id']};
+            	if(id){
+               		$('#minicart-pro-list-block').css('display','block');
+                	$('#minicart-pro-settleup').css('display','block');
+                	$('#minicart-pro-empty').css('display','none');
+                	total = 0;
+                	$.post('__MODULE__/ShopCar/hover',{'id':id},function(data){
+                    	if(data){
+                        	for(var i=0;i<data.length;i++){
+                            	$('.minicart-pro-list').append(`<li class="minicart-pro-item">
+	                                <div class="pro-info">
+	                                    <div class="p-img">
+	                                        <a href="" title="" target="_blank"><img src="__PUBLIC__/images/`+data[i].pic+`" alt="`+data[i].desrc+`"></a>
+	                                        </div>
+	                                    <div class="p-name">
+	                                        <a href="" title="`+data[i].desrc+`" target="_blank">`+data[i].desrc+`&nbsp;
+	                                            <span class="p-slogan"></span>
+	                                            <span class="p-promotions hide"></span>
+	                                        </a>
+	                                    </div>
+	                                    <div class="p-status">
+	                                        <div class="p-price"><b>¥&nbsp;`+data[i].price+`</b><em>x</em><span>`+data[i].num+`</span>
+	                                        </div>
+	                                        <div class="p-tags">
+	                                            <span class="p-mini-tag-gift">配</span>
+	                                        </div>
+	                                    </div>
+	                                    <a href="javascript:;" class="icon-minicart-del" title="删除" onclick="">删除</a>
+	                                </div>
+                            	</li>`);
+
+                            	total += data[i].num*data[i].price;
+                        	}
+                        $('#micro-cart-totalPrice').html('¥&nbsp;'+total);
+                        $('#header-cart-total').html(i);
+                    }else{
+                        $('#header-cart-total').html(0);
+                    }
+                },'json');
+            }else{
+
+                $('#minicart-pro-list-block').css('display','none');
+                $('#minicart-pro-settleup').css('display','none');
+                $('#minicart-pro-empty').css('display','block');
+            }
+        </script>
+				<!-- 21030910-头部-工具栏-start -->
+				<!-- 20140910-头部-二维码-start -->
+				<div class="header-qrcode">
+					<div class="ec-slider" id="ec-erweima" style="width: 91px; height: 96px;">
+						<ul class="ec-slider-list" style="width: 91px; height: 96px;">
+							<li class="ec-slider-item" style="width: 91px; height: 96px; position: absolute;">
+								<p>
+									<a href="https://www.vmall.com/appdownload" target="blank" title="专享无线特惠">
+										<img src="__PUBLIC__/home/qrcode_vmall_app01.png" alt="华为商城官方客户端" /></a>
+								</p>
+								<p>
+									<a href="https://www.vmall.com/appdownload" target="blank">
+										<span>专享无线特惠</span></a>
+								</p>
+							</li>
+							<li class="ec-slider-item" style="width: 91px; height: 96px; display: none; position: absolute;">
+								<p>
+									<a href="https://www.vmall.com/appdownload" target="blank" title="微信扫码关注我们">
+										<img src="__PUBLIC__/home/qrcode_vmall_wechat01.jpg" alt="华为商城官方微信" /></a>
+								</p>
+								<p>
+									<a href="https://www.vmall.com/appdownload" target="blank">
+										<span>微信扫码关注我们</span></a>
+								</p>
+							</li>
+						</ul>
+						<div class="ec-slider-nav">
+							<span class="current"></span>
+							<span></span>
+						</div>
+						<a class="button-slider-prev" href="javascript:;" style="display: none;"></a>
+						<a class="button-slider-next" href="javascript:;" style="display: none;"></a>
+					</div>
+				</div>
+				<!-- 20140910-头部-二维码-end --></div>
+		</header>
+		<!-- 21030909-头部-end -->
+		<script>ec.ready(function() {
+				ec.cart.getTotal();
+				//微型购物车hover效果
+				ec.minicart.microCartTpl = new ec.template($('#micro-cart-tpl').val());
+				var $imall = $('#header-toolbar-imall-content'),
+				$miniCart = $('#header-toolbar-minicart-content');
+				$('#header-toolbar-imall').hover(function() {
+					$.ajax({
+						url: "//remark.vmall.com/remark/queryNotRemarkCount.json?t=" + new Date().getTime(),
+						dataType: "jsonp",
+						success: function(json) {
+							$('#toolbar-notRemarkCount').html( + json.notRemarkCount).attr('class', (json.notRemarkCount <= 0) ? 'hide': '');
+							$('#member-notRemarkCount').text(json.notRemarkCount);
+						}
+					});
+					//
+					//ec.cart.getTotal();
+					$imall.show();
+				},
+				function() {
+					$imall.hide();
+				});
+				$('#header-toolbar-minicart').hover(function() {
+					$(this).unbind("mouseenter");
+					ec.cart.getTotal();
+					$miniCart.show();
+				},
+				function() {
+					$(this).bind("mouseenter",
+					function() {
+						$(this).unbind("mouseenter");
+						ec.cart.getTotal();
+						$miniCart.show();
+					}) $miniCart.hide();
+				});
+			});</script>
+
+		<!-- 导航 -->
+		<div class="naver-main">
+			<div class="layout">
+				<!-- 20130909-导航-start -->
+				<nav class="naver">
+					<ul id="naver-list">
+						<li id="index">
+							<a href="__MODULE__/index/index"  class="current">
+								<span>首页</span></a>
+						</li>
+						<volist name="s[0]['shop']" id="rows">
+						<li id="index">
+							<a href="__MODULE__/goods/index/id/{$rows['id']}"  class="current">
+								<span>{$rows['name']}</span></a>
+						</li>
+						
+						</volist>
+					</ul>
+					<script>$(function() {
+							$('#naver-list li').hover(function() {
+								$(this).addClass('hover');
+							},
+							function() {
+								$(this).removeClass('hover');
+							});
+
+						});</script>
+				</nav>
+				<!-- 20130909-导航-end -->
+				<!-- 20140823-分类-start -->
+				<div class="category" id="category-block">
+					<!-- 20140822-分类-start -->
+					<div class="h">
+						<h2>全部商品</h2>
+						<i class="icon-category"></i>
+					</div>
+					<div class="b">
+						<ol class="category-list">
+							<!-- 鼠标悬停增加ClassName： hover -->
+							<volist name="s" id="rows">
+							<li class="category-item ">
+								<div class="category-info">
+									<h3>
+										<a href="__MODULE__/goods/index/id/{$rows['id']}" target="_blank">
+											<span>{$rows['name']}</span></a>
+									</h3>
+								</div>
+								<div class="category-panels children-col-2">
+									<ul class="subcate-list children-col-list">
+										<volist name="rows['shop']" id="vo">
+										<volist name="vo['shop']" id="row">
+
+										<li class="subcate-item">
+											<a href="__MODULE__/goods/index/id/{$row['id']}" target="_blank">
+												<span>{$row['name']}</span></a>
+										</li>
+										</volist>
+										</volist>
+									</ul>
+								</div>
+							</li>
+							</volist>
+						</ol>
+					</div>
+					<!-- 20140822-分类-end -->
+					<!-- 20140823-分类-end --></div>
+			</div>
+		</div>
+		<script>(function() {
+				//所有分类显示隐藏控制
+				var isIndex = false,
+				categoryBlock = gid('category-block');
+				if (isIndex) return;
+				$("#category-block").hover(function() {
+					$(this).addClass("category-hover");
+				},
+				function() {
+					$(this).removeClass("category-hover");
+				});
+				/*categoryBlock.onmouseover = function () {
+		categoryBlock.className = 'category category-hover';
+	};
+	categoryBlock.onmouseout = function () {
+		categoryBlock.className = 'category';
+	};*/
+			} ());
+
+			/**
+*功能：给鼠标移动到category-list li上面的时候，记得给他多添加一个hover类样式
+*目的是兼容ie6,以及调整二级分类的弹出框的位置。
+*@author 李峰
+*/
+			/**
+$(function(){
+	$(".category-item").hover(function(){
+		$(this).addClass("hover");
+		//1.二级分类的top值
+		var childrenTop = $(this).offset().top;
+		//2.一级分类的top值
+		var parentTop = $(".category-list").offset().top;
+		//3.二级分类到一级分类顶部的距离
+		var top = childrenTop - parentTop;
+		//4.二级分类的弹出层的高度
+		var childrenHeight = $(this).find(".category-panels").innerHeight();
+		//5.一级分类容器的总高度
+		var totalHeight = $(".category-list").height();
+		alert("childrenTop:"+childrenTop+";parentTop:"+parentTop+";top:"+top+";childrenHeight:"+childrenHeight+";totalHeight:"+totalHeight) ;
+		//6.如果二级分类.category-panels的内容高度大于总容量totalHeight,那么.category-panels置顶，然后多余的自动往下延续
+		//如果二级分类childrenHeight内容高度(childrenHeight + top )大于totalHeight,那么.category-panels往上移动childrenHeight + top -totalHeight
+		if((top + childrenHeight) > totalHeight)
+		{
+			if(childrenHeight > totalHeight)
+			{
+				$(this).find(".category-panels").css("top",-top);
+			}else{
+				//上移动
+				var topX = (childrenHeight+top) - totalHeight;
+				$(this).find(".category-panels").css("top",-topX);
+			}
+		}
+		
+	},function(){
+		$(this).removeClass("hover");
+	});
+});
+ */
+			</script>

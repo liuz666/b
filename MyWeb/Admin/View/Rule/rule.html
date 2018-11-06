@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta charset="utf-8" /> 
+  <title>
+            X-admin v1.0
+        </title> 
+  <meta name="renderer" content="webkit" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" /> 
+  <meta name="apple-mobile-web-app-capable" content="yes" /> 
+  <meta name="format-detection" content="telephone=no" /> 
+  <link rel="stylesheet" href="__PUBLIC__/css/x-admin.css" media="all" /> 
+  <link rel="stylesheet" href="__PUBLIC__/css/page.css">
+ </head> 
+ <body> 
+  <div class="x-nav"> 
+   <span class="layui-breadcrumb"> <a><cite>首页</cite></a> <a><cite>会员管理</cite></a> <a><cite>权限管理</cite></a> </span> 
+   <a class="layui-btn layui-btn-small" style="line-height:1.6em;margin-top:3px;float:right" href="javascript:location.replace(location.href);" title="刷新"><i class="layui-icon" style="line-height:30px">ဂ</i></a> 
+  </div> 
+  <div class="x-body"> 
+   <form class="layui-form x-center" method="post" id="did" style="width:70%"> 
+    <div class="layui-form-pane" style="margin-top: 15px;"> 
+     <div class="layui-form-item"> 
+     <!--  <div class="layui-input-inline"> 
+       <select name="cname"> <option value="">请选择角色</option> <option value="3">超级管理员</option> <option value="2">运营管理员</option> <option value="1">商家管理员</option> </select> 
+      </div>  -->
+      <div class="layui-input-inline"> 
+       <input type="text" name="mname" placeholder="模块/控制器" required="" lay-verify="mname" autocomplete="off" class="layui-input" /> 
+      </div> 
+      <div class="layui-input-inline"> 
+       <input type="text" name="name" placeholder="权限名称" required="" lay-verify="name" autocomplete="off" class="layui-input" /> 
+      </div> 
+      <div class="layui-input-inline"> 
+       <input type="text" name="aname" placeholder="方法" required="" lay-verify="aname" autocomplete="off" class="layui-input" /> 
+      </div> 
+      <div class="layui-input-inline" style="width:80px"> 
+       <button class="layui-btn" lay-submit="" lay-filter="*"><i class="layui-icon"></i>添加</button> 
+      </div> 
+     </div> 
+    </div> 
+   </form> 
+   <xblock>
+    <!-- <button class="layui-btn layui-btn-danger" onclick="delAll()"><i class="layui-icon"></i>批量删除</button> -->
+<!--     <a href="javascript:void(0)" id="del" class="layui-btn layui-btn-danger">批量删除</a><a href="javascript:void(0)" id="alldel" class="layui-btn layui-btn-normal">全选</a> <a href="javascript:void(0)" id="nodel" class="layui-btn">全不选</a> <a href="javascript:void(0)" id="fdel" class="layui-btn layui-btn-warm">反选</a> -->
+    <span class="x-right" style="line-height:40px"></span>
+
+   </xblock> 
+   <div id="uid">
+   <table class="layui-table" id="did"> 
+    <thead> 
+     <tr> 
+      <!-- <th> <input type="checkbox" name="" value="" class="all" /> </th>  -->
+      <th> ID </th> 
+      <th>  所属模块分类 </th> 
+      <th>  权限名称</th> 
+      <th>  所属方法</th> 
+      <th>  操作 </th> 
+     </tr> 
+    </thead> 
+    <tbody id="x-link"> 
+    <foreach name="list" item="row">
+     <tr> 
+      <!-- <td> <input type="checkbox" value="1" name="" /> </td>  -->
+      <td> {$row['id']} </td> 
+      <td> {$row['mname']}</td> 
+      <td> {$row['name']} </td> 
+      <td> {$row['aname']} </td> 
+      <td class="td-manage"> <a title="编辑" href="javascript:;" onclick="edit('编辑','__URL__/edit/id/{$row['id']}','','','310')" class="ml-5" style="text-decoration:none"> <i class="layui-icon"></i> </a> <a title="删除" href="javascript:;" onclick="rule_del(this,'{$row['id']}')" style="text-decoration:none"> <i class="layui-icon"></i> </a> </td> 
+     </tr> 
+     </foreach>
+    </tbody> 
+   </table> 
+   </div>
+   <div id="page">
+   <!--    <foreach name="pp" item="value">
+        <a href="javascript:void(0)" onclick="page({$value})"><div style="width:30px;height:30px;text-align:center;line-height:30px;border:1px solid red;float:left">{$value}</div></a>
+      </foreach> -->
+       {$pageinfo}
+   </div> 
+  </div> 
+  <script src="__PUBLIC__/lib/layui/layui.js" charset="utf-8"></script> 
+  <script src="__PUBLIC__/js/x-layui.js" charset="utf-8"></script> 
+  <!-- // <script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script> -->
+  <script>
+            layui.use(['element','laypage','layer','form'], function(){
+                $ = layui.jquery;//jquery
+              lement = layui.element();//面包导航
+              // laypage = layui.laypage;//分页
+              layer = layui.layer;//弹出层
+              form = layui.form();//弹出层
+              // z自动验证
+              form.verify({
+                // name: function(value){
+                //   if(value.length <1){
+                //     return '权限至少得1个字符啊';
+                //   }
+                // }
+                mname: function(value){
+                  if(value.length <1){
+                    return '模块名称至少得1个字符啊';
+                  }
+                }
+                // aname: function(value){
+                //   if(value.length <1){
+                //     return '方法至少得1个字符啊';
+                //   }
+                // }
+              });
+              // 分页
+              // function page(page){
+              //   //Ajax
+              //   $.get("__URL__/rule",{page:page},function(data){
+              //     alert(data);
+              //     //把响应数据赋值给id 为uid的div
+              //     $("#uid").html(data);
+              //   });
+              // }
+              //监听提交
+              form.on('submit(*)', function(data){
+                console.log(data);
+                //发异步，把数据提交给php
+                 $.post('__CONTROLLER__/insert',$('#did').serialize(),function(data){
+                    // alert(data);
+                    layer.alert("增加成功", {icon: 6});
+                  $('#x-link').prepend('<tr><td>'+data.id+'</td><td>'+data.mname+'</td><td>'+data.name+'</td><td>'+data.aname+'</td><td class="td-manage"><a title="编辑"href="javascript:;"onclick="edit(\'编辑\',\'link-edit.html\',\'4\',\'\',\'510\')"class="ml-5"style="text-decoration:none"><i class="layui-icon">&#xe642;</i></a> <a title="删除"href="javascript:;"onclick="rule_del(this,\'1\')"style="text-decoration:none"><i class="layui-icon">&#xe640;</i></a></td></tr>');
+                });
+                return false;
+              });
+            })
+
+              //以上模块根据需要引入
+               // 全选
+            // $(".all").click(function(){
+            //   //获取table下的tr
+            //   $(".layui-table").find("tr").each(function(){
+            //     //把tr里的input选中
+            //     $(this).find(":checkbox").attr("checked",true);
+            //   });
+            // });
+            // 批量删除提交
+             function delAll () {
+                layer.confirm('确认要删除吗？',function(index){
+                    //捉到所有被选中的，发异步进行删除
+                    layer.msg('删除成功', {icon: 1});
+                });
+             }
+            
+            
+
+            //-编辑
+            function edit (title,url,id,w,h) {
+                x_admin_show(title,url,w,h); 
+            }
+            
+            /*删除*/
+            function rule_del(obj,id){
+                layer.confirm('确认要删除吗？',function(index){
+                    //发异步删除数据
+                    $.get('__CONTROLLER__/delete',{'id':id},function(data){
+
+                    });
+                    $(obj).parents("tr").remove();
+                    layer.msg('已删除!',{icon:1,time:1000});
+                });
+            }
+            </script> 
+  <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?b393d153aeb26b46e9431fabaf0f6190";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+        </script>  
+ </body>
+</html>

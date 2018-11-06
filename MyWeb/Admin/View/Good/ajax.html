@@ -1,0 +1,85 @@
+  <div id="uid">
+            <xblock>
+            <button class="layui-btn layui-btn-danger del" onclick="del()">删除</button>
+            <button class="layui-btn layui-btn-danger alldel" onclick="alldel()">全选</button>
+            <button class="layui-btn layui-btn-success nodel" onclick="nodel()">全不选</button>
+             <button class="layui-btn layui-btn-info fdel" onclick="fdel()">反选</button>
+            <button class="layui-btn" onclick="banner_add('添加用户','__URL__/add','600','500')"><i class="layui-icon">&#xe608;</i>添加</button><span class="x-right" style="line-height:40px">共有数据：88 条</span></xblock>
+           <table class="layui-table">
+                <thead>
+                    <tr>
+                        <th>
+                            <!-- <input type="checkbox" name="" value=""> -->
+                        </th>
+                        <th>
+                            ID
+                        </th>
+                        <th>
+                            服务名称
+                        </th>
+                        <th>
+                            服务类别
+                        </th>
+                        <th>
+                            描述
+                        </th>
+                        <th>
+                            咨询QQ
+                        </th>
+                        <th>
+                            项目状态
+                        </th>
+                        <th>
+                            操作
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="x-img">
+                     <foreach name="list" item="row">
+                    <tr>
+                        <td>
+                            <input type="checkbox" value="{$row['sid']}" name="id[]">
+                        </td>
+                        <td>
+                            {$row['sid']}
+                        </td>
+                        <td>
+                            {$row['sname']}
+                        </td>
+                        <td>
+                 
+                            {$row['cname']}
+                         
+                        </td>
+                        <td>
+                            {$row['content']}
+                        </td>
+                        <td>
+                            {$row['qq']}
+                        </td>
+                        <td class="td-status">
+                                <if condition="$row['status'] eq 0"><span class="layui-btn layui-btn-disabled layui-btn-mini">下架</span><else/><span class="layui-btn layui-btn-normal layui-btn-mini">上架</span></if>
+                        </td>
+                        <td class="td-manage">
+                            <if condition="$row['status'] eq 1">
+                            <a style="text-decoration:none" onclick="banner_stop(this,'10001','{$row['sid']}')" href="javascript:;" title="下架">
+                                <i class="layui-icon">&#xe601;</i>
+                            </a>
+                            <else/>
+                                <a style="text-decoration:none" onClick="banner_start(this,'10001','{$row['sid']}')" href="javascript:;" title="上架"><i class="layui-icon">&#xe62f;</i></a>
+                            </if>
+                            <a title="编辑" href="javascript:;" onclick="banner_edit('编辑','__URL__/edit?id={$row['sid']}','4','','510')"
+                            class="ml-5" style="text-decoration:none">
+                                <i class="layui-icon">&#xe642;</i>
+                            </a>
+
+                            <a title="删除" href="javascript:;" onclick="banner_del(this,'{$row['sid']}')" 
+                            style="text-decoration:none">
+                                <i class="layui-icon">&#xe640;</i>
+                            </a>
+                        </td>
+                    </tr>
+                    </foreach>
+                </tbody>
+            </table>
+            </div>

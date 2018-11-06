@@ -1,0 +1,84 @@
+@charset "utf-8";
+.clear{clear:both;}
+.left{ float:left}
+.right{ float:right}
+
+.main{ width:1200px; margin:0 auto; overflow:hidden}
+.about-h2{ font-size:36px; margin-top:57px; height:60px; border-bottom:1px solid #e6e6e6; overflow:hidden; text-align:center; font-weight:normal; color:#404040}
+.main1{ background:url(../images/bj.jpg)/*tpa=http://www.gongsibao.com/st/yxba/1605/images/bj.jpg*/ top center repeat; width:100%; height:550px; overflow:hidden}
+.about-h21{ border:none; height:50px; margin-top:40px;}
+.main6{ height:460px; overflow:hidden }
+.chouse img{ float:left }
+.chouse{width:1200px; margin:20px auto 0; overflow:hidden}
+.margin85{ margin-top:58px;}
+.minv-p{ line-height:30px; text-align:center}
+.mainer1{ margin-top:30px; overflow:hidden; line-height:24px; }
+.mainer1 li{ float:left; width:50%; text-align:center}
+.mainer1 li img{ display:block; width:126px; margin:0 auto;}
+.mainer1 li h3{ color:#2a2a2a; font-size:18px; font-weight:normal; margin-top:23px; overflow:hidden}
+.mainer1 li p{ margin-top:10px; overflow:hidden}
+.maine1{ height:560px;}
+.main2{ height:500px;}
+.wahj-tit{ margin-top:15px; overflow:hidden}
+.wahj-tit a{ float:left; width:50%; background:#83d4f6; height:50px; line-height:50px; text-align:center; color:#fff; font-size:24px;}
+.wahj-tit a.aahover{ background:#1498ce}
+.wahj-box{ margin-top:20px; overflow:hidden}
+.wahj-box .div-whj{ width:100%;}
+.wahj-box .div-whj .diver2 p{ background:#ffffff; width:283px; overflow:hidden; float:left; text-align:center; line-height:24px; color:#575757; display:inline; margin-left:22px;}
+.wahj-box .div-whj .diver2 p.ml-none,.wahj-box .div-whj.li-lett .diver2 p.ml-none{ margin-left:0}
+p.pad40{ padding-top:35px; height:90px;}
+p.pad25{ padding-top:25px; height:100px;}
+.wahj-box .div-whj.li-lett .diver2 p{ width:225px; margin-left:18px;}
+.diver2{ height:137px; overflow:hidden}
+.none1{ color:#0c4155; font-size:14px; margin-top:50px; overflow:hidden; text-align:center; font-weight:bold}
+.iuji1{ background:url(../images/button.png)/*tpa=http://www.gongsibao.com/st/yxba/1605/images/button.png*/ no-repeat; width:182px; height:40px; line-height:40px; color:#fff; text-align:center; margin:15px auto 0; overflow:hidden; display:block}
+.wahj-tit1{ margin-top:0}
+
+.wahj-box .div-whj41 .diver2 p{ width:140px; height:130px; background:#e6f5fa; line-height:130px; margin-left:11px;}
+.wahj-box .div-whj41 .diver2 p.pple{ line-height:24px; padding-top:40px; height:90px;}
+.div-whj41 img{ display:block; margin-top:7px;}
+.div-whj41 a{ margin-top:32px;} 
+.wahj-box .div-whj42 .diver2 p{ width:160px; height:130px; background:#e6f5fa; line-height:130px; margin-left:13px;}
+.maine14{ background:#58bfe5; height:500px;}
+.diver254{ height:181px; overflow:hidden}
+
+.div-whj42 .diver254 .left p{ width:280px; height:80px; line-height:80px; background:#fff; margin-left:26px;}
+.div-whj42 .diver254 .left{ width:895px;}
+.div-whj42 .diver254 .left p.pple1{ margin-top:20px; line-height:24px; padding-top:15px; height:65px;}
+.div-whj42 .diver254 p.right{ width:280px; height:151px; margin:0; float:right;background:#fff; line-height:24px; padding-top:30px;}
+.wahj-box1 .div-whj42 .diver2545{  height:96px;}
+.wahj-box1 .div-whj42 .diver2545 p{ width:180px; height:76px; line-height:76px; background:#fff; margin-left:24px;}
+.wahj-box1 .div-whj42 .diver2545 p.e1r{ line-height:24px; padding-top:15px;height:61px;}
+.epb-ul1{ overflow:hidden; margin-top:5px;}
+.epb-ul1 li{ float:left; display:inline; width:360px; height:146px; overflow:hidden; background:#5fc7ec; text-align:center; color:#fff; line-height:30px; margin-left:60px;}
+.epb-ul1 li b{ background:url(../images/bj.png)/*tpa=http://www.gongsibao.com/st/yxba/1605/images/bj.png*/ no-repeat 0 0; width:34px; height:34px; display:block; margin:22px auto 0; overflow:hidden}
+.epb-ul1 li h3{ font-size:24px; font-weight:normal; margin-top:10px;}
+.epb-ul1 li.lie{ margin:0}
+.epb-ul1 li.lie1{ background:#e86263}
+.epb-ul1 li.lie2{ background:#85b9c4}
+.epb-ul1 li.lie1 b{ background-position:-40px 0;}
+.epb-ul1 li.lie2 b{ background-position:-82px 0; height:21px; margin-top:35px;}
+.epb-ul1 li.lie3{ background:#ea825d; }
+.epb-ul1 li.lie4{ background:#b9cc7b}
+.epb-ul1 li.lie5{ background:#9b7bce}
+.epb-ul1 li.lie3 p{ line-height:20px; margin-top:3px;}
+.epb-ul1 li.lie3 b{background-position:0px -43px; width:29px;}
+.epb-ul1 li.lie4 b{background-position:-40px -49px; width:30px;}
+.epb-ul1 li.lie5 b{background-position:-82px -49px; width:22px;}
+.aere1{ overflow:hidden; margin-top:15px;}
+.aere1 li{ float:left; background:url(../images/img4.png)/*tpa=http://www.gongsibao.com/st/yxba/1605/images/img4.png*/ no-repeat top right; height:377px; overflow:hidden; display:inline; width:212px; padding-right:15px; color:#575757; line-height:24px; margin-left:13px;}
+.aere1 li h3{ text-align:center; font-size:18px; color:#575757; overflow:hidden; margin-top:20px;}
+.aere1 li  p{ margin-top:12px; overflow:hidden; height:135px;}
+.aere1 li img{ display:block; width:117px; margin:0 auto; overflow:hidden}
+.aere1 li a{ background: url(../images/anniu2.jpg)/*tpa=http://www.gongsibao.com/st/yxba/1605/images/anniu2.jpg*/  no-repeat; width:118px; height:31px; display:block; margin:0px auto; overflow:hidden}
+.aere1 li a:hover{ background:url(../images/anniu1.png)/*tpa=http://www.gongsibao.com/st/yxba/1605/images/anniu1.png*/ no-repeat;width:118px; height:31px;}
+
+
+
+
+
+
+
+
+
+.tel {width:366px; height:60px; float:right;}

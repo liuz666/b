@@ -1,0 +1,448 @@
+/*main.css*/
+.m-t-30{margin-top:30px;}
+.ngb-wrap {
+    margin: 0;
+    padding: 0;
+    font: 12px/1.4 "Microsoft YaHei", Helvetica, Arial, sans-serif, "Helvetica Neue";
+    background-color: #fff;
+}
+.ngb-wrap ul,.ngb-wrap ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.ngb-sprite {
+    display: inline-block;
+    background: url(../images/sprite.png)/*tpa=http://www.gongsibao.com/st/icp/1604/images/sprite.png*/ left top no-repeat;
+}
+.ngb-sprite {
+    width: 101px;
+    height: 101px;
+} 
+.ngb-icon-wsite {
+    background-position: 0 0;
+}
+.ngb-icon-wcop {
+    background-position: 0 -101px;
+}
+.ngb-icon-wper {
+    background-position: 0 -202px;
+}
+.ngb-icon-bzhy {
+    background-position: 0 -303px;
+}
+.ngb-icon-spjg {
+    background-position: 0 -404px;
+}
+.ngb-icon-njyq {
+    background-position: 0 -505px;
+}
+.ngb-icon-yxqx {
+    background-position: 0 -606px;
+}
+.ngb-icon-onj {
+    background-position: 0 -707px;
+}
+.ngb-icon-ibg {
+    background-position: 0 -808px;
+}
+.ngb-icon-izx {
+    background-position: 0 -909px;
+}
+.ngb-icon-ixq {
+    background-position: 0 -1010px;
+}
+.ngb-icon-izxx {
+    background-position: 0 -1111px;
+}
+.ngb-section {
+    width:100%;
+    margin-top:20px;
+    clear: both;
+    zoom: 1;
+}
+.ngb-content {
+    margin: 0 auto;
+    width: 90%;
+    position: relative;
+}
+.ngb-section h3,.ngb-section h4 {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    color: #4066ff;
+    font-weight: 700;
+    margin-bottom:30px;
+}
+
+
+/*谁需要办理ICP*/
+.ngb-icp{background:#f5f5f5;padding:10px 0px;}
+.ngb-icp ul{overflow:hidden;}
+.ngb-h-icp li {
+    width: 33%;
+    float: left;
+    height:290px;
+    padding:0px  40px 5px;
+    box-sizing:border-box;
+}
+.ngb-h-icp li>div{
+    width:100%;
+    height:100%;
+    border:2px solid #F76900;
+    background:#fff;
+    border-radius:5px;
+}
+.ngb-h-icp li>div:hover{
+    border:2px solid #4066ff ;
+}
+.ngb-h-icp li .icon{
+    width:100%;
+    text-align:center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.ngb-h-icp  li h5 {
+    font-size: 24px;
+    color: #404040;
+    line-height: 30px;
+    margin-bottom: 10px;
+    text-align:center;
+}
+.ngb-h-icp li p{
+    margin-top:5px;
+    font-size:14px;
+    text-align:center;
+}
+.ngb-h-icp li p:first-child{
+    margin-top:20px;
+}
+.ngb-zsy ul li.o h5 {
+    color: #4cc1e9;
+}
+.ngb-zsy ul li.t h5 {
+    color: #e55151;
+}
+.ngb-zsy ul li.r h5 {
+    color: #02b36f;
+}
+/*什么是ICP*/
+.ngb-zsy{padding:20px 0px;}
+.ngb-zsy ul {
+    overflow: hidden;
+}
+.ngb-w-icp li {
+    width: 25%;
+    float: left;
+    height:300px;
+    padding:0px  30px 5px;
+    box-sizing:border-box;
+}
+.ngb-w-icp li>div{
+    width:100%;
+    height:100%;
+    background:#f5f5f5;
+    box-shadow: 0 0 15px #666666;
+    border-radius:5px;
+}
+.ngb-w-icp li>div:hover{
+    background:#fff;
+}
+.ngb-w-icp li .icon{
+    width:100%;
+    text-align:center;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+.ngb-w-icp  li h5 {
+    font-size: 20px;
+    color: #404040;
+    text-align:center;
+}
+.ngb-w-icp li p{
+    margin-top:5px;
+    font-size:14px;
+    line-height:24px;
+    padding:10px;
+}
+.ydy-oy {
+    margin: 20px auto 36px auto;
+    width: 372px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+    border: 1px solid #d2d2d2;
+    text-align: center;
+}
+/*ICP许可证办理前需注意*/
+.ngb-banli {
+    overflow: hidden;
+    height: 550px;
+    /*background: url(../images/noise.jpg) left top repeat;*/
+    background:#f5f5f5;
+    padding:20px 0px;
+}
+.ngb-section h6 {
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+    margin: .6em;
+    font-weight: bold;
+}
+.ngb-gyhts a:link,
+.ngb-gyhts a:visited,
+.ngb-gyhts a:hover,
+.ngb-gyhts a:active,
+.ngb-zbgm a:link,
+.ngb-zbgm a:visited,
+.ngb-zbgm a:hover,
+.ngb-zbgm a:active,
+.ngb-szht a:link,
+.ngb-szht a:visited,
+.ngb-szht a:hover,
+.ngb-szht a:active,
+.ngb-banli a:link,
+.ngb-banli a:visited,
+.ngb-banli a:hover,
+.ngb-banli a:active {
+    margin: 0 auto;
+    display: block;
+    width: 136px;
+    height: 37px;
+    line-height: 37px;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    background-color: #2a9eda;
+    border-radius: 2px;
+    text-decoration: none;
+    outline: none;
+}
+.ngb-tab-panel li {
+    display: none;
+}
+.ngb-tab-panel li.active {
+    display: list-item;
+}
+.ngb-item-last {
+    margin-right: 0 !important;
+}
+.ngb-banli .ngb-tab {
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.ngb-banli .ngb-tab li {
+    float: left;
+    width: 33%;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    background-color: #1495d7;
+    transition: background-color .2s;
+}
+.ngb-banli .ngb-tab li.active,
+.ngb-banli .ngb-tab li:hover {
+    background-color: #626262;
+}
+.ngb-banli .ngb-tab-panel {
+    text-align: center;
+}
+.ngb-banli .ngb-li {
+    display: inline-block;
+}
+.ngb-banli .ngb-li-blk {
+    height: 46px;
+    line-height: 46px;
+    background-color: #fff;
+    color: #1495d7;
+    border: 1px solid #b0e4ff; cursor:pointer; 
+}
+#zyhy .ngb-li {
+    width: 279px;
+    margin-right: 26px;
+    margin-bottom: 22px;
+    color: #909090;
+}
+.ngb-banli .ngb-h5 {
+    font-size: 18px;
+    height: 25px;
+    line-height: 25px;
+    color: #545454;
+    margin: 28px 0 6px 0;
+}
+.ngb-banli .ngb-h6 {
+    font-size: 16px;
+    color: #545454;
+    margin: 6px 0 12px;
+}
+#zyhy .ngb-li-blk {
+    margin-bottom: 5px;
+}
+#zydy .ngb-li {
+    width: 189px;
+    margin-right: 63px;
+    margin-bottom: 25px;
+}
+#zyms .ngb-li {
+    width: 280px;
+    margin-right: 26px;
+    margin-bottom: 25px;
+}
+.banli-content {
+    height: 100%;
+    overflow: hidden;
+}
+.banli-content .ngb-ul {
+    font-size: 0;
+    letter-spacing: 0;
+}
+.ngb-banli .ngb-li {
+    font-size: 14px;
+}
+.ngb-ft {
+    position: absolute;
+    width: 100%;
+    bottom: 46px;
+}
+.banli-content h6 {
+    color: #000;
+    font-weight: bold;
+}
+/*ICP许可证办理条件*/
+.ngb-icp-xk{
+    padding:20px 0px;
+}
+.ngb-icp-xk ul {
+    margin-top: 20px;
+    overflow: hidden;
+}
+.ngb-icp-xk ul li {
+    float: left;
+    width: 33%;
+    height: 256px;
+    padding:0px  30px 5px;
+    box-sizing:border-box;
+}
+.ngb-icp-xk ul li>div{
+    width:100%;
+    height:100%;
+    box-shadow: 0 0 15px #666666;
+    position:relative;
+}
+.ixk-o>div {
+    background-color: #5ec7eb;
+}
+.ixk-t>div {
+    background-color: #ea7474;
+}
+.ixk-s>div {
+    background-color: #35c28c;
+    margin-right: 0 !important
+}
+.icp-item-o {
+    height: 112px;
+    margin: 0 24px;
+    border-bottom: 1px solid #afe3f5;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.ixk-t .icp-item-o {
+    border-color: #f5baba;
+}
+.ixk-s .icp-item-o {
+    border-color: #9ae1c6;
+}
+.icp-item-o .icp-item-btn {
+    margin: 30px auto 0 auto;
+    width: 157px;
+    height: 49px;
+    color: #fff;
+    border: 1px solid #fff;
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    line-height: 49px;
+}
+.icp-item-o .icp-item-btn:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 12px solid #fff;
+    border-top: none;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+}
+.ngb-icp-xk a:link,
+.ngb-icp-xk a:visited,
+.ngb-icp-xk a:hover,
+.ngb-icp-xk a:active {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 47px;
+    line-height: 47px;
+    color: #16566c;
+    text-align: center;
+    font-size: 14px;
+    background-color: #dff4fb;
+    text-decoration: none;
+    outline: none;
+}
+.ngb-icp-xk .ixk-t a {
+    background-color: #fbe3e3;
+}
+.ngb-icp-xk .ixk-s a {
+    background-color: #d7f3e8;
+}
+.icp-item-t div {
+    color: #fff;
+    font-size: #fff;
+    line-height: 20px;
+    text-indent: 24px;
+}
+.ngb-line-o {
+    height: 603px;
+    background: url(../images/line.jpg) center top no-repeat;
+}
+/*如果您准备同我们合作 您需要准备*/
+.ngb-zbgm {
+    padding: 20px 0;
+    overflow: hidden;
+    /*background: url(../images/noise.jpg) left top repeat;*/
+    background:#f5f5f5;
+}
+.ngb-line-t {
+    height: 420px;
+    background: url(../images/line-2.png) center top no-repeat;
+}
+/*关于ICP 您可能还需要*/
+.ngb-gyhts{
+    margin-bottom:40px;
+}
+.ngb-gyhts ul {
+    overflow: hidden;
+    margin: 26px 0 20px 0;
+}
+.ngb-gyhts ul li {
+    float: left;
+    width: 20%;
+    height:145px;
+    color: #464646;
+    font-size: 14px;
+    padding:10px;
+    box-sizing:border-box;
+}
+.ngb-gyhts ul li>div{
+    width:100%;
+    height:100%;
+    text-align:center;
+}
+.ngb-section h6 .jq {
+    color: #0c8acb;
+}

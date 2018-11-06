@@ -1,0 +1,291 @@
+<block name="include"><include file="./Public/header.html" /></block>
+
+  <body>
+
+    <!-- 广告轮播图 -->
+    <div class="banner">
+      <div class="bd">
+        <ul>
+          <volist name="list" id="no">
+          <li>
+            <a href="{$no['url']}">
+              <img src="__PUBLIC__/img/{$no['imgpath']}" alt="幻灯片" /></a>
+          </li>
+        </volist>
+        </ul>
+      </div>
+      <ul class="hd">
+        <li class="on"></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <block name="include"><include file="./Public/demand.html" /></block>
+          <ul></ul>
+        </div>
+      </div>
+      <script type="text/javascript" src="__PUBLIC__/home/js/layer.js"></script>
+      <script src="__PUBLIC__/home/js/yzh.js"></script>
+      <script>form_submit('demand_form');
+        jQuery(".demand_box").slide({
+          mainCell: "ul",
+          autoPlay: true,
+          effect: "topMarquee",
+          vis: 2,
+          interTime: 60
+        });</script>
+    </div>
+    <script type="text/javascript">/*SuperSlide图片切换*/
+      jQuery(".banner").slide({
+        titCell: ".hd li",
+        mainCell: ".bd ul",
+        effect: "fold",
+        autoPlay: true,
+        easing: "easeOutCirc",
+        interTime: 6000
+      });</script>
+
+    <link href="__PUBLIC__/home/css/edi.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript">
+     $(function(){
+       $(".div-title a").eq(1).addClass("ahober");// $("#top a").first().addClass("hei");
+       $(".div-title a").hover(function(){
+         $(".div-title a").removeClass("ahober");
+        $(".div-title-center .div-cenr1").eq($(this).index()).show().siblings().hide(); 
+        $(this).addClass("ahober");
+        
+      });
+       })
+    </script>
+
+    <!--什么是EDI许可证代码开始-->
+    <div class="main" style="height:350px;">
+      <h2 class="about-h2 about-h23">&nbsp;什么是EDI许可证</h2>
+        <ul class="call-center1 ">
+          <li style=" margin-left:0">
+                <h3>标准含义</h3>
+                <p>通过公用通信网或互联网为用户提供在线数据处理和交易/事物处理的业务牌照，简称EDI证。</p>
+            </li>
+            <li>
+                <h3>审批机构</h3>
+                <p>跨地区业务在工信部办理，省内业务在各省通信管理局办理</p>
+            </li>
+            <li>
+                <h3>年检要求</h3>
+                <p style="text-align:center; padding:30px 0 0;">地网是每年的1-3月；全网是每年3-6月</p>
+            </li>
+            <li>
+                <h3>有效期限</h3>
+                <p>使用年限为5年有效期、5年后需要办理续期</p>
+            </li>
+        </ul>
+        
+        
+        
+    </div>
+<!--什么是EDI许可证代码结束-->
+
+<!--申请EDI许可证需要什么条件开始-->
+
+     <div class="main" style="height:600px;">
+         <h2 class="about-h2">&nbsp;&nbsp;申请EDI许可证需要什么条件</h2>
+         <div class="about-tit">
+                <div class="div-title div-title22">
+                    <a>全网EDI证</a>
+                    <a>地网EDI证</a>
+                </div>
+                <div class="div-title-center div-title-center22">
+                  <div class="div-cenr1"  >
+                      <p class="div-tit-p" >可以在全国开展业务的叫做全网EDI许可证</p>
+                        <div class="city city2 ">
+                          <a class="hz" >经营者为依法设立的公司</a><a class="ji1" >有与开展经营活动<br />相适应的资金和专业人员</a><a class="ji1">有为用户提供长期<br />服务的信誉或者能力</a><a class="ji2" >在全国或者跨省、自治区、<br />直辖市范围经营的，注册资本<br />最低限额为1000万元人民币</a>
+                            
+                        </div>
+                        
+                        <div class="city city1 city2 ">
+                          <a class="hz" >有必要的场地、设施</a><a class="ji2">公司及其主要出资者和主要经营<br />管理人员三年内无违反电信<br />监督管理制度的违法记录</a><a  class="ji1">有可行性研究报告<br />和相关技术方案</a><a >国家规定的其他条件</a>
+                            
+                        </div>
+                    	<a class="zixun" href="javascript:window.location=%27https://tsm.miit.gov.cn/pages/home.aspx%27" target="_blank" style="background: #9481f5;width: 36%;border-radius: 3px;">增值电信业务经营许可证查询</a>
+                        <p class="z-p" style="margin-top: 4px;">"国家规定的其他条件"具体指什么？赶快找我们的客服咨询吧~</p>
+                  		<a class="zixun" href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank" style="margin-top: 1px;">立即咨询</a>
+                    </div>
+                  <div class="div-cenr1" style="display:none"  >
+                      <p class="div-tit-p" >地网EDI许可证是指只在省内开展业务</p>
+                        <div class="city city2 ">
+                          <a class="hz" >经营者为依法设立的公司</a><a class="ji1">有与开展经营活动<br />相适应的资金和专业人员</a><a class="ji1">有为用户提供长期<br />服务的信誉或者能力</a><a class="ji2" >在省、自治区、直辖市<br />范围内经营的，注册资本<br />最低限额为100万元人民币</a>
+                            
+                        </div>
+                        
+                        <div class="city city1 city2 ">
+                          <a class="hz" >有必要的场地和设施</a><a class="ji2">公司及其主要出资者和主要经营<br />
+管理人员三年内无违反电信<br />
+监督管理制度的违法记录</a><a class="ji1">有可行性研究报告<br />和相关技术方案等</a><a >国家规定的其他条件</a>
+                            
+                        </div>
+                        
+                        <p class="z-p z-p1 z-p12" >"国家规定的其他条件“具体指什么？每个地区的通信管理部门不一样哦，赶快找我们的客服咨询吧~</p>
+                  <a class="zixun " href="javascript:window.location=%http://chuangha.com%27" target="_blank">立即咨询</a>
+                    </div>
+                </div>
+            </div>
+     </div>
+<!--申请EDI许可证需要什么条件结束-->
+<!--选择厦门 再无繁杂的流程开始-->
+
+     <div class="main" style="height:710px;">
+         <h2 class="about-h2">选择厦门 再无繁杂的流程</h2>
+         <div class="zt">
+      <div class="zt1">
+          <div class="zt1-left left">
+              <h3>官方流程</h3>
+                <ul>
+                  <li style="margin-top:10px;"><span>1</span><p>申请码号的单位准备材料</p></li>
+                    <li><span style=" margin-right:12px;">2</span><p>向主管部门提交申请材料&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font style="color:#686868">材料不齐备</font></p></li>
+                    <li class="zt-span2"><p style="color:#686868">向申请者发出不予受理申请通知书，并说明理由</p></li>
+                    <li><span>3</span><p>向申请者发出加盖部章的受理申请通知书</p></li>
+                    <li><span>4</span><p>将材料分送相关司局进行审查</p></li>
+                    <li><span>5</span><p>受理后60日内作出是否批准经营的决定</p></li>
+                    <li class="zt-span2"><p style="color:#686868">书面通知申请者，并说明理由</p></li>
+                    <li><span>7</span><p>办法批复文件</p></li>
+                </ul>
+            </div>
+            <div class="zt1-left zt1-left1 right">
+              <h3>厦门办理流程</h3>
+                <ul>
+                  <li style="margin-top:10px;"><span>1</span><p>咨询业务意向（确定您的办理类型）</p></li>
+                    <li><span>2</span><p>商务合作洽谈（为您制定合适的方案）</p></li>
+                    <li><span>3</span><p>基础材料准备（协助您准备所需材料）</p></li>
+                    <li><span>4</span><p>提交审核（剩下的事就交给我们了）</p></li>
+                    <li><span>5</span><p>领取许可证</p></li>
+
+                </ul>
+            </div>
+        </div>
+            
+        </div>
+        <p class="z-p" style="margin-top:50px; color:#0e0e0e">厦门办理时间远低于官方流程时间，最快60工作日办结,如需加急联系客服</p>
+         <a class="zixun" href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank">立即咨询</a>
+         </div>
+<!--选择厦门 再无繁杂的流程结束-->
+<!--如果您准备同我们合作 您需要准备开始-->
+
+     <div class="main" style=" height:520px; margin-top:10px;">
+          <h2 class="about-h2 about-h24">&nbsp;如果您准备同我们合作 您需要准备</h2>
+            <ul class="hezuo">
+              <li style=" margin-left:0">
+                  <b></b>
+                    <p>营业执照副本</p>
+                </li>
+                <li class="data1">
+                  <b ></b>
+                    <p>法人及股东身份证（注：股东<br />为企业，需提供营业执照及公<br />司章程）</p>
+                </li>
+                <li  class="data2">
+                  <b></b>
+                    <p>网络与信息安全保障措施研究<br />报告</p>
+                </li>
+                <li  class="data3">
+                  <b></b>
+                    <p>公司主要管理人员及技术人员<br />身份证</p>
+                </li>
+                 <li  class="data4">
+                  <b></b>
+                    <p>域名注册证书</p>
+                </li>
+            </ul>
+            <div class="clear"></div>
+            <ul class="hezuo" style=" margin-top:22px;">
+              <li class="data5" style=" margin-left:0">
+                  <b></b>
+                    <p>服务器租赁（托管）协议</p>
+                </li>
+                <li class="data6">
+                  <b ></b>
+                    <p>服务器接入方的ISP/IDC证</p>
+                </li>
+                <li  class="data7">
+                  <b></b>
+                    <p>为用户提供长期服务和质量保<br />障措施研究报告</p>
+                </li>
+                <li  class="data8">
+                  <b></b>
+                    <p>业务发展和实施计划研究报告</p>
+                </li>
+                 <li  class="data9">
+                  <b></b>
+                    <p>技术方案研究报告</p>
+                </li>
+            </ul>
+            <div class="clear"></div>
+            <p style="margin-top:50px; color:#0e0e0e" class="z-p">太过繁杂？咨询厦门帮您整理</p>
+            <a class="zixun" href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank">立即咨询</a>
+          </div>
+<!--如果您准备同我们合作 您需要准备结束-->
+<!--厦门服务保障开始-->
+
+     <div class="main" style=" height:492px;" >
+          <h2 class="about-h2 about-h25">厦门服务保障</h2>
+            <ul class="call-baoz">
+              <li style=" margin-left:0"><div><span></span></div><b>经验丰富</b>10年经验为您保驾护航</li>
+                <li><div><span class="call-span1"></span></div><b>一站式服务</b>各个环节保障服务顺畅</li>
+                <li><div><span class="call-span2"></span></div><b>一对一高效服务</b>专业对接人员,帮你节省不必要环节</li>
+            </ul>
+             <ul class="call-baoz" style=" margin-top:30px;">
+              <li style=" margin-left:0"><div><span class="call-span3"></span></div><b>信息保密
+</b>自有服务器保障客户数据安全<br />
+专人保障客户资料免遭外泄</li>
+                <li><div><span class="call-span4"></span></div><b>专业品质
+</b>服务均由3年以上资深人士操作保障品质</li>
+                <li><div><span class="call-span5"></span></div><b>全程服务
+</b>售前咨询，下单5分钟内响应，关键环节100%提醒</li>
+            </ul>
+     </div>
+<!--厦门服务保障结束-->
+
+<!--您可能还需要开始-->
+
+     <div class="main" style=" height:380px;">
+          <h2 class="about-h2 about-h25">您可能还需要</h2>
+            <div class="call-whj" style=" margin-top:40px;">
+              <a class="lil10" href="javascript:window.location=%http://chuangha.com%27" target="_blank">
+                  <span class="l-span4"></span>
+                  <h3>呼叫中心许可证</h3>
+                    <p>企业运营电话呼入和呼出业务<br />服务，必须要办的许可证。</p>
+                    <font class="banli" >咨询办理</font>
+                </a>
+                <a class="lil10" href="javascript:window.location=%http://chuangha.com%27" target="_blank">
+                  <span class="l-span1"></span>
+                  <h3>SP证书</h3>
+                    <p>SP证是在移动端涉及经营性<br />以及提供有偿信息服务时申请的。</p>
+                    <font class="banli">咨询办理</font>
+                </a>
+                <a class="lil10" href="javascript:window.location=%http://chuangha.com%27" target="_blank">
+                  <span class="l-span2"></span>
+                  <h3>网络文化经营许可证</h3>
+                    <p>从事经营性互联网文化活动<br />的互联网信息服务提供者的<br />市场合法准入资质。</p>
+                    <font class="banli" >咨询办理</font>
+                </a>
+              
+                
+                
+                 <a class="lil10" href="javascript:window.location=%http://chuangha.com%27" target="_blank">
+                  <span class="l-span3"></span>
+                  <h3>游戏备案</h3>
+                    <p>游戏运营您需要两种备案：<br />一种是游戏运营备案；<br />一种是游戏出版备案。</p>
+                    <font class="banli">咨询办理</font>
+                </a>
+                <a style=" margin-left:0" class="lil10" href="javascript:window.location=%http://chuangha.com%27" target="_blank">
+                  <span></span>
+                  <h3>ICP证书</h3>
+                    <p>ICP证是在网站涉及经营性<br />以及提供有偿信息服务时申请的。</p>
+                    <font class="banli" >咨询办理</font>
+                </a>
+                
+               
+            </div>
+     
+     </div>
+<!--您可能还需要结束-->
+
+    <block name="include"><include file="./Public/footer.html" /></block>
+    

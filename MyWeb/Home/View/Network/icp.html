@@ -1,0 +1,332 @@
+<block name="include">
+    <include file="./Public/header.html" />
+</block>
+
+<body>
+    <!-- 广告轮播图 -->
+    <div class="banner">
+        <div class="bd">
+            <ul>
+                <volist name="list" id="no">
+                    <li>
+                        <a href="{$no['url']}">
+              <img src="__PUBLIC__/img/{$no['imgpath']}" alt="幻灯片" /></a>
+                    </li>
+                </volist>
+            </ul>
+        </div>
+        <ul class="hd">
+            <li class="on"></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <!-- <block name="include">
+            <include file="./Public/demand.html" />
+        </block> -->
+    </div>
+    </div>
+    <script type="text/javascript" src="__PUBLIC__/home/js/layer.js"></script>
+    <script src="__PUBLIC__/home/js/yzh.js"></script>
+    <script>
+    form_submit('demand_form');
+    jQuery(".demand_box").slide({
+        mainCell: "ul",
+        autoPlay: true,
+        effect: "topMarquee",
+        vis: 2,
+        interTime: 60
+    });
+    </script>
+    </div>
+    <script type="text/javascript">
+    /*SuperSlide图片切换*/
+    jQuery(".banner").slide({
+        titCell: ".hd li",
+        mainCell: ".bd ul",
+        effect: "fold",
+        autoPlay: true,
+        easing: "easeOutCirc",
+        interTime: 6000
+    });
+    </script>
+    <link href="__PUBLIC__/home/css/icp.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript">
+    $(function() {
+        $(".div-title a").eq(1).addClass("ahober"); // $("#top a").first().addClass("hei");
+        $(".div-title a").hover(function() {
+            $(".div-title a").removeClass("ahober");
+            $(".div-title-center .div-cenr1").eq($(this).index()).show().siblings().hide();
+            $(this).addClass("ahober");
+
+        });
+    })
+    </script>
+    <div class="ngb-wrap">
+        <div class="ngb-section ngb-icp m-t-30">
+            <div class="ngb-content">
+                <h4>谁需要办理ICP？</h4>
+                <ul class="ngb-h-icp">
+                    <li class="o">
+                        <div>
+                            <div class="icon"><i class="ngb-sprite ngb-icon-wsite"></i></div>
+                            <h5>哪些网站需要办理</h5>
+                            <p>你的网站是否有在线交易或购买？</p>
+                            <p>你的网站是经营性质的么？</p>
+                            <p>你的网站收费么了么？</p>
+                        </div>
+                    </li>
+                    <li class="t">
+                       <div>
+                            <div class="icon"><i class="ngb-sprite ngb-icon-wcop"></i></div>
+                            <h5>哪些企业需要办理</h5>
+                            <p>你的企业打算建线上交易网站？</p>
+                            <p>你的企业打算往线上发展么？</p>
+                       </div>
+                    </li>
+                    <li class="r">
+                        <div>
+                            <div class="icon"><i class="ngb-sprite ngb-icon-wper"></i></div>
+                            <h5>哪些个人需要办理</h5>
+                            <p>创业者，经营性网站站长。</p>
+                            <p>打算经营收费性网站的人。</p>
+                        </div>
+                    </li>
+                </ul>
+                <div style="width:100%;text-align:center;margin:15px 0;">
+                    <a href="javascript:window.location=%27https://tsm.miit.gov.cn/pages/home.aspx%27" target="_blank" class="ydy-oy" style="background: #1495d7;padding:5px 2%;font-size:15px;color: white;border: none;border-radius: 4px;">增值电信业务经营许可证查询</a>
+                </div>
+            </div>
+        </div>
+        <div class="ngb-section ngb-zsy ">
+            <div class="ngb-content zsy-content">
+                <!-- <h3 class="pat">关于ICP 您需要了解</h3> -->
+                <h4>什么是ICP?</h4>
+                <ul class="ngb-w-icp">
+                    <li>
+                        <div>
+                            <div class="icon"><i class="ngb-sprite ngb-icon-bzhy"></i></div>
+                            <h5>标准含义</h5>
+                            <p>中华人民共和国电信与信息服务业务经营许可证（简称：ICP许可证）是指一般性经营性网站的主办者向当地区县申请的证书证明，即《中华人民共和国电信与信息服务业务经营许可证》。</p> 
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="icon"><i class="ngb-sprite ngb-icon-spjg"></i></div>
+                            <h5>审批机构</h5>
+                            <p>企业注册地所在省、自治区、直辖市的通信管理局进行审批</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="icon"><i class="ngb-sprite ngb-icon-njyq"></i></div>
+                            <h5>年检要求</h5>
+                            <p>ICP证年检是每年的1月4号——3月31号</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="icon"><i class="ngb-sprite ngb-icon-yxqx"></i></div>
+                            <h5>有效期限</h5>
+                            <p>ICP经营许可证使用年限为5年、5年后需要办理续期</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="ngb-section ngb-banli">
+            <div class="ngb-content banli-content">
+                <h3>ICP许可证办理前需注意</h3>
+                <ul class="ngb-tab">
+                    <li data-target="#zyhy" class="active">注意所从事行业</li>
+                    <li data-target="#zydy">注意ICP申请地域</li>
+                    <li data-target="#zyms">注意业务的盈利模式</li>
+                </ul>
+                <ul class="ngb-tab-panel">
+                    <li id="zyhy" class="active" style="text-align: center;">
+                        <div class="ngb-h5"> </div>
+                        <div class="ngb-h6">如网站中含有前置审批(特殊行业)内容，则需要首先通过行业前置审批后才可以申请ICP许可证</div>
+                        <div class="ngb-ul n-1">
+                            <div class="ngb-li">
+                                <div href="javascript:window.location=%27http://www.chuangha.com/%27" target="_blank" class="ngb-li-blk">论坛类</div> BBS论坛(电子公告服务)
+                            </div>
+                            <div class="ngb-li">
+                                <div href="javascript:window.location=%27http://www.chuangha.com/%27" target="_blank" class="ngb-li-blk">药品信息类</div> 互联网药品信息服务许可证
+                            </div>
+                            <div class="ngb-li">
+                                <div href="javascript:window.location=%27http://www.chuangha.com/%27" target="_blank" class="ngb-li-blk">药品交易类</div> 互联网药品交易资格证
+                            </div>
+                            <div class="ngb-li ngb-item-last">
+                                <div href="javascript:window.location=%27http://www.chuangha.com/%27" target="_blank" class="ngb-li-blk">医疗服务类</div> 医疗保健信息前置审批
+                            </div>
+                            <div class="ngb-li">
+                                <div href="javascript:window.location=%27http://www.chuangha.com/%27" target="_blank" class="ngb-li-blk">广播类</div> 广播电视节目制作经营许可证
+                            </div>
+                            <div class="ngb-li">
+                                <div href="javascript:window.location=%27http://www.chuangha.com/%27" target="_blank" class="ngb-li-blk">出版类</div> 互联网出版许可证
+                            </div>
+                            <div class="ngb-li">
+                                <div href="javascript:window.location=%27http://www.chuangha.com/%27" target="_blank" class="ngb-li-blk">新闻类</div> 互联网新闻信息服务许可证
+                            </div>
+                            <div class="ngb-li ngb-item-last">
+                                <div href="javascript:window.location=%27http://www.chuangha.com/%27" target="_blank" class="ngb-li-blk">视频类</div> 信息网络传播视听节目许可证
+                            </div>
+                        </div>
+                        <div class="ngb-ft">
+                            <h6>“来厦门这些证也能帮你办理”</h6><a href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank">立即咨询</a>
+                        </div>
+                    </li>
+                    <li id="zydy">
+                        <div class="ngb-h5"> </div>
+                        <div class="ngb-h6">ICP许可证由企业注册所在地的通信管理局审批，各地区政策有区别</div>
+                        <div class="ngb-ul n-1">
+                            <div class="ngb-li">
+                                <div href="javascript:window.location=%27http://www.chuangha.com/%27" target="_blank" class="ngb-li-blk">北京</div>
+                            </div>
+                            <div class="ngb-li">
+                                <div href="javascript:window.location=%27http://www.chuangha.com/%27" target="_blank" class="ngb-li-blk">上海</div>
+                            </div>
+                            <div class="ngb-li">
+                                <div href="javascript:window.location=%27http://www.chuangha.com/%27" target="_blank" class="ngb-li-blk">广州</div>
+                            </div>
+                            <div class="ngb-li">
+                                <div href="javascript:window.location=%27http://www.chuangha.com/%27" target="_blank" class="ngb-li-blk">深圳</div>
+                            </div>
+                            <div class="ngb-li ngb-item-last">
+                                <div href="javascript:window.location=%27http://www.chuangha.com/%27" target="_blank" class="ngb-li-blk">杭州</div>
+                            </div>
+                            <div class="ngb-li">
+                                <div href="javascript:window.location=%27http://www.chuangha.com/%27" target="_blank" class="ngb-li-blk">天津</div>
+                            </div>
+                            <div class="ngb-li">
+                                <div href="javascript:window.location=%27http://www.chuangha.com/%27" target="_blank" class="ngb-li-blk">西安</div>
+                            </div>
+                            <div class="ngb-li">
+                                <div href="javascript:window.location=%27http://www.chuangha.com/%27" target="_blank" class="ngb-li-blk">南京</div>
+                            </div>
+                            <div class="ngb-li">
+                                <div href="javascript:window.location=%27http://www.chuangha.com/%27" target="_blank" class="ngb-li-blk">武汉</div>
+                            </div>
+                            <div class="ngb-li ngb-item-last">
+                                <div href="javascript:window.location=%27http://www.chuangha.com/%27" target="_blank" class="ngb-li-blk">更多城市</div>
+                            </div>
+                        </div>
+                        <div class="ngb-ft">
+                            <h6>厦门在全国各地开设分支机构，可为全国客户服务”</h6><a href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank">立即咨询</a>
+                        </div>
+                    </li>
+                    <li id="zyms">
+                        <div class="ngb-h5">在线盈利模式包括</div>
+                        <div class="ngb-h6">互联网有偿信息服务，包括在线销售、在线支付、广告招商、会员收费、企业合作、项目投标等</div>
+                        <div class="ngb-ul n-1">
+                            <div class="ngb-li">
+                                <div href="javascript:window.location=%27http://www.chuangha.com/%27" target="_blank" class="ngb-li-blk">电商网站ICP许可证</div>
+                            </div>
+                            <div class="ngb-li">
+                                <div href="javascript:window.location=%27http://www.chuangha.com/%27" target="_blank" class="ngb-li-blk">互联网广告类ICP许可证</div>
+                            </div>
+                            <div class="ngb-li">
+                                <div href="javascript:window.location=%27http://www.chuangha.com/%27" target="_blank" class="ngb-li-blk">游戏网站ICP许可证</div>
+                            </div>
+                            <div class="ngb-li ngb-item-last">
+                                <div href="javascript:window.location=%27http://www.chuangha.com/%27" target="_blank" class="ngb-li-blk">充值类网站ICP许可证</div>
+                            </div>
+                            <div class="ngb-li">
+                                <div href="javascript:window.location=%27http://www.chuangha.com/%27" target="_blank" class="ngb-li-blk">导购类网站ICP许可证</div>
+                            </div>
+                            <div class="ngb-li">
+                                <div href="javascript:window.location=%27http://www.chuangha.com/%27" target="_blank" class="ngb-li-blk">一般行业ICP许可证</div>
+                            </div>
+                            <div class="ngb-li ngb-item-last">
+                                <div href="javascript:window.location=%27http://www.chuangha.com/%27" target="_blank" class="ngb-li-blk">更多行业</div>
+                            </div>
+                        </div>
+                        <div class="ngb-ft">
+                            <h6>“厦门拥有丰富的各类行业ICP办理经验”</h6><a href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank">立即咨询</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="ngb-section ngb-icp-xk">
+            <div class="ngb-content icp-xk-content">
+                <h3>ICP许可证办理条件</h3>
+                <ul>
+                    <li class="ixk-o">
+                        <div>
+                            <div class="icp-item-o">
+                                <div class="icp-item-btn">基本条件</div>
+                            </div>
+                            <div class="icp-item-t">
+                                <div>公司注册资金100万以上</div>
+                                <div>公司属于内资企业</div>
+                                <div>（外资占股比例不得超过49%以上）</div>
+                            </div>
+                            <a href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank">立即咨询</a>
+                        </div>
+                    </li>
+                    <li class="ixk-t">
+                        <div>
+                            <div class="icp-item-o">
+                                <div class="icp-item-btn">客观条件</div>
+                            </div>
+                            <div class="icp-item-t">
+                                <div>社保要求：人数</div>
+                                <div>技术人员要求：学历</div>
+                                <div>服务器空间托管要求：托管地/托管商</div>
+                            </div>
+                            <a href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank">立即咨询</a>
+                        </div>
+                    </li>
+                    <li class="ixk-s">
+                        <div>
+                            <div class="icp-item-o">
+                                <div class="icp-item-btn">其他条件</div>
+                            </div>
+                            <div class="icp-item-t">
+                                <div>申请企业性质要求</div>
+                                <div>专业资料撰写要点及格式要求</div>
+                            </div>
+                            <a href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank">立即咨询</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="ngb-section ngb-szht">
+            <h3>选择厦门 办理ICP再无繁杂的流程</h3>
+            <div class="ngb-line-o"></div>
+            <h6>“厦门办理时间远低于官方流程时间，最快<span class="jq">60工作日</span>办结,如需加急联系客服”</h6><a href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank">立即咨询</a>
+        </div>
+        <div class="ngb-section ngb-zbgm">
+            <h3>如果您准备同我们合作 您需要准备</h3>
+            <div class="ngb-line-t"></div>
+            <h6>太过繁杂？咨询厦门帮您梳理</h6><a href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank">立即咨询</a>
+        </div>
+        <div class="ngb-section ngb-gyhts">
+            <div class="ngb-content gyhts-content">
+                <h3 >关于ICP 您可能还需要</h3>
+                <ul>
+                    <li>
+                        <div><i class="ngb-sprite ngb-icon-onj"></i><p>ICP年检</p></div>
+                    </li>
+                    <li>
+                        <div><i class="ngb-sprite ngb-icon-ibg"></i><p>ICP变更</p></div>
+                    </li>
+                    <li>
+                        <div><i class="ngb-sprite ngb-icon-izx"></i><p>ICP增项</p></div>
+                    </li>
+                    <li >
+                        <div><i class="ngb-sprite ngb-icon-ixq"></i><p>ICP续期</p></div>
+                    </li>
+                    <li >
+                        <div><i class="ngb-sprite ngb-icon-izxx"></i><p>ICP注销</p></div>
+                    </li>
+                </ul>
+                <h6>这些来厦门都能帮您办到</h6>
+                <a href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank">立即咨询</a>
+            </div>
+        </div>
+    </div>
+    <block name="include">
+        <include file="./Public/footer.html" />
+    </block>

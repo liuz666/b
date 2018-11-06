@@ -1,0 +1,176 @@
+
+<!-- 尾部 -->
+<div class="footer">
+    <div class="grWidth footMain">
+        <div class="footLeft fl">
+            <ul class="footMenu">
+                <li>
+                    <h3>关于我们</h3>
+                </li>
+                <li>
+                    <a href="__MODULE__/About/index">公司简介</a></li>
+                <!-- <li>
+              <a href="/a/guanyu/gsdt/">公司动态</a></li> -->
+                <li>
+                    <a href="__MODULE__/About/team">服务团队</a></li>
+                <li>
+                    <a href="__MODULE__/Contact/index">联系我们</a></li>
+            </ul>
+            <ul class="footMenu">
+                <li>
+                    <h3>服务项目</h3>
+                </li>
+                <li>
+                    <a href="__MODULE__/Service/index">公司注册</a></li>
+                <li>
+                    <a href="__MODULE__/Service/index">行政资质审批</a></li>
+                <li>
+                    <a href="__MODULE__/Service/index">资源转化</a></li>
+                <li>
+                    <a href="__MODULE__/Service/index">解决方案</a></li>
+            </ul>
+            <ul class="footMenu">
+                <li>
+                    <h3>知识课堂</h3>
+                </li>
+                <li>
+                    <a href="__MODULE__/Classroom/index/status/'行业动态'">知识课堂</a></li>
+                <li>
+                    <a href="__MODULE__/Classroom/index/status/行业动态">行业动态</a></li>
+                <li>
+                    <a href="__MODULE__/Classroom/index/status/常见问题">常见问题</a></li>
+                <li>
+                    <a href="__MODULE__/Classroom/index/status/FAQ">FAQ</a></li>
+            </ul>
+            <ul class="footMenu">
+                <li>
+                    <h3>友情链接</h3>
+                </li>
+                <li>
+                    <volist name="sre" id="srow">
+                <li>
+                    <a href='{$srow['url']}' target='_blank'>{$srow['name']}</a></li>
+                </volist>
+                </li>
+            </ul>
+        </div>
+        <div class="footRight ">
+            <div class="foot_wx">
+                <volist name="list4" id="li4">
+                    <img class="fl" src="__PUBLIC__/image/{$li4['pic']}" alt="扫描二维码关注创哈网络微信">
+                    <p>扫描二维码<br />关注创哈网络微信<br />创业一手掌握</p>
+                </volist>
+            </div>
+            <div class="footContact" style="white-space:normal; width:300px;">
+                <h4>
+                <span>服务热线</span>
+                <strong>{$li4['phone']}</strong></h4>厦门公司地址：{$li4['address2']}<br />
+                <br />{$li4['gtime']}
+            </div>
+        </div>
+        
+    </div>
+    <div class="footBottom">
+        <div class="grWidth">
+            <div class="fl">{$li4['address']}
+                <volist name="list4" id="lp">
+                    <a href="http://www.miibeian.gov.cn" target="_blank">{$lp['ICP']}</a>
+                </volist>
+                <br />
+            </div>
+            <div class="fr" style="margin-top:0px">
+                <a href="#">
+              <img src="__PUBLIC__/home/images/f1.jpg" alt="可信网站身份验证" height="47"></a>
+                <a href="#">
+              <img src="__PUBLIC__/home/images/f2.jpg" alt="360安全网站检测" height="47"></a>
+                <a href="#">
+              <img src="__PUBLIC__/home/images/f3.jpg" alt="ISO认证900" height="47"></a>
+            </div>
+        </div>
+    </div>
+    <script>
+    jQuery(".navMenu").slide({
+        type: "menu",
+        titCell: ".m",
+        targetCell: ".navMenu_sub",
+        effect: "fade",
+        delayTime: 300,
+        triggerTime: 0,
+        returnDefault: true,
+        defaultPlay: false
+    });
+    $(function() {
+        $('.topRight .wx').hover(function() {
+            $(this).find('span').stop().slideToggle();
+        });
+        $('.navBox .navIcon').click(function() {
+            $('.navMenu').stop().slideToggle();
+        });
+    });
+    </script>
+    <script>
+    window._bd_share_config = {
+        "common": {
+            "bdSnsKey": {},
+            "bdText": "",
+            "bdMini": "2",
+            "bdMiniList": false,
+            "bdPic": "",
+            "bdStyle": "0",
+            "bdSize": "16"
+        },
+        "slide": {
+            "type": "slide",
+            "bdImg": "5",
+            "bdPos": "left",
+            "bdTop": "160.5"
+        }
+    };
+    with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+    <div class="kefuBox" id="kefu">
+        <!-- <div class="kefuRight">
+            <div class="kefuTop"></div>
+            <div class="kefuCont">
+              <ul>
+                <a target="_blank" href="tencent://message/?uin={$li4['qq']}" rel="nofollow">
+                  <li class="qq">{$li4['name']}</li></a>
+                <a target="_blank" href="tencent://message/?uin={$li4['sqq']}" rel="nofollow">
+                  <li class="qq">{$li4['sname']}</li></a>
+                <li class="codeer">
+                  <p>扫一扫,关注我们</p>
+                  <span>
+                    <img src="__PUBLIC__/image/{$li4['pic']}" /></span>
+                </li>
+              </ul>
+            </div>
+            <div class="kefuBottom"></div>
+          </div> -->
+        </volist>
+    </div>
+    <script>
+    $('#kefu .kefuClose').click(function() {
+        $('#kefu .kefuLeft').animate({
+                width: '30px'
+            },
+            500);
+        $('#kefu .kefuRight').animate({
+                width: 0
+            },
+            100);
+    });
+    $('.kefuLeft').click(function() {
+        $(this).animate({
+                width: 0
+            },
+            100);
+        $('.kefuRight').animate({
+                width: '154px'
+            },
+            100);
+    });
+    </script>
+    <script type="text/javascript" src="//js.users.51.la/19398015.js"></script>
+    </body>
+
+    </html>
