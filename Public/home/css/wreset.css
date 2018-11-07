@@ -7,7 +7,7 @@
 .p-l-5{padding-left:5px;}
 
 .main,.main2-center,.main4{ width:90%; margin:10px auto 10px; overflow:hidden}
-.about-h2{ font-size:24px; margin-top:57px; height:54px; border-bottom:1px solid #e6e6e6; text-align:center;font-weight:700;color:#4066ff;}
+.about-h2{ font-size:24px;height:54px;text-align:center;font-weight:700;color:#4066ff;}
 
 
 .main-box{width:100%;background:#f2f1ef;padding:10px 0;}
@@ -82,7 +82,7 @@
 .zt1-left ul li.zt-span1 p{ margin-left:50px; display:inline; color:#828282}
 
 /*如果您准备同我们合作 您需要准备*/
-.main2{ width:100%;padding:10px 0;background:#f5f5f5;}
+.main2{ width:100%;padding:10px 0;}
 .main2 h2{margin-top:20px;line-height:50px;}
 .main2 .ngb-line-t ul{overflow:hidden;}
 .main2 .ngb-line-t ul li{
@@ -90,6 +90,7 @@
     height:100px;
     float:left;
     padding:10px 25px;
+    margin-top:20px;
     box-sizing:border-box;
 }
 .main2 .ngb-line-t ul li p{
@@ -100,7 +101,7 @@
     line-height: 24px;
     background:#fff;
     font-size:14px;
-    color:#666;
+    color:#999;
     border:1px dotted #E76162;
     box-shadow: 0 0 15px #666666;
     position:relative;
@@ -147,8 +148,8 @@
     -ms-transform: rotate(136deg);
 }
 
-.main4{ width:90%;margin:0 auto;height:190px;border-bottom:1px solid #e6e6e6; overflow:hidden}
-.main4 a{ float:left; width:20%; display:inline-block;text-align:center;  margin-top:31px; color:#484848}
+.main4{ width:90%;margin:0 auto;height:190px;overflow:hidden}
+.main4 a{ float:left; width:20%; display:inline-block;text-align:center;margin-top:31px; color:#484848}
 .main4 a.main4-li4{ margin-right:0}
 .main4 a p{ text-align:center; color:#464646; font-size:14px; margin-top:11px;}
 .main6{ height:465px; margin-top:43px;}
