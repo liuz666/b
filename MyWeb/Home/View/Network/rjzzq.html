@@ -1,164 +1,222 @@
-<block name="include"><include file="./Public/header.html" /></block>
+<block name="include">
+    <include file="./Public/header.html" />
+</block>
 
-  <body>
-
+<body>
     <!-- 广告轮播图 -->
     <div class="banner">
-      <div class="bd">
-        <ul>
-          <volist name="list" id="no">
-          <li>
-            <a href="{$no['url']}">
+        <div class="bd">
+            <ul>
+                <volist name="list" id="no">
+                    <li>
+                        <a href="{$no['url']}">
               <img src="__PUBLIC__/img/{$no['imgpath']}" alt="幻灯片" /></a>
-          </li>
-        </volist>
-        </ul>
-      </div>
-      <ul class="hd">
-        <li class="on"></li>
-        <li></li>
-        <li></li>
-      </ul>
-      <block name="include"><include file="./Public/demand.html" /></block>
-          <ul></ul>
+                    </li>
+                </volist>
+            </ul>
         </div>
-      </div>
-      <script type="text/javascript" src="__PUBLIC__/home/js/layer.js"></script>
-      <script src="__PUBLIC__/home/js/yzh.js"></script>
-      <script>form_submit('demand_form');
-        jQuery(".demand_box").slide({
-          mainCell: "ul",
-          autoPlay: true,
-          effect: "topMarquee",
-          vis: 2,
-          interTime: 60
-        });</script>
+        <ul class="hd">
+            <li class="on"></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <!-- <block name="include">
+            <include file="./Public/demand.html" />
+        </block> -->
     </div>
-    <script type="text/javascript">/*SuperSlide图片切换*/
-      jQuery(".banner").slide({
+    </div>
+    <script type="text/javascript" src="__PUBLIC__/home/js/layer.js"></script>
+    <script src="__PUBLIC__/home/js/yzh.js"></script>
+    <script>
+    form_submit('demand_form');
+    jQuery(".demand_box").slide({
+        mainCell: "ul",
+        autoPlay: true,
+        effect: "topMarquee",
+        vis: 2,
+        interTime: 60
+    });
+    </script>
+    </div>
+    <script type="text/javascript">
+    /*SuperSlide图片切换*/
+    jQuery(".banner").slide({
         titCell: ".hd li",
         mainCell: ".bd ul",
         effect: "fold",
         autoPlay: true,
         easing: "easeOutCirc",
         interTime: 6000
-      });</script>
-
-    <link href="__PUBLIC__/home/css/rjzzq.css" type="text/css" rel="stylesheet"/>
-    <script type="text/javascript">
-     $(function(){
-       $(".div-title a").eq(1).addClass("ahober");// $("#top a").first().addClass("hei");
-       $(".div-title a").hover(function(){
-         $(".div-title a").removeClass("ahober");
-        $(".div-title-center .div-cenr1").eq($(this).index()).show().siblings().hide(); 
-        $(this).addClass("ahober");
-        
-      });
-       })
+    });
     </script>
-
+    <link href="__PUBLIC__/home/css/rjzzq.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript">
+    $(function() {
+        $(".div-title a").eq(1).addClass("ahober"); // $("#top a").first().addClass("hei");
+        $(".div-title a").hover(function() {
+            $(".div-title a").removeClass("ahober");
+            $(".div-title-center .div-cenr1").eq($(this).index()).show().siblings().hide();
+            $(this).addClass("ahober");
+        });
+    })
+    </script>
     <div id="content">
-<div class="textBox1 grWidth icpBox" id="icpBox1">
-  <div class="left fl">
-    <h2 class="iTitle"><span>What is software copyright?</span><strong>什么是软件著作权?</strong></h2>
-    <div class="font">
-      计算机软件著作权是指软件的开发者或者其他权利人依据有关著作权法律的规定，对于软件作品所享有的各项专有权利。就权利的性质而言，它属于一种民事权利，具备民事权利的共同特征。软件经过登记后，软件著作权人享有发表权、开发者身份权、使用权、使用许可权和获得报酬权。
+        <div class="rjzzBox1">
+            <h2 class="iTitle">
+                <span>What is software copyright?</span><strong>什么是软件著作权?</strong>
+            </h2>
+            <div class="rjzzBox1-con">
+                <div class="font">
+                    计算机软件著作权是指软件的开发者或者其他权利人依据有关著作权法律的规定，对于软件作品所享有的各项专有权利。就权利的性质而言，它属于一种民事权利，具备民事权利的共同特征。软件经过登记后，软件著作权人享有发表权、开发者身份权、使用权、使用许可权和获得报酬权。
+                </div>
+                <a href="javascript:window.location=%27http://www.ccopyright.com.cn/index.php?com=com_noticeQuery&method=softwareList&optionid=1221&registerNumber=2017SR582184&softwareType=1%27" target="_blank">
+                    软件著作权查询
+                </a>
+            </div>
+            <div class="rjzzBox1-img">
+                <img src="__PUBLIC__/home/images/rjzz_1.jpg" alt="软件著作登记证书">
+                <a href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank">   
+                    <p class="phone">立即咨询：<span>18650801179</span></p>
+                </a>
+            </div>
+        </div>
+        <div class="rjzzBox2">
+            <h2 class="iTitle">
+                <span>Which companies need to apply for "network culture business license"?</span>
+                <strong>哪些企业需要办理《软件著作权》?</strong>
+            </h2>
+            <div >
+                <ul class="hide">
+                    <li><i></i><span>个人开发者</span></li>
+                    <li><i></i><span>委托他人开发者</span></li>
+                    <li><i></i><span>网站经营者</span></li>
+                    
+                </ul>
+                <ul class="hide">
+                    <li><i></i><span>互联网公司</span></li>
+                    <li><i></i><span>软件公司</span></li>
+                    <li><i></i><span>游戏公司</span></li>
+                </ul>
+                <div class="boxCen center">
+                    <strong>每个地区的文化管理部门不同，详情您可以咨询我们的客服</strong>
+                    <a class="shangqiao" href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank"><p class="i_phone">立即咨询：<span>18650801179</span></p></a>
+                </div>
+            </div>
+        </div>
+        <div class="rjzzBox3">
+            <h2 class="iTitle">
+                <span>What are the benefits of software copyright registration?</span>
+                <strong>软件著作权登记后有什么好处</strong>
+            </h2>
+            <ul class="hide">
+                <li>
+                    <div>
+                        <h4><i></i><span>防止抄袭</span></h4>
+                        <p>软件著作权登记是打击盗版、抄袭的重要法律保护依据。</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h4><i></i><span>税收减免证明</span></h4>
+                        <p>相关政策支持规定，证书可作为软件企业申请减免税收的证明。</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h4><i></i><span>做评估与认定</span></h4>
+                        <p>有利于高新技术企业认定和企业无形资产评估</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h4><i></i><span>上线必备</span></h4>
+                        <p>APP在应用商店上线审核时，大多被要求提交软件著作权证书</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="boxCen center">
+                <strong>办理软件著作权还可以解决哪些问题，咨询在线客服为您解答</strong>
+                <a class="shangqiao" href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank"><p class="i_phone">立即咨询：<span>18650801179</span></p></a>
+            </div>
+        </div>
+        <div class="rjzzBox4">
+            <h2 class="iTitle iTitle2">
+                <span>Which individuals or enterprises need to handle software copyright?</span>
+                <strong>申请软件著作权登记流程</strong>
+            </h2>
+            <div >
+                <ul class="hide">
+                    <li><i>01.</i>
+                        <p>您填写软件基本信息采集表</p>
+                    </li>
+                    <li><i>02.</i>
+                        <p>提供部分源程序(电子版)</p>
+                    </li>
+                    <li><i>03.</i>
+                        <p>提供手册(电子版)</p>
+                    </li>
+                    <li><i>04.</i>
+                        <p>盖章及快递</p>
+                    </li>
+                    <li><i>05.</i>
+                        <p>报送审查</p>
+                    </li>
+                    <li><i>06.</i>
+                        <p>版权中心复审</p>
+                    </li>
+                    <li><i>07.</i>
+                        <p>公告发证</p>
+                    </li>
+                </ul>
+                <div class="boxCen center">
+                    <strong>我方可根据贵公司实际情况量身定制办理方案，详细请咨询客服</strong>
+                    <a class="shangqiao" href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank"><p class="i_phone">立即咨询：<span>18650801179</span></p></a>
+                </div>
+            </div>
+        </div>
+        <div class="rjzzBox5">
+            <h2 class="iTitle">
+                <span>Apply for software copyright registration materials</span>
+                <strong>申请软件著作权登记材料</strong>
+            </h2>
+            <div class="rjzzBoxCon">
+                <h4 class="tie"><i></i>个人申请</h4>
+                <div class="box">
+                    <span>1、身份证复印件</span><span>2、软件操作说明书</span><span>3、前后各30页源代码</span><span>4、个人签字申请书代理委托书</span>
+                </div>
+            </div>
+            <div class="rjzzBoxCon">
+                <h4 class="tie"><i></i>企业申请</h4>
+                <div class="box">
+                    <span>1、营业执照副本</span><span>2、软件操作说明书</span><span>3、前后各30页源代码</span><span>4、加盖公章的代理委托书</span>
+                </div>
+            </div>
+            <div class="boxCen center">
+                <strong>需要了解材料具体细节，请咨询事代办在线客服</strong>
+                <a class="shangqiao" href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank"><p class="i_phone">立即咨询：<span>18650801179</span></p></a>
+            </div>
+        </div>
+        <div class="rjzzBox6">
+            <h2 class="iTitle">
+                <span>Do you need to understand the FAQ?</span>
+                <strong>您需要了解的常见问题?</strong>
+            </h2>
+            <ul class="hide">
+                <li>
+                    <p>刚开发了一款游戏，不申请著作权会有什么不良影响?<i>01</i></p>
+                </li>
+                <li>
+                    <p><i>02</i>请问软件著作权登记的最终受理单位是哪个?</p>
+                </li>
+                <li>
+                    <p>软件著作权申请，著作权人跟申请人必须是同一人吗?<i>03</i></p>
+                </li>
+                <li>
+                    <p><i>04</i>软件著作权可以保护软件的思想、算法和技术方案吗?</p>
+                </li>
+            </ul>
+        </div>
     </div>
-    <a class="shangqiao" href="javascript:window.location=%27http://www.ccopyright.com.cn/index.php?com=com_noticeQuery&method=softwareList&optionid=1221&registerNumber=2017SR582184&softwareType=1%27" target="_blank"><p class="phone" style="margin-bottom: 8%;margin-left: 1%;width: 92%;text-align: center;">软件著作权查询</p></a>
-  <a class="shangqiao" href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank">  <p class="phone">立即咨询：<span>18650801179</span></p></a>
-  </div>
-  <img class="fr" src="__PUBLIC__/home/images/rjzz_1.jpg" tppabs="http://www.4db.com/zhuanti/images/rjzz_1.jpg" alt="软件著作登记证书">
-</div>
-<div class="rjzzBox2 icpBox">
-  <div class="grWidth">
-    <h2 class="iTitle iTitle2"><span>Which companies need to apply for "network culture business license"?</span><strong>哪些企业需要办理《软件著作权》?</strong></h2>
-    <ul class="hide">
-      <li><i></i><span>个人开发者</span></li>
-      <li><i></i><span>委托他人开发者</span></li>
-      <li><i></i><span>网站经营者</span></li>
-      <li><i></i><span>互联网公司</span></li>
-      <li><i></i><span>软件公司</span></li>
-      <li><i></i><span>游戏公司</span></li>
-    </ul>
-    <div class="boxCen center">
-      <strong>每个地区的文化管理部门不同，详情您可以咨询我们的客服</strong>
-      <a class="shangqiao" href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank"><p class="i_phone">立即咨询：<span>18650801179</span></p></a>
-    </div>
-  </div>
-</div>
-<div class="rjzzBox3 icpBox grWidth">
-  <h2 class="iTitle"><span>What are the benefits of software copyright registration?</span><strong>软件著作权登记后有什么好处</strong></h2>
-  <ul class="hide">
-      <li>
-          <h4><i></i><span>防止抄袭</span></h4>
-          <p>软件著作权登记是打击盗版、抄袭的重要法律保护依据。</p>
-      </li>
-      <li>
-          <h4><i></i><span>税收减免证明</span></h4>
-          <p>相关政策支持规定，证书可作为软件企业申请减免税收的证明。</p>
-      </li>
-      <li>
-          <h4><i></i><span>做评估与认定</span></h4>
-          <p>有利于高新技术企业认定和企业无形资产评估</p>
-      </li>
-      <li>
-          <h4><i></i><span>上线必备</span></h4>
-          <p>APP在应用商店上线审核时，大多被要求提交软件著作权证书</p>
-      </li>
-  </ul>
-  <div class="boxCen center">
-    <strong>办理软件著作权还可以解决哪些问题，咨询在线客服为您解答</strong>
-    <a class="shangqiao" href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank"><p class="i_phone">立即咨询：<span>18650801179</span></p></a>
-  </div>
-</div>
-<div class="rjzzBox4 icpBox" id="icpBox3">
-  <div class="grWidth">
-    <h2 class="iTitle iTitle2"><span>Which individuals or enterprises need to handle software copyright?</span><strong>申请软件著作权登记流程</strong></h2>
-    <ul class="hide">
-        <li><i>01.</i><p>您填写软件基本信息采集表</p></li>
-        <li><i>02.</i><p>提供部分源程序(电子版)</p></li>
-        <li><i>03.</i><p>提供手册(电子版)</p></li>
-        <li><i>04.</i><p>盖章及快递</p></li>
-        <li><i>05.</i><p>报送审查</p></li>
-        <li><i>06.</i><p>版权中心复审</p></li>
-        <li><i>07.</i><p>公告发证</p></li>
-    </ul>
-    <div class="boxCen center">
-      <strong>我方可根据贵公司实际情况量身定制办理方案，详细请咨询客服</strong>
-      <a class="shangqiao" href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank"><p class="i_phone">立即咨询：<span>18650801179</span></p></a>
-    </div>
-  </div>
-</div>
-<div class="rjzzBox5 icpBox grWidth" id="icpBox4">
-  <h2 class="iTitle"><span>Apply for software copyright registration materials</span><strong>申请软件著作权登记材料</strong></h2>
-  <div class="left fl">
-      <h4 class="tie"><i></i>个人申请</h4>
-      <div class="box">
-          <span>1、身份证复印件</span><span>2、软件操作说明书</span><span>3、前后各30页源代码</span><span>4、个人签字申请书代理委托书</span>
-      </div>
-  </div>
-  <div class="left fr">
-      <h4 class="tie"><i></i>企业申请</h4>
-      <div class="box">
-          <span>1、营业执照副本</span><span>2、软件操作说明书</span><span>3、前后各30页源代码</span><span>4、加盖公章的代理委托书</span>
-      </div>
-  </div>
-  <div class="clearfix"></div>
-  <div class="boxCen center">
-    <strong>需要了解材料具体细节，请咨询事代办在线客服</strong>
-    <a class="shangqiao" href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank"><p class="i_phone">立即咨询：<span>18650801179</span></p></a>
-  </div>
-</div>
-<div class="rjzzBox5 icpBox grWidth" id="icpBox5">
-  <h2 class="iTitle"><span>Do you need to understand the FAQ?</span><strong>您需要了解的常见问题?</strong></h2>
-  <ul class="hide">
-    <li><p>刚开发了一款游戏，不申请著作权会有什么不良影响?<i>01</i></p></li>
-    <li><p><i>02</i>请问软件著作权登记的最终受理单位是哪个?</p></li>
-    <li><p>软件著作权申请，著作权人跟申请人必须是同一人吗?<i>03</i></p></li>
-    <li><p><i>04</i>软件著作权可以保护软件的思想、算法和技术方案吗?</p></li>
-  </ul>
-</div>
-</div>
-
-    <block name="include"><include file="./Public/footer.html" /></block>
-    
+    <block name="include">
+        <include file="./Public/footer.html" />
+    </block>
