@@ -26,10 +26,10 @@
     height:100%;
     margin:0 auto;
     /*background:#f5f5f5;*/
-    box-shadow: 0 0 15px #666666;
-    border-radius:5px;
+    border-top-left-radius: 85px;
+    border-bottom-right-radius: 85px;
+    background-color: #f0f0f0;
 }
-.call-center1 li>div:hover{ background:#fff;}
 .call-center1 li h3{ text-align:center; font-size:18px;overflow:hidden;line-height:44px;}
 .call-center1 li p{  font-size:14px;line-height:24px;padding:10px 15px 0;color:#999;}
 /*什么是EDI许可证代码结束*/
