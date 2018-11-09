@@ -56,7 +56,7 @@ a:hover{color:#2aa0c4 ;text-decoration:none;}:focus{outline:none;}
 .boxCen .i_phone{margin-top:20px;}
 
 .rjzzBox3 li{float:left;width:25%;height:235px;padding-right:15px;padding-left:15px;box-sizing:border-box;}
-.rjzzBox3 li>div{padding:20px;border-radius:8px;background:#01a95a;color:#fff;font-size:16px;text-align:center;}
+.rjzzBox3 li>div{min-height:190px;padding:20px;border-radius:8px;background:#01a95a;color:#fff;font-size:16px;text-align:center;}
 .rjzzBox3 li h4{font-size:20px;margin-bottom:20px;}
 .rjzzBox3 li i{display:inline-block;width:80px;height:80px;background: url("../images/rjzz3_icon.png") no-repeat;transition:all 0.3s;}
 .rjzzBox3 li h4 span{display:block;margin-top:10px;}
