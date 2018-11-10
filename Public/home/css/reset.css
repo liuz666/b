@@ -7,55 +7,87 @@ ul, li{ list-style:none;}
 a{ text-decoration:none;}
 a:hover{ text-decoration:none;}
 .clear{clear:both;}
-body{ font-size:12px; font-family:"微软雅黑"; background:#ffffff; color:#343434}
+body{ font-size:12px; font-family:"微软雅黑"; background:#ffffff; color:#343434;position:relative;}
 .left{ float:left}
 .right{ float:right}
 
-/*头部样式开始*/
-.header{border-bottom:none;}
-.header_wrap {width:100%; overflow:hidden; background:#111;}
-.logo {width:280px; height:60px; float:left;}
-.tel {width:366px; height:60px; float:right;}
-/*头部样式结束*/
 /*导航样式开始*/
-.nav_wrap {width:80%; height:40px;margin-left:10%; z-index:999;}
-/*#nav { width:1185px; margin:0 auto; font-size:16px;}*/
-#nav{clear:both;width:100%;height:56px; margin-top:10px;}
+.header{ position: absolute;width: 100%;z-index:999;background:none;}
+#nav_wrap{width:100%;position:fixed;top:0px;left:0px;background: rgba(0,0,0,0.8);}
+#nav_wrap .container{position:relative;width:80%;margin:0 auto;}
+#nav_wrap .container .logo {float:left;position:absolute;left:15px;margin:15px 0; }
+#nav{display:inline-block;float:left;width:100%;height:70px;}
+#nav>ul{float:right;}
 #nav ul li.headerli{
-  position:relative;
-  list-style:none;
-  display:inline-block;
-  font-family:'微软雅黑';
-  font-size:18px;
-  color:#666;
+	display:inline-block;
+	position:relative;
+	list-style:none;
+	font-family:'微软雅黑';
+	font-size:12px;
+	margin:0px 20px 0px 0px;
 }
 #nav ul li.headerli>a{
   display:block;
-  height:56px;
-  line-height:56px;
-  color:#666;
+  height:70px;
+  line-height:70px;
+  color:#fff;
   text-decoration:none;
-  padding:0px 30px;
 }
-#nav ul li.headerli a:hover{color:#c7100b;}
-#nav .hover-menu{ min-width:274px;position:absolute;top:55px;left:-44px;z-index:888;background:#c7100b;display:none; }
-#nav ul li.headerli .hover-menu li{ color:#fff;text-align:center;}
-#nav ul li.headerli .hover-menu a{ height:30px;line-height:30px;padding:5px 10px;display:block;color:#Fff;font-size:14px;}
-#nav ul li.headerli .hover-menu a:hover{ color:#fb8c8c}
+/*start一级菜单hover效果*/
+#nav ul li.headerli>a:before ,.hover-menu a:before{
+	width: 0px;
+	margin: 0px auto;
+	position: absolute;
+	content: "";
+	bottom: -1px;
+	height: 2px;
+	background: #fff;
+	-webkit-transition: 0.2s ease-in-out;
+	-moz-transition: 0.2s ease-in-out;
+	-ms-transition: 0.2s ease-in-out;
+	-o-transition: 0.2s ease-in-out;
+	transition: 0.2s ease-in-out;
+}
+#nav ul li.headerli>a:hover:before {	width: 100%;}
+/*end一级菜单hover效果*/
+.hover-menu{ 
+	min-width:220px;position:absolute;top:70px;left:0px;z-index:888;
+	background:#222222;display:none; 
+}
+
+.hover-menu li{ width:100%;text-align:left;}
+.hover-menu a{ 
+	border-bottom:1px solid rgba(255,255,255,0.1);
+	height:30px;line-height:30px;padding:5px 10px;
+	display:block;color:#Fff;font-size:11px;
+	color:#999;
+	position:relative;
+}
+.hover-menu a:before {
+	background: #1cd1aa;
+	content: "";
+	width: 0px;
+	height: 100%;
+	top: 0px;
+	margin: 0px;
+	z-index: -1;
+	left: 0px;
+}
+.hover-menu a:hover:before {width:100%;}
+.hover-menu a:hover{ color:#fff}
 #nav ul li.headerli:hover .hover-menu{ display:block}
 /*导航样式结束*/
 
 /*banner样式开始*/
-.banner{  height:424px; overflow: hidden; width:100%;position:relative;top:20px;zoom: 1;}
+.banner{  height:424px; overflow: hidden; width:100%;position:relative;top:70px;zoom: 1;}
 .banner-img{height:501px;}
-.bannli1{background:url(banner.jpg)/*tpa=http://www.gongsibao.com/st/htjh/images/banner.jpg*/ top center no-repeat;height:501px;}
-.bannli2{background:url(banner2.jpg)/*tpa=http://www.gongsibao.com/st/htjh/images/banner2.jpg*/ top center no-repeat;height:501px;}
-.bannli3{background:url(banner3.jpg)/*tpa=http://www.gongsibao.com/st/htjh/images/banner3.jpg*/ top center no-repeat;height:501px;}
+.bannli1{background:url(banner.jpg) top center no-repeat;height:501px;}
+.bannli2{background:url(banner2.jpg) top center no-repeat;height:501px;}
+.bannli3{background:url(banner3.jpg) top center no-repeat;height:501px;}
 .banner1{ width:1200px; height:100%; overflow: hidden; position:relative; margin:0 auto}
 .banner11{ position:absolute; top:424px; width:100%; text-align:center; left:0;}
 .banner11 a{ display:inline-block; width:256px; height:39px; line-height:37px; color:#ebebeb; font-size:18px; background:url(a.png)/*tpa=http://www.gongsibao.com/st/htjh/images/a.png*/ no-repeat; cursor:pointer; margin:0 5px;}
 .banner11 a:hover{ background:#ff0000}
-
 
 .flexslider .slides li {
 	width:100%;
@@ -77,20 +109,16 @@ body{ font-size:12px; font-family:"微软雅黑"; background:#ffffff; color:#343
 }
 .flex-control-paging li a.flex-active,
 .flex-control-paging li.active a {
-background:#ff0000
+	background:#ff0000
 }
-
 .flexslider .slides a img {
 	width: 100%;
 	display: block;
 }
-
-
 /*banner样式结束*/
 
 /*增值电信许可证代码开始*/
 .part1{ height:680px; overflow:hidden}
-.title h2{ color:#ee1d23; font-size:36px; font-weight:normal; position:absolute; left:210px; top:25px;}
 .title p{ position:absolute; font-size:16px; left:148px; top:89px; line-height:22px;}
 .part1-ul{ width:1180px; margin:50px auto 0; overflow:hidden}
 .part1-ul li{ float:left; display:inline; width:281px; height:373px; background:#f9f9f9; margin-left:18px; cursor: pointer}

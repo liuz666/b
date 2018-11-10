@@ -28,7 +28,7 @@ a:hover{color:#2aa0c4 ;text-decoration:none;}:focus{outline:none;}
 .iTitle i{display:block;font-size:14px;color:#999;font-style:normal;}
 
 
-#content{margin-top:20px;}
+#content{margin-top:67px;}
 #content>div{width:90%; margin:0 auto;padding:50px 10px;}
 /* 软件著作权 */
 .rjzzBox1 .iTitle strong{padding:0;letter-spacing: 2px;}
@@ -68,15 +68,29 @@ a:hover{color:#2aa0c4 ;text-decoration:none;}:focus{outline:none;}
 .rjzzBox3 li:nth-child(4)>div i{background-position: -240px 0;}
 .rjzzBox3 li:hover i{margin-top:-8px;margin-bottom:8px;}
 
+.rjzzBox4{width:100%;}
 .rjzzBox4 ul{margin-bottom:40px;}
-.rjzzBox4 li{float:left;width:124px;padding-right:55px;text-align:center;background: url("../images/rjzz4_icon.png") no-repeat right top;color:#333;font-size:16px;height:100px;}
-.rjzzBox4 li i{display:block;font-size:30px;color:#333;font-family:Arial;margin-bottom:20px;}
-.rjzzBox4 li:last-child{padding-right:0;background:none;}
+.rjzzBox4 li{float:left;width:14.28%;text-align:center;color:#333;font-size:16px;height:100px;}
+.rjzzBox4 li>div{position:relative;}
+.rjzzBox4 li>div:after{content: '';background:#DBDBDB;height:1px;width:75%;position:absolute;top:50%;right:-36%;}
+.rjzzBox4 li i{
+	display: block;
+	width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    border: 2px solid #F44336;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: .5em;
+    color: #212121;
+    box-sizing: border-box;
+}
+.rjzzBox4 li p{font-size:14px;color:#999;margin-top:15px;}
 
-.rjzzBox5 .rjzzBoxCon{background:#f4f4f4;border-radius:5px;overflow:hidden;width:50%;margin:20px auto;}
+.rjzzBox5 .rjzzBoxCon{float:left;width:50%;padding:0 20px;overflow:hidden;box-sizing:border-box;}
 .rjzzBox5 .rjzzBoxCon h4{font-size:20px;color:#fff;background:#2aa0c4;text-align:center;height:60px;line-height:60px;}
 .rjzzBox5 .rjzzBoxCon h4 i{display:inline-block;width:21px;height:20px;background: url("../images/rjzz5_icon.png") no-repeat;margin-right:5px;position:relative;top:4px;}
-.rjzzBox5 .rjzzBoxCon .box{padding:25px;line-height:30px;font-size:16px;}
+.rjzzBox5 .rjzzBoxCon .box{padding:25px;line-height:30px;font-size:14px;background:#f4f4f4;border-radius:5px;}
 .rjzzBox5 .rjzzBoxCon .box span{margin-right:40px;}
 
 .rjzzBox6 li p{display:inline-block;background:#d6f5ff;height:50px;line-height:50px;color:#333;font-size:16px;border-radius:25px;padding-left:20px;margin-bottom:10px;}

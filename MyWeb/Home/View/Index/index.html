@@ -19,37 +19,12 @@
             <li></li>
             <li></li>
         </ul>
-        <!-- <block name="include"><include file="./Public/demand.html" /></block> -->
-        <ul></ul>
     </div>
-    <script type="text/javascript" src="__PUBLIC__/home/js/layer.js"></script>
-    <script src="__PUBLIC__/home/js/yzh.js"></script>
-    <script>
-        form_submit('demand_form');
-        jQuery(".demand_box").slide({
-            mainCell: "ul",
-            autoPlay: true,
-            effect: "topMarquee",
-            vis: 2,
-            interTime: 60
-        });
-    </script>
-    <script type="text/javascript">
-        jQuery(".banner").slide({ /*SuperSlide图片切换*/
-            titCell: ".hd li",
-            mainCell: ".bd ul",
-            effect: "fold",
-            autoPlay: true,
-            easing: "easeOutCirc",
-            interTime: 6000
-        });
-    </script>
     <!--我们的优势-->
     <div class="youshi-box" id="test01">
         <div class="main">
             <div class="title ">
-                <h2 style="margin-left:-61px;">我们的优势</h2>
-                <span id="line"></span>
+                <h2 >我们的优势</h2>
             </div>
             <p class="youshi-t">为什么选择我们？WHY CHOOSE US?</p>
             <ul>
@@ -79,8 +54,7 @@
     <!--专业顾问团队-->
     <div class="team grWidth main">
         <div class="title ">
-            <h2 style="margin-left:-55px;">我们的团队</h2>
-            <span id="line"></span>
+            <h2 >我们的团队</h2>
         </div>
         <p class="youshi-t">专业顾问团队 PROFESSIONAL ADVISOR TEAM</p>
         <div class="teamSlide">
@@ -111,16 +85,19 @@
     <div class="khkb-box">
         <div class="main">
             <div class="title ">
-                <h2 style="margin-left:-50px;">客户口碑</h2>
-                <span id="line"></span>
+                <h2 >客户口碑</h2>
             </div>
             <p class="khkb-t">CUSTOMER REPUTATION</p>
             <div class="clear"></div>
             <ul >
                 <volist name="lis" id="lrow">
                     <li>
-                        <h2 title="{$lrow['title']}"><a href="__MODULE__/About/xinwen/id/{$lrow['id']}">{$lrow['title']}</a></h2>
-                        <p>{$lrow['content']}</p>
+                        <div>
+                            <h2 title="{$lrow['title']}">
+                                <a href="__MODULE__/About/xinwen/id/{$lrow['id']}">{$lrow['title']}</a>
+                            </h2>
+                            <p>{$lrow['content']}</p>
+                        </div>
                     </li>
                 </volist>
             </ul>
@@ -130,8 +107,7 @@
     <div class="hezuo-box">
         <div class="main">
             <div class="title ">
-                <h2 style="margin-left:-85px;">我们的合作伙伴</h2>
-                <span id="line"></span>
+                <h2 >我们的合作伙伴</h2>
             </div>
             <p class="khkb-t">OUR BUSINESS PARTNER</p>
             <div class="clear"></div>
@@ -194,7 +170,16 @@
     <p class="btn"><a class="fl btn1" href="http://wpa.qq.com/msgrd?v=3&uin=1696902291&site=qq&menu=yes">免费咨询</a><input class="sub fr" type="submit" value="立即提交"></p></form>
     </div>
     </div> -->
+    <script src="__PUBLIC__/home/js/yzh.js"></script>
     <script type="text/javascript">
+        jQuery(".banner").slide({ /*SuperSlide图片切换*/
+            titCell: ".hd li",
+            mainCell: ".bd ul",
+            effect: "fold",
+            autoPlay: true,
+            easing: "easeOutCirc",
+            interTime: 6000
+        });
         /*专业顾问团队 */
         jQuery(".teamSlide").slide({
             mainCell: ".ohbox ul",
@@ -202,14 +187,6 @@
             vis: 4,
             scroll: 1,
             autoPlay: true
-        });
-        /* 新闻中心 */
-        jQuery(".news").slide({
-            titCell: ".newsMenu  a",
-            mainCell: ".newsMain",
-            delayTime: 0,
-            prevCell: false,
-            nextCell: false
         });
         form_submit('floating_form');
         $(function() {

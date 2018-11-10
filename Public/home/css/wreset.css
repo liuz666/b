@@ -3,7 +3,7 @@
 .clear{clear:both;}
 .left{ float:left}
 .right{ float:right}
-.m-t-30{margin-top:30px !important;}
+.m-t-30{margin-top:67px !important;}
 .p-l-5{padding-left:5px;}
 
 .main,.main2-center,.main4{ width:90%; margin:10px auto 10px; overflow:hidden}
@@ -155,5 +155,3 @@
 .main6{ height:465px; margin-top:43px;}
 .chouse img{ float:left }
 .chouse{width:1200px; margin:10px auto 0; overflow:hidden}
-.logo {width:280px; height:60px; float:left;}
-.tel {width:366px; height:60px; float:right;}
