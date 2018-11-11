@@ -1,13 +1,35 @@
-.ban24{ width:100%; float:left; background:#FFF; padding-bottom:20px;}
-.ban24_main{ width:981px; margin:0 auto;overflow:hidden;}
-.ban24_ont{ width:981px; float:left;}
 .pa10{ padding-top:15px;}
 .pa20{ padding-top:20px;}
-.ban24_kuang{ width:280px; height:335px; background:url(../images/ban24_9.jpg)/*tpa=http://www.jinsan.cn/template/images/ban24_9.jpg*/ no-repeat; float:left; margin-top:15px; padding:180px 0 0 700px;}
-.ban24_3d{ width:981px; height:51px; background:url(../images/ban24_3e.jpg)/*tpa=http://www.jinsan.cn/template/images/ban24_3e.jpg*/ no-repeat; float:left; overflow:hidden;}
-.ban24_3d li{ width:327px; height:47px; line-height:47px; font-size:18px; font-weight:bold; color:#5b5b5b; text-align:center; float:left; cursor:pointer;}
-.ban24_3d .ban24_3der{ width:327px; height:47px; line-height:47px; font-size:20px; font-weight:bold; background:url(../images/sac06_3d.jpg)/*tpa=http://www.jinsan.cn/template/images/sac06_3d.jpg*/ no-repeat; color:#fff; text-align:center; float:left;}
-.footpic{width:981px; height:262px;margin:0 auto 30px;}
+
+.fut20{margin-top:67px;}
+.ban24{ width:1280px; float:left; background:#FFF; padding-bottom:20px;}
+.ban24_main{ width:90%; margin:0 auto;overflow:hidden;}
+.ban24_main ul{width:100%;}
+.ban24_main ul img{display:block;text-align:center;margin-left:calc( (100% - 980px)  /2 );}
+.ban24_ont{ width:981px; float:left;}
+
+.ban24_kuang{ 
+	width:280px; height:335px; background:url(../images/ban24_9.jpg) no-repeat; float:left; margin-top:15px; padding:180px 0 0 700px;
+}
+.ban24_main .ban24_3d{ 
+	width:1280px;
+	height:51px; 
+	/*background:url(../images/ban24_3e.jpg) no-repeat; */
+	float:left; 
+	overflow:hidden;
+	margin-left:calc( (100% - 980px)  /2 );
+}
+.ban24_3d li{ 
+	width:327px; height:47px; line-height:47px; font-size:18px; font-weight:bold; color:#5b5b5b; text-align:center; float:left; cursor:pointer;
+}
+.ban24_3d .ban24_3der{ 
+	width:327px; 
+	height:47px; line-height:47px; font-size:20px; font-weight:bold; 
+	background:url(../images/sac06_3d.jpg) no-repeat; color:#fff; text-align:center; float:left;
+}
+.footpic{
+	width:981px; height:262px;margin:0 auto 30px;
+}
 .fut20a{
-	background:url(../images/ban24_1.jpg)/*tpa=http://www.jinsan.cn/template/images/ban24_1.jpg*/ no-repeat center top;
+	background:url(../images/ban24_1.jpg) no-repeat center top;
 }

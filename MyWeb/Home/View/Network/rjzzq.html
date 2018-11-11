@@ -20,46 +20,29 @@
             <li></li>
             <li></li>
         </ul>
-        <!-- <block name="include">
-            <include file="./Public/demand.html" />
-        </block> -->
     </div>
-    </div>
-    <script type="text/javascript" src="__PUBLIC__/home/js/layer.js"></script>
+    <link href="__PUBLIC__/home/css/rjzzq.css" type="text/css" rel="stylesheet" />
     <script src="__PUBLIC__/home/js/yzh.js"></script>
     <script>
-    form_submit('demand_form');
-    jQuery(".demand_box").slide({
-        mainCell: "ul",
-        autoPlay: true,
-        effect: "topMarquee",
-        vis: 2,
-        interTime: 60
-    });
-    </script>
-    </div>
-    <script type="text/javascript">
-    /*SuperSlide图片切换*/
-    jQuery(".banner").slide({
-        titCell: ".hd li",
-        mainCell: ".bd ul",
-        effect: "fold",
-        autoPlay: true,
-        easing: "easeOutCirc",
-        interTime: 6000
-    });
-    </script>
-    <link href="__PUBLIC__/home/css/rjzzq.css" type="text/css" rel="stylesheet" />
-    <script type="text/javascript">
-    $(function() {
-        $(".div-title a").eq(1).addClass("ahober"); // $("#top a").first().addClass("hei");
-        $(".div-title a").hover(function() {
-            $(".div-title a").removeClass("ahober");
-            $(".div-title-center .div-cenr1").eq($(this).index()).show().siblings().hide();
-            $(this).addClass("ahober");
+        form_submit('demand_form');
+        jQuery(".banner").slide({ /*SuperSlide图片切换*/
+            titCell: ".hd li",
+            mainCell: ".bd ul",
+            effect: "fold",
+            autoPlay: true,
+            easing: "easeOutCirc",
+            interTime: 6000
         });
-    })
+        $(function() {
+            $(".div-title a").eq(1).addClass("ahober"); // $("#top a").first().addClass("hei");
+            $(".div-title a").hover(function() {
+                $(".div-title a").removeClass("ahober");
+                $(".div-title-center .div-cenr1").eq($(this).index()).show().siblings().hide();
+                $(this).addClass("ahober");
+            });
+        })
     </script>
+    
     <div id="content">
         <div class="rjzzBox1">
             <h2 class="iTitle">

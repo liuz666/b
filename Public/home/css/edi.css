@@ -3,14 +3,7 @@
 .clear{clear:both;}
 .left{ float:left}
 .right{ float:right}
-.about-h2{
-	width: 100%;
-    text-align: center;
-    font-size: 24px;
-    color: #4066ff;
-    font-weight: 700;
-    margin-bottom:20px;
-}
+.about-h2{width: 100%;text-align: center;font-size: 30px;color: #404040;font-weight: 700;margin-bottom:20px;}
 
 /*什么是EDI许可证代码开始*/
 .call-center1 li{
@@ -177,26 +170,19 @@
 /*汉唐服务保障结束*/
 
 /*您可能还需要开始*/
-.call-whj{ width:1180px; margin:0 auto; overflow:hidden}
-.call-whj .lil10{ float:left; display:inline; text-align:center; width:217px; height:235px; border:1px solid #f0f3f8; margin-left:21px; color:#949494}
-.call-whj .lil10 span{ display:block;background:url(../images/bj1.png)/*tpa=http://www.gongsibao.com/st/edi/1607/images/bj1.png*/ no-repeat -114px -222px; width:49px; height:41px; margin:25px auto 0; }
+.call-whj{ width:90%; margin:0 auto; overflow:hidden}
+.call-whj .lil10{ float:left;width:20%; height:235px;text-align:center; border:1px solid #f0f3f8;color:#949494;padding:10px 20px;box-sizing:border-box;background: url(../images/img4.png) no-repeat top right;}
+.call-whj .lil10:last-child{background:none;}
+.call-whj .lil10 span{ display:block;background:url(../images/bj1.png) no-repeat -114px -222px; width:49px; height:41px; margin:25px auto 0; }
 .call-whj .lil10 span.l-span1{ background-position: -168px -224px; width:42px;}
 .call-whj .lil10 span.l-span2{ background-position: -212px -222px; height:41px;}
 .call-whj .lil10 span.l-span3{background-position: -319px -221px; width:44px; }
 .call-whj .lil10 span.l-span4{ background-position: -262px -221px; width:44px;}
-.call-whj .lil10:hover{ background:#c3b9f5;border-radius:5px;}
-.call-whj .lil10:hover h3{color:#fff;}
-.call-whj .lil10:hover p{color:#666;}
 .call-whj .lil10 h3{ color:#3a3a3a; font-size:16px; height:50px; line-height:50px; overflow:hidden}
 .call-whj .lil10 b{ height:1px; width:65px; border-top:1px solid #04bae1; margin:0 auto; overflow:hidden; display:block}
 .call-whj .lil10 p{ line-height:21px; overflow:hidden;height:74px;font-size:14px;color:#999;}
-.banli{background:url(../images/bj1.png) no-repeat -254px -126px; width:88px; height:30px; line-height:30px; text-align:center; display:block; margin:0 auto; overflow:hidden; color:#666666; font-size:14px;}
-.call-whj .lil10:hover .banli{ background-position:-254px -171px; color:#fff;}
-.call-whj .lil10:hover span{background-position: -114px -279px;}
-.call-whj .lil10:hover span.l-span1{background-position: -168px -281px;}
-.call-whj .lil10:hover span.l-span2{background-position: -212px -279px; }
-.call-whj .lil10:hover span.l-span3{background-position: -319px -279px;}
-.call-whj .lil10:hover span.l-span4{background-position: -262px -279px;}
+.banli{background: url(../images/anniu2.jpg) no-repeat;width: 118px;height: 31px;display: block;margin: 0px auto;overflow: hidden;}
+.banli:hover {background: url(../images/anniu1.png) no-repeat;width: 118px;height: 31px;}
 /*您可能还需要结束*/
 
 /*他们都选择了汉唐样式开始*/

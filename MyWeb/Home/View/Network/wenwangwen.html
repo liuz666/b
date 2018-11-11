@@ -3,7 +3,6 @@
 </block>
 
 <body>
-    <!-- 广告轮播图 -->
     <div class="banner">
         <div class="bd">
             <ul>
@@ -24,42 +23,37 @@
             <include file="./Public/demand.html" />
         </block> -->
     </div>
-    <script type="text/javascript" src="__PUBLIC__/home/js/layer.js"></script>
+    <link href="__PUBLIC__/home/css/wreset.css" type="text/css" rel="stylesheet" />
+    <!-- <script type="text/javascript" src="__PUBLIC__/home/js/layer.js"></script> -->
     <script src="__PUBLIC__/home/js/yzh.js"></script>
     <script>
-    form_submit('demand_form');
-    jQuery(".demand_box").slide({
-        mainCell: "ul",
-        autoPlay: true,
-        effect: "topMarquee",
-        vis: 2,
-        interTime: 60
-    });
-    </script>
-    </div>
-    <script type="text/javascript">
-    /*SuperSlide图片切换*/
-    jQuery(".banner").slide({
-        titCell: ".hd li",
-        mainCell: ".bd ul",
-        effect: "fold",
-        autoPlay: true,
-        easing: "easeOutCirc",
-        interTime: 6000
-    });
-    </script>
-    <link href="__PUBLIC__/home/css/wreset.css" type="text/css" rel="stylesheet" />
-    <script type="text/javascript">
-    $(function() {
-        $(".div-title a").eq(1).addClass("ahober"); // $("#top a").first().addClass("hei");
-        $(".div-title a").hover(function() {
-            $(".div-title a").removeClass("ahober");
-            $(".div-title-center .div-cenr1").eq($(this).index()).show().siblings().hide();
-            $(this).addClass("ahober");
-
+        form_submit('demand_form');
+        jQuery(".demand_box").slide({
+            mainCell: "ul",
+            autoPlay: true,
+            effect: "topMarquee",
+            vis: 2,
+            interTime: 60
         });
-    })
+        jQuery(".banner").slide({ /*SuperSlide图片切换*/
+            titCell: ".hd li",
+            mainCell: ".bd ul",
+            effect: "fold",
+            autoPlay: true,
+            easing: "easeOutCirc",
+            interTime: 6000
+        });
+        $(function() {
+            $(".div-title a").eq(1).addClass("ahober"); // $("#top a").first().addClass("hei");
+            $(".div-title a").hover(function() {
+                $(".div-title a").removeClass("ahober");
+                $(".div-title-center .div-cenr1").eq($(this).index()).show().siblings().hide();
+                $(this).addClass("ahober");
+
+            });
+        })
     </script>
+    
     <!-- 谁需要办理 -->
     <div class="main-box m-t-30">
         <div class="main ">
@@ -127,7 +121,7 @@
     <!-- 办理需注意事项 -->
     <div class="main1">
         <div class="main2-center">
-            <h2 class="about-h2 about-h21" >文网文许可证办理前需注意</h2>
+            <h2 class="about-h2" >文网文许可证办理前需注意</h2>
             <div class="about-tit">
                 <div class="div-title">
                     <a>注意所需前置审批</a>
@@ -179,24 +173,67 @@
         </div>
     </div>
     <!-- 许可证办理条件 -->
-    <div class="main" style="line-height: 30px;">
-        <h2 class="about-h2" style="margin-top:20px;">文网文许可证办理条件</h2>
-        <div class="tijian">
-            <p>有单位的名称、住所、组织机构和章程</p>
-            <p class="pp1">有确定的互联网文化活动范围</p>
-            <p class="pp2">具有合法的互联网文化产品来源渠道或互联网文化产品生产能力</p>
-            <p class="pp3">有适应互联网文化活动需要并取得相应从业资格的8名以上业务管理人员和专业技术人员</p>
-        </div>
-        <div class="tijian">
-            <p class="pp4">有100万元以上的注册资金、适应互联网文化活动需要的设备、工作场所以及相应的经营管理技术措施；游戏产品业务，除上述条件外，注册资金须达到1000万元以上</p>
-            <p class="pp5">符合文化部关于互联网文化单位总量、结构和布局的规划</p>
-            <p class="pp6">不受理外商投资互联网信息服务提供者的申请从事互联网文化活动，允许香港和澳门的服务提供者设立由内地控股的经营性的互联网文化单位</p>
-            <p class="pp7">法律、法规规定的其他条件</p>
-        </div>
+    <div class="yxbaBox5">
+        <h2 class="about-h2">文网文许可证办理条件</h2>
+        <ul class="call-baoz">
+            <li >
+                <div class="baoz-content">
+                    <div>1</div>
+                    <p>有单位的名称、住所、组织机构和章程</p>
+                </div>
+            </li>
+            <li>
+                <div class="baoz-content">
+                    <div>2</div>
+                    <p>有确定的互联网文化活动范围</p>
+                </div>
+            </li>
+            <li>
+                <div class="baoz-content">
+                    <div>3</div>
+                    <p>具有合法的互联网文化产品来源渠道或互联网文化产品生产能力</p>
+                </div>
+            </li>
+            <li>
+                <div class="baoz-content">
+                    <div>4</div>
+                    <p>有适应互联网文化活动需要并取得相应从业资格的8名以上业务管理人员和专业技术人员</p>
+                </div>
+            </li>
+            <div class="clearfix"></div>
+        </ul>
+        <ul class="call-baoz" style=" margin-top:40px;">
+            <li >
+               <div class="baoz-content">
+                    <div>5</div>
+                    <p>有100万元以上的注册资金、适应互联网文化活动需要的设备、工作场所以及相应的经营管理技术措施；游戏产品业务，除上述条件外，注册资金须达到1000万元以上</p>
+               </div>
+            </li>
+            <li>
+                <div class="baoz-content">
+                    <div>6</div>
+                    <p>符合文化部关于互联网文化单位总量、结构和布局的规划</p>
+                </div>
+            </li>
+            <li>
+                <div class="baoz-content">
+                    <div>7</div>
+                    <p>不受理外商投资互联网信息服务提供者的申请从事互联网文化活动，允许香港和澳门的服务提供者设立由内地控股的经营性的互联网文化单位</p>
+                </div>
+            </li>
+             <li>
+                <div class="baoz-content">
+                    <div>8</div>
+                    <p>法律、法规规定的其他条件</p>
+                </div>
+            </li>
+            <div class="clearfix"></div>
+        </ul>
         <p class="z-p">"法律、法规规定的其他条件"具体指什么？每个地区的文化管理部门不一样哦，赶快找我们的客服咨询吧</p>
         <a href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank" class="zixun">立即咨询</a>
-        <h2 class="about-h2 about-h21" >文网文许可证办理前需注意</h2>
     </div>
+    <!-- 办理前需要注意 -->
+    <h2 class="about-h2" >文网文许可证办理前需注意</h2>
     <div class="zt">
         <div class="zt1">
             <div class="zt1-left left">
@@ -273,42 +310,55 @@
     </div>
     <p class="z-p">"厦门办理时间远低于官方流程时间，最快<font class="blue">60工作日</font>办结,如需加急联系客服"</p>
     <a href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank" class="zixun">立即咨询</a>
-    <div class="main2">
-        <h2 class="about-h2 about-h21" >如果您准备同我们合作 您需要准备</h2>
-        <div class="main ngb-line-t">
-            <ul>
-                <li>
-                    <p><span>1</span><br>法人签署的书面申请</p>
-                </li>
-                <li>
-                    <p><span>2</span><br>设立互联网文化单位申请表</p>
-                </li>
-                <li>
-                    <p><span>3</span><br>企业名称预先核准通知书或者营业执照和章程</p>
-                </li>
-                <li>
-                    <p><span>4</span><br>资金来源、数额及其信用证明文件（如验资报告、验资机构企业法人营业执照复印件等)</p>
-                </li>
-                <li>
-                    <p><span>5</span><br>工作场所使用权证明文件（租赁办公场所的需提交房屋租赁合同和出租方房屋</p>
-                </li>
-                <li>
-                    <p><span>6</span><br>法定代表人、主要负责人身份证复印件及简历</p>
-                </li>
-                <li>
-                    <p><span>7</span><br>主要经营管理人员、专业技术人员的资格证明和身份证明文件（如学历证书、职业资格证书和身份证复印件)</p>
-                </li>
-                <li>
-                    <p><span>8</span><br>业务发展报告</p>
-                </li>
-                <li>
-                    <p><span>9</span><br>依法需要提交的其他文件</p>
-                </li>  
-            </ul>
-        </div>
-        <p class="z-p">太过繁杂？咨询厦门帮您梳理</p>
-        <a href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank" class="zixun">立即咨询</a>
+    <!-- 合作需要准备资料 -->
+    <div style="width:100%;padding:20px 0">
+        <h2 class="about-h2 ">&nbsp;如果您准备同我们合作 您需要准备</h2>
+        <ul class="hezuo">
+            <li>
+                <div>1</div>
+                <p>法人签署的书面申请</p>
+            </li>
+            <li class="data1">
+                <div>2</div>
+                <p>设立互联网文化单位申请表</p>
+            </li>
+            <li class="data2">
+                <div>3</div>
+                <p>企业名称预先核准通知书或者营业执照和章程</p>
+            </li>
+            <li class="data3">
+                <div>4</div>
+                <p>资金来源、数额及其信用证明文件（如验资报告、验资机构企业法人营业执照复印件等)</p>
+            </li>
+            <li class="data4">
+                <div>5</div>
+                <p>工作场所使用权证明文件（租赁办公场所的需提交房屋租赁合同和出租方房屋</p>
+            </li>
+            <div class="clearfix"></div>
+        </ul>
+        <ul class="hezuo" >
+            <li class="data5">
+                <div>6</div>
+                <p>法定代表人、主要负责人身份证复印件及简历</p>
+            </li>
+            <li class="data6">
+                <div>7</div>
+                <p>主要经营管理人员、专业技术人员的资格证明和身份证明文件（如学历证书、职业资格证书和身份证复印件)</p>
+            </li>
+            <li class="data7">
+                <div>8</div>
+                <p>业务发展报告</p>
+            </li>
+            <li class="data8">
+                <div>9</div>
+                <p>依法需要提交的其他文件</p>
+            </li>
+            <div class="clearfix"></div>
+        </ul>
+        <p class="z-p">太过繁杂？咨询厦门帮您整理</p>
+        <a class="zixun" href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank">立即咨询</a>
     </div>
+    <!-- 网络经营可能需要 -->
     <div style="width:100%;background:#f5f5f5;padding:20px 0;">
         <h2 class="about-h2" style="margin-top:0px;height:auto;">网络经营 您可能还需要</h2>
         <div class="main4">
@@ -336,7 +386,6 @@
         <p class="z-p">这些来厦门都能帮您办到</p>
         <a href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank" class="zixun">立即咨询</a>
     </div>
-    
     <block name="include">
         <include file="./Public/footer.html" />
     </block>

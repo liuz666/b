@@ -1,34 +1,40 @@
-<block name="include"><include file="./Public/header.html" /></block>
+<block name="include">
+    <include file="./Public/header.html" />
+</block>
 <style type="text/css">
 .navMenu {
-  display:none;
+    display: none;
 }
 </style>
+
 <body>
-      <div class="grWidth">
+    <div class="grWidth">
         <span>您现在的位置：</span>
         <a href="/">首页</a>
         <em>></em>
         <a class="" href="__MODULE__/Classroom/index/status/'行业动态'">知识课堂</a>
     </div>
-      <div class="newsList_menu">
-      <div class="loreLeft fl">
-        <div class="loreList">
-          <ul>
-            <volist name="list" id="row">
-            <li>
-              <h3>
+    <div class="newsList_menu">
+        <div class="loreLeft fl">
+            <div class="loreList">
+                <ul>
+                    <volist name="list" id="row">
+                        <li>
+                            <h3>
                 <a href="__MODULE__/About/xinwen/id/{$row['id']}">{$row['title']}</a></h3>
-              <a class="fl" href="__MODULE__/About/xinwen/id/{$row['id']}">
+                            <a class="fl" href="__MODULE__/About/xinwen/id/{$row['id']}">
                 <img src="__PUBLIC__/image/{$row['pic']}" alt="{$row['title']}"></a>
-              <p class="date">{$row['time']}
-                <span>浏览量：{$row['click']}</span></p>
-              <p class="font">{$row['content']}
-                <a class="more" href="__MODULE__/About/xinwen/id/{$row['id']}">[查看详情]</a></p>
-            </li>
-            </volist>
-          </ul>
+                            <p class="date">{$row['time']}
+                                <span>浏览量：{$row['click']}</span></p>
+                            <p class="font">{$row['content']}
+                                <a class="more" href="__MODULE__/About/xinwen/id/{$row['id']}">[查看详情]</a></p>
+                        </li>
+                    </volist>
+                </ul>
+            </div>
         </div>
-      </div>
     </div>
-    <block name="include"><include file="./Public/footer.html" /></block>
+    <div class="clearfix"></div>
+    <block name="include">
+        <include file="./Public/footer.html" />
+    </block>

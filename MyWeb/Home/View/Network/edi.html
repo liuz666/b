@@ -3,14 +3,14 @@
 </block>
 
 <body>
-    <!-- 广告轮播图 -->
     <div class="banner">
         <div class="bd">
             <ul>
                 <volist name="list" id="no">
                     <li>
                         <a href="{$no['url']}">
-              <img src="__PUBLIC__/img/{$no['imgpath']}" alt="幻灯片" /></a>
+                            <img src="__PUBLIC__/img/{$no['imgpath']}" alt="幻灯片" />
+                        </a>
                     </li>
                 </volist>
             </ul>
@@ -24,42 +24,31 @@
             <include file="./Public/demand.html" />
         </block> -->
     </div>
-    <script type="text/javascript" src="__PUBLIC__/home/js/layer.js"></script>
+    <!-- <script type="text/javascript" src="__PUBLIC__/home/js/layer.js"></script> -->
+    <link href="__PUBLIC__/home/css/edi.css" type="text/css" rel="stylesheet" />
     <script src="__PUBLIC__/home/js/yzh.js"></script>
     <script>
-    form_submit('demand_form');
-    jQuery(".demand_box").slide({
-        mainCell: "ul",
-        autoPlay: true,
-        effect: "topMarquee",
-        vis: 2,
-        interTime: 60
-    });
-    </script>
-    <script type="text/javascript">
-    /*SuperSlide图片切换*/
-    jQuery(".banner").slide({
-        titCell: ".hd li",
-        mainCell: ".bd ul",
-        effect: "fold",
-        autoPlay: true,
-        easing: "easeOutCirc",
-        interTime: 6000
-    });
-    </script>
-    <link href="__PUBLIC__/home/css/edi.css" type="text/css" rel="stylesheet" />
-    <script type="text/javascript">
-    $(function() {
-        $(".div-title a").eq(1).addClass("ahober"); // $("#top a").first().addClass("hei");
-        $(".div-title a").hover(function() {
-            $(".div-title a").removeClass("ahober");
-            $(".div-title-center .div-cenr1").eq($(this).index()).show().siblings().hide();
-            $(this).addClass("ahober");
+        form_submit('demand_form');
+        /*SuperSlide图片切换*/
+        jQuery(".banner").slide({
+            titCell: ".hd li",
+            mainCell: ".bd ul",
+            effect: "fold",
+            autoPlay: true,
+            easing: "easeOutCirc",
+            interTime: 6000
         });
-    })
+        $(function() {
+            $(".div-title a").eq(1).addClass("ahober"); // $("#top a").first().addClass("hei");
+            $(".div-title a").hover(function() {
+                $(".div-title a").removeClass("ahober");
+                $(".div-title-center .div-cenr1").eq($(this).index()).show().siblings().hide();
+                $(this).addClass("ahober");
+            });
+        })
     </script>
     <!--什么是EDI许可证代码开始-->
-    <div  style="height:290px;width:100%;margin-top:67px;padding:10px 0;">
+    <div  style="height:290px;width:100%;margin-top:67px;padding:20px 0;">
         <h2 class="about-h2">&nbsp;什么是EDI许可证</h2>
         <div style="width:90%;margin:0 auto;overflow:hidden;">
             <ul class="call-center1 ">
@@ -310,31 +299,31 @@
                 <span class="l-span4"></span>
                 <h3>呼叫中心许可证</h3>
                 <p>企业运营电话呼入和呼出业务<br />服务，必须要办的许可证。</p>
-                <font class="banli" >咨询办理</font>
+                <font class="banli" ></font>
             </a>
             <a class="lil10" href="javascript:window.location=%http://chuangha.com%27" target="_blank">
                 <span class="l-span1"></span>
                 <h3>SP证书</h3>
                 <p>SP证是在移动端涉及经营性<br />以及提供有偿信息服务时申请的。</p>
-                <font class="banli">咨询办理</font>
+                <font class="banli"></font>
             </a>
             <a class="lil10" href="javascript:window.location=%http://chuangha.com%27" target="_blank">
                 <span class="l-span2"></span>
                 <h3>网络文化经营许可证</h3>
                 <p>从事经营性互联网文化活动<br />的互联网信息服务提供者的<br />市场合法准入资质。</p>
-                <font class="banli" >咨询办理</font>
+                <font class="banli" ></font>
             </a>
             <a class="lil10" href="javascript:window.location=%http://chuangha.com%27" target="_blank">
                 <span class="l-span3"></span>
                 <h3>游戏备案</h3>
                 <p>游戏运营您需要两种备案：<br />一种是游戏运营备案；<br />一种是游戏出版备案。</p>
-                <font class="banli">咨询办理</font>
+                <font class="banli"></font>
             </a>
             <a style=" margin-left:0" class="lil10" href="javascript:window.location=%http://chuangha.com%27" target="_blank">
                 <span></span>
                 <h3>ICP证书</h3>
                 <p>ICP证是在网站涉及经营性<br />以及提供有偿信息服务时申请的。</p>
-                <font class="banli" >咨询办理</font>
+                <font class="banli" ></font>
             </a>
         </div>
     </div>

@@ -3,14 +3,14 @@
 </block>
 
 <body>
-    <!-- 广告轮播图 -->
     <div class="banner">
         <div class="bd">
             <ul>
                 <volist name="list" id="no">
                     <li>
                         <a href="{$no['url']}">
-              <img src="__PUBLIC__/img/{$no['imgpath']}" alt="幻灯片" /></a>
+                            <img src="__PUBLIC__/img/{$no['imgpath']}" alt="幻灯片" />
+                        </a>
                     </li>
                 </volist>
             </ul>
@@ -25,46 +25,52 @@
         </block> -->
     </div>
     </div>
-    <script type="text/javascript" src="__PUBLIC__/home/js/layer.js"></script>
+    <link href="__PUBLIC__/home/css/icp.css" type="text/css" rel="stylesheet" />
+    <!-- <script type="text/javascript" src="__PUBLIC__/home/js/layer.js"></script> -->
     <script src="__PUBLIC__/home/js/yzh.js"></script>
     <script>
-    form_submit('demand_form');
-    jQuery(".demand_box").slide({
-        mainCell: "ul",
-        autoPlay: true,
-        effect: "topMarquee",
-        vis: 2,
-        interTime: 60
-    });
-    </script>
-    </div>
-    <script type="text/javascript">
-    /*SuperSlide图片切换*/
-    jQuery(".banner").slide({
-        titCell: ".hd li",
-        mainCell: ".bd ul",
-        effect: "fold",
-        autoPlay: true,
-        easing: "easeOutCirc",
-        interTime: 6000
-    });
-    </script>
-    <link href="__PUBLIC__/home/css/icp.css" type="text/css" rel="stylesheet" />
-    <script type="text/javascript">
-    $(function() {
-        $(".div-title a").eq(1).addClass("ahober"); // $("#top a").first().addClass("hei");
-        $(".div-title a").hover(function() {
-            $(".div-title a").removeClass("ahober");
-            $(".div-title-center .div-cenr1").eq($(this).index()).show().siblings().hide();
-            $(this).addClass("ahober");
-
+        form_submit('demand_form');
+        jQuery(".demand_box").slide({
+            mainCell: "ul",
+            autoPlay: true,
+            effect: "topMarquee",
+            vis: 2,
+            interTime: 60
         });
-    })
+        /*SuperSlide图片切换*/
+        jQuery(".banner").slide({
+            titCell: ".hd li",
+            mainCell: ".bd ul",
+            effect: "fold",
+            autoPlay: true,
+            easing: "easeOutCirc",
+            interTime: 6000
+        });
+        $(function() {
+            $('.ngb-tab li').hover(function(){
+                var type = $(this).attr('data-target');
+                $(this).addClass('active').siblings('li').removeClass('active');
+                switch(type){
+                    case '#zyhy':
+                        $('#zydy,#zyms').removeClass('active');
+                        break;
+                    case '#zydy':
+                        $('#zyhy,#zyms').removeClass('active');
+                        break;
+                    case '#zyms':
+                        $('#zyhy,#zydy').removeClass('active');
+                        break;
+                }
+                $(type).addClass('active');
+            })
+        })
+        
     </script>
+    
     <div class="ngb-wrap">
         <div class="ngb-section ngb-icp m-t-67">
             <div class="ngb-content">
-                <h4>谁需要办理ICP？</h4>
+                <h3>谁需要办理ICP？</h3>
                 <ul class="ngb-h-icp">
                     <li class="o">
                         <div>
@@ -99,8 +105,7 @@
         </div>
         <div class="ngb-section ngb-zsy ">
             <div class="ngb-content zsy-content">
-                <!-- <h3 class="pat">关于ICP 您需要了解</h3> -->
-                <h4>什么是ICP?</h4>
+                <h3>什么是ICP?</h3>
                 <ul class="ngb-w-icp">
                     <li>
                         <div>
@@ -155,7 +160,7 @@
                             <div class="ngb-li">
                                 <div href="javascript:window.location=%27http://www.chuangha.com/%27" target="_blank" class="ngb-li-blk">药品交易类</div> 互联网药品交易资格证
                             </div>
-                            <div class="ngb-li ngb-item-last">
+                            <div class="ngb-li ">
                                 <div href="javascript:window.location=%27http://www.chuangha.com/%27" target="_blank" class="ngb-li-blk">医疗服务类</div> 医疗保健信息前置审批
                             </div>
                             <div class="ngb-li">
@@ -167,7 +172,7 @@
                             <div class="ngb-li">
                                 <div href="javascript:window.location=%27http://www.chuangha.com/%27" target="_blank" class="ngb-li-blk">新闻类</div> 互联网新闻信息服务许可证
                             </div>
-                            <div class="ngb-li ngb-item-last">
+                            <div class="ngb-li ">
                                 <div href="javascript:window.location=%27http://www.chuangha.com/%27" target="_blank" class="ngb-li-blk">视频类</div> 信息网络传播视听节目许可证
                             </div>
                         </div>
@@ -191,7 +196,7 @@
                             <div class="ngb-li">
                                 <div href="javascript:window.location=%27http://www.chuangha.com/%27" target="_blank" class="ngb-li-blk">深圳</div>
                             </div>
-                            <div class="ngb-li ngb-item-last">
+                            <div class="ngb-li ">
                                 <div href="javascript:window.location=%27http://www.chuangha.com/%27" target="_blank" class="ngb-li-blk">杭州</div>
                             </div>
                             <div class="ngb-li">
@@ -206,7 +211,7 @@
                             <div class="ngb-li">
                                 <div href="javascript:window.location=%27http://www.chuangha.com/%27" target="_blank" class="ngb-li-blk">武汉</div>
                             </div>
-                            <div class="ngb-li ngb-item-last">
+                            <div class="ngb-li ">
                                 <div href="javascript:window.location=%27http://www.chuangha.com/%27" target="_blank" class="ngb-li-blk">更多城市</div>
                             </div>
                         </div>
@@ -227,7 +232,7 @@
                             <div class="ngb-li">
                                 <div href="javascript:window.location=%27http://www.chuangha.com/%27" target="_blank" class="ngb-li-blk">游戏网站ICP许可证</div>
                             </div>
-                            <div class="ngb-li ngb-item-last">
+                            <div class="ngb-li ">
                                 <div href="javascript:window.location=%27http://www.chuangha.com/%27" target="_blank" class="ngb-li-blk">充值类网站ICP许可证</div>
                             </div>
                             <div class="ngb-li">
@@ -236,7 +241,7 @@
                             <div class="ngb-li">
                                 <div href="javascript:window.location=%27http://www.chuangha.com/%27" target="_blank" class="ngb-li-blk">一般行业ICP许可证</div>
                             </div>
-                            <div class="ngb-li ngb-item-last">
+                            <div class="ngb-li ">
                                 <div href="javascript:window.location=%27http://www.chuangha.com/%27" target="_blank" class="ngb-li-blk">更多行业</div>
                             </div>
                         </div>
@@ -250,45 +255,32 @@
         <div class="ngb-section ngb-icp-xk">
             <div class="ngb-content icp-xk-content">
                 <h3>ICP许可证办理条件</h3>
-                <ul>
-                    <li class="ixk-o">
-                        <div>
-                            <div class="icp-item-o">
-                                <div class="icp-item-btn">基本条件</div>
-                            </div>
-                            <div class="icp-item-t">
-                                <div>公司注册资金100万以上</div>
-                                <div>公司属于内资企业</div>
-                                <div>（外资占股比例不得超过49%以上）</div>
-                            </div>
-                            <a href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank">立即咨询</a>
+                <ul class="call-baoz">
+                    <li>
+                        <div class="baoz-content">
+                            <div>1</div>
+                            <h2>基本条件</h2>
+                            <p>公司注册资金100万以上<br>公司属于内资企业<br>(外资占股比例不得超过49%以上)</p>
                         </div>
                     </li>
-                    <li class="ixk-t">
-                        <div>
-                            <div class="icp-item-o">
-                                <div class="icp-item-btn">客观条件</div>
-                            </div>
-                            <div class="icp-item-t">
-                                <div>社保要求：人数</div>
-                                <div>技术人员要求：学历</div>
-                                <div>服务器空间托管要求：托管地/托管商</div>
-                            </div>
-                            <a href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank">立即咨询</a>
+                    <li>
+                        <div class="baoz-content">
+                            <div>2</div>
+                            <h2>客观条件</h2>
+                            <p>
+                                社保要求：人数<br>
+                                技术人员要求：学历<br>
+                                服务器空间托管要求：托管地/托管商</p>
                         </div>
                     </li>
-                    <li class="ixk-s">
-                        <div>
-                            <div class="icp-item-o">
-                                <div class="icp-item-btn">其他条件</div>
-                            </div>
-                            <div class="icp-item-t">
-                                <div>申请企业性质要求</div>
-                                <div>专业资料撰写要点及格式要求</div>
-                            </div>
-                            <a href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank">立即咨询</a>
+                    <li>
+                        <div class="baoz-content">
+                            <div>3</div>
+                            <h2>其他条件</h2>
+                            <p>申请企业性质要求<br>专业资料撰写要点及格式要求</p>
                         </div>
                     </li>
+                    <div class="clearfix"></div>
                 </ul>
             </div>
         </div>
@@ -299,38 +291,52 @@
         </div>
         <div class="ngb-section ngb-zbgm">
             <h3>如果您准备同我们合作 您需要准备</h3>
-            <div class="ngb-content ngb-line-t">
-                <ul>
+            <div class="ngb-content">
+                <ul class="hezuo">
                     <li>
-                        <p><span>1</span><br>法人签署的书面申请</p>
+                        <div>1</div>
+                        <p>法人签署的书面申请</p>
                     </li>
-                    <li>
-                        <p><span>2</span><br>设立互联网文化单位申请表</p>
+                    <li class="data1">
+                        <div>2</div>
+                        <p>设立互联网文化单位申请表</p>
                     </li>
-                    <li>
-                        <p><span>3</span><br>企业名称预先核准通知书或者营业执照和章程</p>
+                    <li class="data2">
+                        <div>3</div>
+                        <p>企业名称预先核准通知书或者营业执照和章程</p>
                     </li>
-                    <li>
-                        <p><span>4</span><br>资金来源、数额及其信用证明文件（如验资报告、验资机构企业法人营业执照复印件等)</p>
+                    <li class="data3">
+                        <div>4</div>
+                        <p>资金来源、数额及其信用证明文件（如验资报告、验资机构企业法人营业执照复印件等)</p>
                     </li>
-                    <li>
-                        <p><span>5</span><br>工作场所使用权证明文件（租赁办公场所的需提交房屋租赁合同和出租方房屋</p>
+                    <li class="data4">
+                        <div>5</div>
+                        <p>工作场所使用权证明文件（租赁办公场所的需提交房屋租赁合同和出租方房屋</p>
                     </li>
-                    <li>
-                        <p><span>6</span><br>法定代表人、主要负责人身份证复印件及简历</p>
-                    </li>
-                    <li>
-                        <p><span>7</span><br>主要经营管理人员、专业技术人员的资格证明和身份证明文件（如学历证书、职业资格证书和身份证复印件)</p>
-                    </li>
-                    <li>
-                        <p><span>8</span><br>业务发展报告</p>
-                    </li>
-                    <li>
-                        <p><span>9</span><br>依法需要提交的其他文件</p>
-                    </li>  
+                    <div class="clearfix"></div>
                 </ul>
+                <ul class="hezuo" style="margin-top:22px;">
+                    <li class="data5">
+                        <div>6</div>
+                        <p>法定代表人、主要负责人身份证复印件及简历</p>
+                    </li>
+                    <li class="data6">
+                        <div>7</div>
+                        <p>主要经营管理人员、专业技术人员的资格证明和身份证明文件（如学历证书、职业资格证书和身份证复印件)</p>
+                    </li>
+                    <li class="data7">
+                        <div>8</div>
+                        <p>业务发展报告</p>
+                    </li>
+                    <li class="data8">
+                        <div>9</div>
+                        <p>依法需要提交的其他文件</p>
+                    </li>
+                    <div class="clearfix"></div>
+                </ul>
+                <h6>太过繁杂？咨询厦门帮您梳理</h6>
+                <a href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank">立即咨询</a>
             </div>
-            <h6>太过繁杂？咨询厦门帮您梳理</h6><a href="javascript:window.location=%27http://www.chuangha.com/Home/Contact%27" target="_blank">立即咨询</a>
         </div>
         <div class="ngb-section ngb-gyhts">
             <div class="ngb-content gyhts-content">

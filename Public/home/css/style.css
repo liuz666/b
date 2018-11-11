@@ -61,8 +61,8 @@ a:hover{color:#1e4e72;text-decoration:none;}:focus{outline:none;}
 /*  广告轮播图 */
 .banner{ margin: 0 auto;position:relative; overflow:hidden;height:420px;}
 .banner .bd{height:420px; z-index:0;position:relative;left:50%; margin-left:-960px;}
-.banner .hd{position:absolute; bottom:10px; text-align: center; z-index:5;left: 50%;font-size: 0; line-height: 0;height: 0px; margin-left:-50px;height:14px;overflow:hidden;}
-.banner .hd li{background:#fff; z-index:2; cursor:pointer; margin-right:5px; display:inline-block;width:8px; height:8px;*display:inline; zoom:1; border-radius: 100%;border:2px solid #fff;}
+.banner .hd{width:100%;position:absolute;bottom:10px;text-align: center; z-index:5;font-size:0;height:20px;line-height:20px; overflow:hidden;}
+.banner .hd li{background:#fff; z-index:2; cursor:pointer; margin-right:10px; display:inline-block;width:10px; height:10px;zoom:1; border-radius:100%;border:2px solid #fff;}
 .banner .hd li:hover,.banner .hd .on{background:none;border:2px solid #fff;}
 
 /*  需求登记 */
@@ -92,8 +92,8 @@ a:hover{color:#1e4e72;text-decoration:none;}:focus{outline:none;}
 }
 .main .title h2 {
     text-align: center;
-    font-size: 24px;
-    color: #4066ff;
+    font-size: 30px;
+    color: #404040;
     width: auto;
     font-weight: 700;
 }
@@ -199,8 +199,8 @@ a:hover{color:#1e4e72;text-decoration:none;}:focus{outline:none;}
 /* 底部 */
 .footer{background:#313131;color:#999;overflow:hidden;}
 .footMain{width:80%;padding:40px 0;overflow:hidden;}
-.footLeft{width:50%;overflow:hidden;}
-.footRight{width:50%;float:right;}
+.footLeft{width:70%;overflow:hidden;}
+.footRight{width:30%;float:right;}
 .footMenu{float:left;width:130px;}
 .footMenu h3{height:40px;font-size:14px;color:#fff;}
 .foot_wx{border:1px solid #fff;width:280px;height:140px;color:#fff;}
@@ -229,11 +229,11 @@ a:hover{color:#1e4e72;text-decoration:none;}:focus{outline:none;}
 
 /* 内页公用 */
 .listWrapper{padding-bottom:50px;overflow:hidden;}
-.breadCrumb{height:50px;margin-bottom:15px;}
+.breadCrumb{padding:20px 0;margin-bottom:15px;margin-top:70px;overflow: hidden;}
 .breadCrumb span{background:url('../images/home_icon.png') no-repeat left center; padding-left:25px;}
 .breadCrumb em{ margin:0 5px;font-style:normal;font-family:"宋体";}
-.sidebar{width:190px; float:left;}
-.listRight{width:970px; float:right;overflow:hidden;text-align:justify;text-justify:inter-ideograph;}
+.sidebar{width:20%; float:left;}
+.listRight{width:75%; float:right;margin-left:5%;overflow:hidden;text-align:justify;text-justify:inter-ideograph;}
 
 /* 内页公用菜单 */
 .sidebar li{margin-bottom:10px;text-align:center;font-size:14px;}
@@ -338,7 +338,7 @@ a:hover{color:#1e4e72;text-decoration:none;}:focus{outline:none;}
 
 
 /* 知识课堂 */
-.loreLeft{width: 78%;margin-left: 8%;padding-right:49px;border-right:1px solid #dbdbdb;min-height:1155px;}
+.loreLeft{width: 78%;margin-left: 8%;padding-right:49px;border-right:1px solid #dbdbdb;min-height:1155px;margin-top:67px;}
 .faqWrap{min-height:680px;}
 .loreList li{padding-bottom:30px;margin-bottom:20px;border-bottom:1px dashed #cacaca;overflow:hidden;font-size:14px;}
 .loreList li h3{font-size:24px;font-weight:normal;white-space:nowrap;overflow:hidden;text-overflow: ellipsis;height:40px}
