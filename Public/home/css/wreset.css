@@ -10,8 +10,7 @@
 .about-h2{ font-size:30px;height:54px;line-height:54px;text-align:center;font-weight:700;color:#404040;}
 
 
-.main-box{width:100%;background:#f2f1ef;padding:10px 0;}
-.main-box .title h2{background:#f2f1ef;}
+.main-box{width:100%;padding:10px 0;}
 .main-div1{ margin-top:31px; overflow: hidden;border-bottom:1px solid #e6e6e6;} 
 .main-div1-ul1{ width:100%;margin-top:30px;overflow:hidden}
 .main-div1-ul1 li{
@@ -22,8 +21,7 @@
     padding:10px;
 	overflow:hidden;
 	border-radius: 5px;
-	background-color: rgba(255,255,255,0.9);
-	box-shadow: 0 0 15px #666666;
+	background-color: #f5f5f5;
 	box-sizing:border-box;
 }
 .main-div1-ul1 li.main-div-ul-lir{margin-left:4%;}
@@ -32,10 +30,10 @@
 .main-div1-ul1 li .photo img{width:100px;}
 .main-div1-ul1 li div h4{ font-weight:normal; color:#666; font-size:18px; overflow: hidden;}
 .main-div1-ul1 li div p{color:#999; font-size:14px; line-height:19px; overflow:hidden;padding:15px;}
-.main-div1-ul1 li.main-div-ul-lir div p a{ width:77px; float:left}
+.main-div1-ul1 li.main-div-ul-lir div p a{ width:77px; float:left;color:#999;}
 .main-div1-ul1 li.main-div-ul-lir div p span{ float:left; margin-right:24px; display:inline-block}
 .main-div1-ul1 li.main-div-ul-lir div p a.yac{ width:105px;}
-.z-p{ text-align:center; font-size:18px; color:#000000; height:35px; margin-top:27px; overflow: hidden; font-weight:700}
+.z-p{ text-align:center; font-size:16px; color:#000000; height:35px; margin-top:27px; overflow: hidden; font-weight:700}
 .zixun{ background:url(../images/but.jpg) no-repeat; width:137px; height:37px; line-height:37px; color:#fff; margin:10px auto; text-align:center; font-size:14px; display:block;}
 .main-div1-ul12 li.ul2-right div p{ margin-top:8px;}
 .main-div1-ul13{ margin-top:52px;}
@@ -70,27 +68,17 @@
 	border-radius:40px;top:-20%;left:5%;text-align:center;font-size:20px;color:#fff;}
 .yxbaBox5 .call-baoz li p{ color:#999;font-size:14px;margin-top:10px;height:100%;overflow:hidden;}
 
-/*办理前需要注意*/
-.zt{ background:url(../images/zt.jpg) no-repeat top center; height:627px; overflow:hidden}
-.zt1{ width:724px; margin:44px auto 0; overflow:hidden}
-.zt1-left{ width:240px; color:#fff; font-size:14px;}
-.zt1-left h3{ height:68px; line-height:68px; overflow:hidden; font-size:24px; text-align:center}
-.zt1-left ul{ overflow:hidden}
-.zt1-left ul li{ height:32px; line-height:32px; margin-top:15px; overflow:hidden}
-.zt1-left ul li span{ float:left; width:36px; text-align:center; margin-right:17px; display:inline}
-.zt1-left ul li p{ float:left}
-.zt1-left ul li.zt-span1 p{ margin-left:50px; display:inline; color:#828282}
+/*办理流程*/
+
 
 /*如果您准备同我们合作 您需要准备*/
 .hezuo{width:90%; margin:0px auto;margin-top:22px;}
 .hezuo li{ 
-	float:left; width:20%; height:180px;text-align:center;position:relative;min-height:1px;padding-right:15px;
-	padding-left: 15px;
-	box-sizing:border-box;
+	float:left; width:20%; height:180px;text-align:center;position:relative;min-height:1px;padding-right:15px;padding-left: 15px;box-sizing:border-box;
 }
 .hezuo li div{
 	width:80px;height:80px;line-height:80px;border-radius:80px;font-size:20px;font-weight:bold;color:#707070;
-	background:#f5f5f5;margin: 0 auto ;position:relative;box-sizing:border-box;
+	background:#DBDBDB;margin: 0 auto ;position:relative;box-sizing:border-box;
 }
 .hezuo li p{ line-height:18px; font-size:14px; margin-top:20px;color:#999;}
 

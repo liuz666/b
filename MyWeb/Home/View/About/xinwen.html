@@ -1,66 +1,68 @@
-<block name="include"><include file="./Public/header.html" /></block>
+<block name="include">
+    <include file="./Public/header.html" />
+</block>
 <style type="text/css">
 .navMenu {
-  display:none;
+    display: none;
 
 }
 </style>
-  <div class="breadCrumb"> 
-   <div class="grWidth"> 
-    <span>您现在的位置：</span>
-    <a href="/">首页</a>
-    <em> &gt; </em>
-    <a class="" href="/zhishiketang.html">知识课堂 </a> &gt; 
-    <a class="bc" href="/zhishiketang.html">知识课堂</a> 
-   </div> 
-  </div> 
-  <div class="listWrapper grWidth clearfix"> 
-   <div class="loreLeft fl"> 
-    <div class="gr-content-box"> 
-     <div class="gr-news-show"> 
-      <h2>{$list['title']}</h2> 
-      <h3 class="mb15"><span>文章来源：{$list['source']}</span><span>人气：{$list['click']}</span><span>发表时间：{$list['time']}</span><span class="fontResizer">【<a href="javascript:void(0);" class="smallFont">小</a><a href="javascript:void(0);" class="medFont">中</a><a href="javascript:void(0);" class="largeFont">大</a>】</span></h3> 
-      <div class="news-show-box fontsizebox" style="font-size:14px;"> 
-      {$list['cont']}
-      </div> 
-     </div> 
-    </div> 
-    <!-- 上下篇 --> 
-    <div class="gr-fenx"> 
-     <div class="prew">
-      <a href="__MODULE__/About/xinwen/id/{$sid}">上一篇:{$lists['title']}</a>
-     </div> 
-     <div class="nextw">
-      
-      <a href="__MODULE__/About/xinwen/id/{$uid}">下一篇:{$listu['title']}</a>
-     </div> 
-    </div> 
-    <!-- 此文关键词 --> 
-    <div class="clearfix"></div> 
-    <div class="gr-keyword">
-     <b>此文关键词:</b>定制,开发,自己,棋牌游戏,需要,注意,哪些,
-    </div> 
-    <div class="clearfix"></div> 
-    <!-- 相关资讯 --> 
-    <div class="gr-rec-news"> 
-     <div class="rec-title">
-      相关资讯
-     </div> 
-     <ul>
-     <volist name="list1" id="row">  
-      <li><a href="__MODULE__/About/xinwen/id/{$row['id']}">{$row['title']}</a><span>{$row['time']|date='Y-m-d',###}</span></li>
-      </volist> 
-     </ul> 
-    </div> 
-   </div> 
-   <div class="loreRight fr"> 
-    <h3 class="title"><span>推荐文章</span></h3> 
-    <ul class="recommend"> 
-      <volist name="list1" id="row1">
-     <li> <h3><a href="__MODULE__/About/xinwen/id/{$row1['id']}">{$row1['title']}</a></h3> <a class="fl" href="__MODULE__/About/xinwen/id/{$row1['id']}"><img src="__PUBLIC__/image/{$row1['pic']}" alt="{$row1['title']}" /></a> <p class="font">{$row1['content']}</p> </li> 
-   </volist>
-    </ul> 
-    <!-- <div class="r_faq"> 
+<div class="breadCrumb">
+    <div class="grWidth">
+        <span>您现在的位置：</span>
+        <a href="/">首页</a>
+        <em> &gt; </em>
+        <a class="bc" href="#">知识课堂</a>
+    </div>
+</div>
+<div class="listWrapper grWidth clearfix">
+    <div class="loreLeft fl">
+        <div class="gr-content-box">
+            <div class="gr-news-show">
+                <h2>{$list['title']}</h2>
+                <h3 class="mb15"><span>文章来源：{$list['source']}</span><span>人气：{$list['click']}</span><span>发表时间：{$list['time']}</span><span class="fontResizer">【<a href="javascript:void(0);" class="smallFont">小</a><a href="javascript:void(0);" class="medFont">中</a><a href="javascript:void(0);" class="largeFont">大</a>】</span></h3>
+                <div class="news-show-box fontsizebox" style="font-size:14px;">
+                    {$list['cont']}
+                </div>
+            </div>
+        </div>
+        <!-- 上下篇 -->
+        <div class="gr-fenx">
+            <div class="prew">
+                <a href="__MODULE__/About/xinwen/id/{$sid}">上一篇:{$lists['title']}</a>
+            </div>
+            <div class="nextw">
+                <a href="__MODULE__/About/xinwen/id/{$uid}">下一篇:{$listu['title']}</a>
+            </div>
+        </div>
+        <!-- 此文关键词 -->
+        <div class="clearfix"></div>
+        <div class="gr-keyword">
+            <b>此文关键词:</b>定制,开发,自己,棋牌游戏,需要,注意,哪些,
+        </div>
+        <div class="clearfix"></div>
+        <!-- 相关资讯 -->
+        <div class="gr-rec-news">
+            <div class="rec-title">
+                相关资讯
+            </div>
+            <ul>
+                <volist name="list1" id="row">
+                    <li><a href="__MODULE__/About/xinwen/id/{$row['id']}">{$row['title']}</a><span>{$row['time']|date='Y-m-d',###}</span></li>
+                </volist>
+            </ul>
+        </div>
+    </div>
+    <div class="loreRight fr">
+        <h3 class="title"><span>推荐文章</span></h3>
+        <ul class="recommend">
+            <volist name="list1" id="row1">
+                <li> <h3><a href="__MODULE__/About/xinwen/id/{$row1['id']}">{$row1['title']}</a></h3> <a class="fl" href="__MODULE__/About/xinwen/id/{$row1['id']}"><img src="__PUBLIC__/image/{$row1['pic']}" alt="{$row1['title']}" /></a>
+                    <p class="font">{$row1['content']}</p>
+                </li>
+            </volist>
+        </ul>
+        <!-- <div class="r_faq"> 
      <h3 class="title"><a href="/faq.html">more+</a><span>FAQ</span></h3> 
      <ul class="r_faqMain"> 
       <li> <h4><a href="/faq/31-364.html">ICP许可证和增值电信业务经营许可证的区别?</a></h4> <p>增值电信业务经营许可证是一个统称，包括很多种许可证，每一个许可证都有对应的业务范...</p> </li>
@@ -69,78 +71,84 @@
       <li> <h4><a href="/faq/31-356.html">如何查P2P平台是否有ICP许可证?</a></h4> <p>有人说判断一个P2P平台有没有ICP许可证，不就是看官网底下是“ICP证”还是“ICP备”吗...</p> </li> 
      </ul> 
     </div>  -->
-   </div> 
-  </div> 
-  <script type="text/javascript">
-function fontResizer(smallFont,medFont,largeFont){
+    </div>
+</div>
+<script type="text/javascript">
+function fontResizer(smallFont, medFont, largeFont) {
 
-    function clearSelected(){
+    function clearSelected() {
         $(".smallFont").removeClass("curFont");
         $(".medFont").removeClass("curFont");
         $(".largeFont").removeClass("curFont");
     }
 
-    function saveState(curSize){
+    function saveState(curSize) {
         var date = new Date();
-        date.setTime(date.getTime()+(7*24*60*60*1000));
-        var expires = "; expires="+date.toGMTString();
-        document.cookie = "fontSizer"+"="+curSize+expires+"; path=/";
+        date.setTime(date.getTime() + (7 * 24 * 60 * 60 * 1000));
+        var expires = "; expires=" + date.toGMTString();
+        document.cookie = "fontSizer" + "=" + curSize + expires + "; path=/";
     }
 
-    $(".smallFont").click(function(){
+    $(".smallFont").click(function() {
         $('.fontsizebox').css('font-size', smallFont);
         clearSelected();
         $(".smallFont").addClass("curFont");
         saveState(smallFont);
     });
 
-    $(".medFont").click(function(){
+    $(".medFont").click(function() {
         $('.fontsizebox').css('font-size', medFont);
         clearSelected();
         $(".medFont").addClass("curFont");
         saveState(medFont);
     });
 
-    $(".largeFont").click(function(){
+    $(".largeFont").click(function() {
         $('.fontsizebox').css('font-size', largeFont);
         clearSelected();
         $(".largeFont").addClass("curFont");
         saveState(largeFont);
     });
 
-    function getCookie(c_name){
-        if(document.cookie.length>0){
-            c_start=document.cookie.indexOf(c_name + "=");
-            if (c_start!=-1){
-                c_start=c_start + c_name.length+1;
-                c_end=document.cookie.indexOf(";",c_start);
-                if(c_end==-1)c_end=document.cookie.length;
-                return unescape(document.cookie.substring(c_start,c_end));
+    function getCookie(c_name) {
+        if (document.cookie.length > 0) {
+            c_start = document.cookie.indexOf(c_name + "=");
+            if (c_start != -1) {
+                c_start = c_start + c_name.length + 1;
+                c_end = document.cookie.indexOf(";", c_start);
+                if (c_end == -1) c_end = document.cookie.length;
+                return unescape(document.cookie.substring(c_start, c_end));
             }
         }
         return "";
     }
     var savedSize = getCookie('fontSizer');
-    if(savedSize!=""){
+    if (savedSize != "") {
         $('.fontsizebox').css('font-size', savedSize);
-        switch(savedSize){
-            case smallFont: $(".smallFont").addClass("curFont");
-            break;
-            case medFont: $(".medFont").addClass("curFont");
-            break;
-            case largeFont: $(".largeFont").addClass("curFont");
-            break;
-            default: $(".medFont").addClass("curFont");
+        switch (savedSize) {
+            case smallFont:
+                $(".smallFont").addClass("curFont");
+                break;
+            case medFont:
+                $(".medFont").addClass("curFont");
+                break;
+            case largeFont:
+                $(".largeFont").addClass("curFont");
+                break;
+            default:
+                $(".medFont").addClass("curFont");
         }
-    }else {
+    } else {
         $('.fontsizebox').css('font-size', medFont);
         $(".medFont").addClass("curFont");
     }
 }
-</script> 
-  <script type="text/javascript">
+</script>
+<script type="text/javascript">
 $(document).ready(function() {
-    fontResizer('12px','14px','16px');
+    fontResizer('12px', '14px', '16px');
 });
-</script> 
-   <block name="include"><include file="./Public/footer.html" /></block>
+</script>
+<block name="include">
+    <include file="./Public/footer.html" />
+</block>
