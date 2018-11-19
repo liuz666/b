@@ -185,16 +185,11 @@ a:hover{color:#1e4e72;text-decoration:none;}:focus{outline:none;}
 
 /*  优势 */
 .advantage-box{background-image:url('../images/sb-bc.jpg');padding:10px;margin-bottom:10px;}
-.advantage {width:80%;margin:15px auto;}
-.advantage li{position:relative;width:19%;height:188px;background:rgba(255,255,255,0.2);float:left;margin-right:1%; transition: all .6s;}
-.advantage li h2{font-size:20px;color:#fff;margin-top:15px;text-align:center;}
-.advantage li p{font-size:14px;color:#999;margin-top:2px;padding:2px 8px; height:40px;text-align:justify;}
-.advantage li .img{width:100%;display:block;text-align:center;}
-.advantage li .img i{display:inline-block;width:58px;height:80px;background: url('../images/advantage_icon.jpg') no-repeat;margin-top:30px;transition:all 0.3s;}
-.advantage li .img i.a2{background-position: -58px 0;}
-.advantage li .img i.a3{background-position: -116px 0;}
-.advantage li .img i.a4{background-position: -174px 0;}
-.advantage li .img i.a5{background-position: -232px 0;}
+.advantage {width:90%;margin:15px auto;}
+.advantage li{float:left;width:20%;height:120px;padding-right:15px;padding-left:15px;box-sizing:border-box;}
+.advantage li div{width:100%;height:100%;background:rgba(255,255,255,0.2);padding:10px;box-sizing:border-box;}
+.advantage li h2{font-size:20px;color:#fff;text-align:center;}
+.advantage li p{font-size:14px;color:#f1f1f1;margin-top:10px;padding:2px 8px; height:40px;text-align:justify;}
 
 /* 底部 */
 .footer{background:#313131;color:#999;overflow:hidden;}

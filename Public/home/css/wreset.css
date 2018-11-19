@@ -30,7 +30,7 @@
 .main-div1-ul1 li .content{ width:calc(100% - 130px);height:167px;margin-left:130px;}
 .main-div1-ul1 li .photo img{width:100px;}
 .main-div1-ul1 li div h4{ font-weight:normal; color:#666; font-size:18px; overflow: hidden;}
-.main-div1-ul1 li div p{color:#999; font-size:14px; line-height:19px; overflow:hidden;padding:15px;}
+.main-div1-ul1 li div p{color:#999; font-size:14px; line-height:24px; overflow:hidden;padding:15px;}
 .main-div1-ul1 li.main-div-ul-lir div p a{ width:77px; float:left;color:#999;}
 .main-div1-ul1 li.main-div-ul-lir div p span{ float:left; margin-right:24px; display:inline-block}
 .main-div1-ul1 li.main-div-ul-lir div p a.yac{ width:105px;}
